@@ -1,0 +1,6 @@
+framework module GlPopView {
+  umbrella header "GlPopView-umbrella.h"
+
+  export *
+  module * { export * }
+}

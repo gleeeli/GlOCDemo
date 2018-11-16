@@ -1,0 +1,6 @@
+framework module GlChartView {
+  umbrella header "GlChartView-umbrella.h"
+
+  export *
+  module * { export * }
+}

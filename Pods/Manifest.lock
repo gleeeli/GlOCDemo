@@ -1,0 +1,38 @@
+PODS:
+  - GlChartView (1.0.0):
+    - GlPopView
+  - GlPopView (1.0.2)
+  - HMSegmentedControl (1.5.5)
+  - Masonry (1.1.0)
+  - SDAutoLayout (2.1.9)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - GlChartView
+  - HMSegmentedControl
+  - Masonry
+  - SDAutoLayout (~> 2.1.3)
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GlChartView
+    - GlPopView
+    - HMSegmentedControl
+    - Masonry
+    - SDAutoLayout
+    - YYKit
+
+SPEC CHECKSUMS:
+  GlChartView: 09eeb57e9b945fc839c56f27d4ce72b6115d6110
+  GlPopView: 21533a3d4aabdb41d40c85039aff87356bbeede1
+  HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 0e911bca4f5ae00976c84b300402244d35510799
+
+COCOAPODS: 1.5.3

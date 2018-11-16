@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface GlOCDemoUITests : XCTestCase
 
@@ -35,6 +36,12 @@
 - (void)testExample {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+}
+
+- (void)testDefaultVC
+{
+    ViewController *viewControl = [[ViewController alloc] init];
+    
 }
 
 @end

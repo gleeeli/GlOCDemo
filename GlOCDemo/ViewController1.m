@@ -13,10 +13,13 @@
 #import "MCTestModel.h"
 #import "TestHsegmentViewController.h"
 #import "TestTableViewController.h"
+#import "MyManager.h"
+#import "TestWkwebViewViewController.h"
 
-@interface ViewController1 ()
+@interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) WKWebView         *webView;
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *array;
 @end
 
 @implementation ViewController1
@@ -24,6 +27,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     id data = nil;
+    self.array = [[NSMutableArray alloc] init];
+    [self.array addObject:@"wkwebview"];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    
     
     //NSAssert(nil, @"token为空");
     MCTestModel *model = [MCTestModel modelWithJSON:data];
@@ -32,6 +40,16 @@
     [self.webView loadHTMLString:@"<p>test</p>" baseURL:nil];
     
     [self.view sendSubviewToBack:self.webView];
+    
+    
+    TestManager1 *testManager = [TestManager1 sharedManager];
+    MyManager *myManager = [MyManager sharedManager];
+    
+    NSLog(@"单列名字1:%@",testManager.myName);
+    NSLog(@"单列名字:%@",myManager.myName);
+    
+    [testManager method1];
+    [myManager method1];
 }
 
 - (IBAction)tohmsegment:(id)sender {
@@ -93,5 +111,28 @@
 
 - (void)testsort {
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 40;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.array count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    cell.textLabel.text = self.array[indexPath.row];
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *vc;
+    NSString *title = self.array[indexPath.row];
+    if ([title isEqualToString:@"wkwebview"]) {
+        vc = [[TestWkwebViewViewController alloc] initWithBaseHttpUrlStr:@"https://www.baidu.com/"];
+    }
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

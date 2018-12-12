@@ -12,4 +12,5 @@ target 'GlOCDemo' do
     pod 'YYKit'
     pod 'GlChartView'
     pod 'HMSegmentedControl'#分段控制器
+    pod 'WebViewJavascriptBridge'
 end

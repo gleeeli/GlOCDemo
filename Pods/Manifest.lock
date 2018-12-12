@@ -5,6 +5,7 @@ PODS:
   - HMSegmentedControl (1.5.5)
   - Masonry (1.1.0)
   - SDAutoLayout (2.1.9)
+  - WebViewJavascriptBridge (6.0.3)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - HMSegmentedControl
   - Masonry
   - SDAutoLayout (~> 2.1.3)
+  - WebViewJavascriptBridge
   - YYKit
 
 SPEC REPOS:
@@ -23,6 +25,7 @@ SPEC REPOS:
     - HMSegmentedControl
     - Masonry
     - SDAutoLayout
+    - WebViewJavascriptBridge
     - YYKit
 
 SPEC CHECKSUMS:
@@ -31,8 +34,9 @@ SPEC CHECKSUMS:
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 0e911bca4f5ae00976c84b300402244d35510799
+PODFILE CHECKSUM: 791468ad19ed4af1da30406438c79e1f783afcab
 
 COCOAPODS: 1.5.3

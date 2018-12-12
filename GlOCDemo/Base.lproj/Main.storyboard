@@ -50,11 +50,28 @@
                                     <action selector="testTableview:" destination="t4K-lz-dtG" eventType="touchUpInside" id="C1F-wA-TYG"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bOT-aX-mBn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="t4K-lz-dtG" id="Mhf-je-pK6"/>
+                                    <outlet property="delegate" destination="t4K-lz-dtG" id="b2U-O6-cVt"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bOT-aX-mBn" firstAttribute="trailing" secondItem="Xf0-db-B1E" secondAttribute="trailing" id="Jtm-da-Bkp"/>
+                            <constraint firstItem="bOT-aX-mBn" firstAttribute="top" secondItem="Xf0-db-B1E" secondAttribute="top" id="Kwa-6f-6TI"/>
+                            <constraint firstItem="Xf0-db-B1E" firstAttribute="bottom" secondItem="bOT-aX-mBn" secondAttribute="bottom" id="Nbp-gO-Xeg"/>
+                            <constraint firstItem="bOT-aX-mBn" firstAttribute="leading" secondItem="Xf0-db-B1E" secondAttribute="leading" id="v8d-Lu-FyU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xf0-db-B1E"/>
                     </view>
                     <navigationItem key="navigationItem" id="afo-MW-kS5"/>
+                    <connections>
+                        <outlet property="tableView" destination="bOT-aX-mBn" id="oA9-ON-gEb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hza-cP-je5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,7 +166,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3d-fc-fb4" customClass="RoundedButton">
-                                <rect key="frame" x="10" y="588" width="7" height="20"/>
+                                <rect key="frame" x="10" y="588" width="30" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="T5X-lC-oPK"/>
                                 </constraints>
@@ -167,7 +184,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPh-AT-5Cv" customClass="RoundedButton">
-                                <rect key="frame" x="27" y="588" width="9" height="20"/>
+                                <rect key="frame" x="50" y="588" width="30" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="gWD-ka-kKK"/>
                                 </constraints>

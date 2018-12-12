@@ -23,7 +23,7 @@
     if (self.navigationBar.isTranslucent) {
         if (backgroundImageView != nil && backgroundImageView.image != nil) {
             barBackgroundView.alpha = alpha;
-        } else {
+        } else if([[barBackgroundView subviews] count] > 1) {
             UIView *backgroundEffectView = [[barBackgroundView subviews] objectAtIndex:1];// UIVisualEffectView
             if (backgroundEffectView != nil) {
                 backgroundEffectView.alpha = alpha;

@@ -37,7 +37,7 @@
     self.filePath = [path stringByAppendingPathComponent:@"recorder.pcm"];
     
     //wav文件的路径
-    self.wavPath = [path stringByAppendingPathComponent:@"recorder.wav"];
+    self.wavPath = [NSString stringWithFormat:@"%@",self.filePath];//[path stringByAppendingPathComponent:@"recorder.wav"];
     
     [self deleteFilePath:self.filePath];
     [self createPath:self.filePath];
@@ -68,6 +68,7 @@
 }
 
 - (void)deleteFilePath:(NSString *)path {
+    return;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL fileExists = [fileManager fileExistsAtPath:path];
     if (fileExists) {
@@ -170,7 +171,7 @@ void GenericInputCallback (
     NSLog(@"暂停");
     self.isRecoreding = NO;
     AudioQueuePause(_inputQueue);
-    [self deleteFilePath:self.wavPath];
+    //[self deleteFilePath:self.wavPath];
     [self createWavPathFileFromPcmData:self.filePath];
     NSLog(@"创建wav:%@",self.wavPath);
     [self todefaultAudioSessionModel];
@@ -182,7 +183,7 @@ void GenericInputCallback (
     AudioQueueDispose(_inputQueue, YES);
     [self.fileHandle closeFile];
     
-    [self deleteFilePath:self.wavPath];
+    //[self deleteFilePath:self.wavPath];
     [self createWavPathFileFromPcmData:self.filePath];
     [self todefaultAudioSessionModel];
 }
@@ -218,7 +219,8 @@ void GenericInputCallback (
 - (void)createWavPathFileFromPcmData:(NSString *)filePath
 {
     NSLog(@"PCM file path : %@",filePath); //pcm文件的路径
-    convertPcm2Wav([filePath UTF8String], [self.wavPath UTF8String], 1, kDefaultSampleRate);
+    return;
+//    convertPcm2Wav([filePath UTF8String], [self.wavPath UTF8String], 1, kDefaultSampleRate);
 //    convertPcm2Wav([filePath UTF8String], [self.wavPath UTF8String], 1, kDefaultSampleRate);
     
 //    FILE *fout;

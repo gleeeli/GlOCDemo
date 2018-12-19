@@ -29,7 +29,6 @@
 		1952DABE217706B8001D9FED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1952DABD217706B8001D9FED /* AVFoundation.framework */; };
 		195418BF21C9D7F0000A4C81 /* TestRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 195418BE21C9D7F0000A4C81 /* TestRecorderViewController.m */; };
 		195418C321C9D841000A4C81 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 195418C121C9D841000A4C81 /* libmp3lame.a */; };
-		195418C621C9D961000A4C81 /* recorder.wav in Resources */ = {isa = PBXBuildFile; fileRef = 195418C521C9D961000A4C81 /* recorder.wav */; };
 		195418C921C9DEA0000A4C81 /* GlRecorderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 195418C721C9DEA0000A4C81 /* GlRecorderManager.m */; };
 		195418CB21C9DFA5000A4C81 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195418CA21C9DFA4000A4C81 /* AudioToolbox.framework */; };
 		195418D421CA1FF1000A4C81 /* LYPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 195418D321CA1FF1000A4C81 /* LYPlayer.m */; };
@@ -72,6 +71,8 @@
 		195AF66F217962CB0068A3AD /* GlTwoTextEditDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 195AF66E217962CB0068A3AD /* GlTwoTextEditDistance.m */; };
 		1963E426218AFF5F0029294B /* MCStudentProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963E425218AFF5F0029294B /* MCStudentProgressViewController.m */; };
 		1963E42B218AFFF30029294B /* MCStudentProgressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963E42A218AFFF30029294B /* MCStudentProgressTableViewCell.m */; };
+		196F818921CA456100FD39E5 /* gleelirecorder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 196F818821CA456100FD39E5 /* gleelirecorder.mp3 */; };
+		196F818C21CA468900FD39E5 /* XJJAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */; };
 		1977C0EC219EA2A000B42354 /* TestNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1977C0EB219EA2A000B42354 /* TestNavigationViewController.m */; };
 		1977C0F0219EA2F400B42354 /* UIButton+NMHitRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1977C0EF219EA2F400B42354 /* UIButton+NMHitRect.m */; };
 		197984C221C092AA0036C551 /* BaseWKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984C121C092AA0036C551 /* BaseWKWebViewViewController.m */; };
@@ -152,7 +153,6 @@
 		195418BE21C9D7F0000A4C81 /* TestRecorderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRecorderViewController.m; sourceTree = "<group>"; };
 		195418C121C9D841000A4C81 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		195418C221C9D841000A4C81 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
-		195418C521C9D961000A4C81 /* recorder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = recorder.wav; sourceTree = "<group>"; };
 		195418C721C9DEA0000A4C81 /* GlRecorderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlRecorderManager.m; sourceTree = "<group>"; };
 		195418C821C9DEA0000A4C81 /* GlRecorderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlRecorderManager.h; sourceTree = "<group>"; };
 		195418CA21C9DFA4000A4C81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -236,6 +236,9 @@
 		1963E425218AFF5F0029294B /* MCStudentProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCStudentProgressViewController.m; sourceTree = "<group>"; };
 		1963E429218AFFF30029294B /* MCStudentProgressTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCStudentProgressTableViewCell.h; sourceTree = "<group>"; };
 		1963E42A218AFFF30029294B /* MCStudentProgressTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCStudentProgressTableViewCell.m; sourceTree = "<group>"; };
+		196F818821CA456100FD39E5 /* gleelirecorder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gleelirecorder.mp3; sourceTree = "<group>"; };
+		196F818A21CA468900FD39E5 /* XJJAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJJAudioPlayer.h; sourceTree = "<group>"; };
+		196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJJAudioPlayer.m; sourceTree = "<group>"; };
 		1977C0EA219EA2A000B42354 /* TestNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNavigationViewController.h; sourceTree = "<group>"; };
 		1977C0EB219EA2A000B42354 /* TestNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNavigationViewController.m; sourceTree = "<group>"; };
 		1977C0EE219EA2F400B42354 /* UIButton+NMHitRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NMHitRect.h"; sourceTree = "<group>"; };
@@ -339,6 +342,8 @@
 				193C31D62194163400A42551 /* MCTestModel.m */,
 				195418C821C9DEA0000A4C81 /* GlRecorderManager.h */,
 				195418C721C9DEA0000A4C81 /* GlRecorderManager.m */,
+				196F818A21CA468900FD39E5 /* XJJAudioPlayer.h */,
+				196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -425,8 +430,8 @@
 		195418C421C9D956000A4C81 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				196F818821CA456100FD39E5 /* gleelirecorder.mp3 */,
 				195418D521CA2024000A4C81 /* recorder.pcm */,
-				195418C521C9D961000A4C81 /* recorder.wav */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -795,11 +800,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196F818921CA456100FD39E5 /* gleelirecorder.mp3 in Resources */,
 				195418D621CA2024000A4C81 /* recorder.pcm in Resources */,
 				193E36E4219972330010E772 /* README.md in Resources */,
 				19B01D622112AF2C003ECDD9 /* LaunchScreen.storyboard in Resources */,
 				19B01D5F2112AF2C003ECDD9 /* Assets.xcassets in Resources */,
-				195418C621C9D961000A4C81 /* recorder.wav in Resources */,
 				1954C0DF2117FB5C00251404 /* AAJSFiles.bundle in Resources */,
 				19B01D5D2112AF2B003ECDD9 /* Main.storyboard in Resources */,
 				193E36E2219972330010E772 /* LICENSE in Resources */,
@@ -912,6 +917,7 @@
 				193E36DA219960800010E772 /* TestTableViewController.m in Sources */,
 				193A9E03215B084600BD6AC0 /* ViewController3.m in Sources */,
 				1954C0EE2117FB5C00251404 /* AAStyle.m in Sources */,
+				196F818C21CA468900FD39E5 /* XJJAudioPlayer.m in Sources */,
 				1954C0E92117FB5C00251404 /* AAYAxis.m in Sources */,
 				195AF66F217962CB0068A3AD /* GlTwoTextEditDistance.m in Sources */,
 				1954C0E82117FB5C00251404 /* AASubtitle.m in Sources */,

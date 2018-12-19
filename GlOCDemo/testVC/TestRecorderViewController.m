@@ -10,11 +10,13 @@
 //#import "lame.h"
 #import "GlRecorderManager.h"
 #import "LYPlayer.h"
+#import "XJJAudioPlayer.h"
 
 #define LocalEncMp3Path [NSString stringWithFormat:@"%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]]
 
 @interface TestRecorderViewController ()
 @property (nonatomic, strong) GlRecorderManager *manager;
+@property (nonatomic, strong) XJJAudioPlayer *xjjplayer;
 @end
 
 @implementation TestRecorderViewController
@@ -34,11 +36,17 @@
     [btn addTarget:self action:@selector(startBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
-    UIButton *pbtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 200, 100, 50)];
-    [pbtn setTitle:@"play" forState:UIControlStateNormal];
-    [pbtn setTitle:@"pause" forState:UIControlStateSelected];
+    UIButton *pbtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 250, 100, 50)];
+    [pbtn setTitle:@"play pcm" forState:UIControlStateNormal];
+    [pbtn setTitle:@"pause pcm" forState:UIControlStateSelected];
     [pbtn addTarget:self action:@selector(onDecodeStart) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:pbtn];
+    
+    UIButton *mp3btn = [[UIButton alloc] initWithFrame:CGRectMake(50, 350, 100, 50)];
+    [mp3btn setTitle:@"play mp3" forState:UIControlStateNormal];
+    [mp3btn setTitle:@"pause mp3" forState:UIControlStateSelected];
+    [mp3btn addTarget:self action:@selector(playMp3) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:mp3btn];
     
 }
 
@@ -48,7 +56,7 @@
         [self.manager startRecorder];
     }else {
         [self.manager pauseRecorder];
-        
+        [self switchTomp3filePath:self.manager.wavPath];
     }
     
 }
@@ -57,6 +65,31 @@
     player = [[LYPlayer alloc] init];
     player.delegate = self;
     [player play];
+}
+
+- (void)playMp3 {
+    NSString *path = [self getmp3path];
+    
+    self.xjjplayer.wavPath = path;
+    __weak typeof(self) weakSelf = self;
+    [self.xjjplayer playsoundBlock:^(AVAudioPlayer *audioPlayer) {
+        
+        
+        weakSelf.xjjplayer.audioPlayer.delegate = self;
+    }];
+}
+
+- (XJJAudioPlayer *)xjjplayer {
+    if (!_xjjplayer) {
+        _xjjplayer = [[XJJAudioPlayer alloc]init];
+    }
+    return _xjjplayer;
+}
+
+- (NSString *)getmp3path {
+    NSString *mp3FilePath = LocalEncMp3Path;
+    mp3FilePath = [mp3FilePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.mp3",@"recorder"]];
+    return mp3FilePath;
 }
 
 //将录音文件转换为mp3
@@ -81,10 +114,7 @@
         [fm createDirectoryAtPath:LocalEncMp3Path withIntermediateDirectories:YES attributes:nil error:nil];
     }
     
-    NSString *mp3FilePath = LocalEncMp3Path;
-    NSString *currentTimeStringfilename;
-    currentTimeStringfilename = [NSString stringWithFormat:@"%@bucketFreeRecitation",currentTimeString];
-    mp3FilePath = [mp3FilePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.mp3",filePath == nil ? @"gleelirecorder" : currentTimeStringfilename]];
+    NSString *mp3FilePath = mp3FilePath = [self getmp3path];
     @try {
         int read, write;
         

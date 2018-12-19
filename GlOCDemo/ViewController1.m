@@ -15,6 +15,8 @@
 #import "TestTableViewController.h"
 #import "MyManager.h"
 #import "TestWkwebViewViewController.h"
+#import "TestScrollviewToTableviewViewController.h"
+#import "TestRecorderViewController.h"
 
 @interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) WKWebView         *webView;
@@ -29,6 +31,8 @@
     id data = nil;
     self.array = [[NSMutableArray alloc] init];
     [self.array addObject:@"wkwebview"];
+    [self.array addObject:@"scrollviewToTableview"];
+    [self.array addObject:@"recorder"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
@@ -132,6 +136,15 @@
     if ([title isEqualToString:@"wkwebview"]) {
         vc = [[TestWkwebViewViewController alloc] initWithBaseHttpUrlStr:@"https://www.baidu.com/"];
     }
+    else if ([title isEqualToString:@"scrollviewToTableview"]) {
+        vc = [[TestScrollviewToTableviewViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }else if ([title isEqualToString:@"recorder"]) {
+        vc = [[TestRecorderViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    
+    
     
     [self.navigationController pushViewController:vc animated:YES];
 }

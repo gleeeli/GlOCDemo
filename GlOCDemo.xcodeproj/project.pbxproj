@@ -13,6 +13,8 @@
 		193A9DFF215B071D00BD6AC0 /* GlCompareTwoText.m in Sources */ = {isa = PBXBuildFile; fileRef = 193A9DFC215B071D00BD6AC0 /* GlCompareTwoText.m */; };
 		193A9E00215B071D00BD6AC0 /* GlCompareTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193A9DFD215B071D00BD6AC0 /* GlCompareTextModel.m */; };
 		193A9E03215B084600BD6AC0 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 193A9E02215B084600BD6AC0 /* ViewController3.m */; };
+		193B3E0E21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193B3E0D21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m */; };
+		193B3E1121C254C200FE1AF1 /* GlScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 193B3E1021C254C200FE1AF1 /* GlScrollview.m */; };
 		193C31D72194163400A42551 /* MCTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193C31D62194163400A42551 /* MCTestModel.m */; };
 		193D79D721B613D0001D928F /* TestManager1.m in Sources */ = {isa = PBXBuildFile; fileRef = 193D79D621B613D0001D928F /* TestManager1.m */; };
 		193D79DA21B61451001D928F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 193D79D921B61451001D928F /* MyManager.m */; };
@@ -25,6 +27,13 @@
 		194941F82148C45F00D207A3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 194941F72148C45F00D207A3 /* ViewController2.m */; };
 		1952DABC217704DA001D9FED /* TestAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1952DABB217704DA001D9FED /* TestAudioViewController.m */; };
 		1952DABE217706B8001D9FED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1952DABD217706B8001D9FED /* AVFoundation.framework */; };
+		195418BF21C9D7F0000A4C81 /* TestRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 195418BE21C9D7F0000A4C81 /* TestRecorderViewController.m */; };
+		195418C321C9D841000A4C81 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 195418C121C9D841000A4C81 /* libmp3lame.a */; };
+		195418C621C9D961000A4C81 /* recorder.wav in Resources */ = {isa = PBXBuildFile; fileRef = 195418C521C9D961000A4C81 /* recorder.wav */; };
+		195418C921C9DEA0000A4C81 /* GlRecorderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 195418C721C9DEA0000A4C81 /* GlRecorderManager.m */; };
+		195418CB21C9DFA5000A4C81 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195418CA21C9DFA4000A4C81 /* AudioToolbox.framework */; };
+		195418D421CA1FF1000A4C81 /* LYPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 195418D321CA1FF1000A4C81 /* LYPlayer.m */; };
+		195418D621CA2024000A4C81 /* recorder.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 195418D521CA2024000A4C81 /* recorder.pcm */; };
 		1954C0792117EDCB00251404 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1954C0782117EDCB00251404 /* QuartzCore.framework */; };
 		1954C0DF2117FB5C00251404 /* AAJSFiles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1954C0A02117FB5C00251404 /* AAJSFiles.bundle */; };
 		1954C0E02117FB5C00251404 /* AAAreaspline.m in Sources */ = {isa = PBXBuildFile; fileRef = 1954C0A32117FB5C00251404 /* AAAreaspline.m */; };
@@ -115,6 +124,10 @@
 		193A9DFE215B071D00BD6AC0 /* GlCompareTextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlCompareTextModel.h; sourceTree = "<group>"; };
 		193A9E01215B084600BD6AC0 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
 		193A9E02215B084600BD6AC0 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		193B3E0C21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScrollviewToTableviewViewController.h; sourceTree = "<group>"; };
+		193B3E0D21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScrollviewToTableviewViewController.m; sourceTree = "<group>"; };
+		193B3E0F21C254C200FE1AF1 /* GlScrollview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlScrollview.h; sourceTree = "<group>"; };
+		193B3E1021C254C200FE1AF1 /* GlScrollview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlScrollview.m; sourceTree = "<group>"; };
 		193C31D52194163400A42551 /* MCTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCTestModel.h; sourceTree = "<group>"; };
 		193C31D62194163400A42551 /* MCTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCTestModel.m; sourceTree = "<group>"; };
 		193D79D521B613D0001D928F /* TestManager1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestManager1.h; sourceTree = "<group>"; };
@@ -135,6 +148,17 @@
 		1952DABA217704DA001D9FED /* TestAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAudioViewController.h; sourceTree = "<group>"; };
 		1952DABB217704DA001D9FED /* TestAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAudioViewController.m; sourceTree = "<group>"; };
 		1952DABD217706B8001D9FED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		195418BD21C9D7F0000A4C81 /* TestRecorderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRecorderViewController.h; sourceTree = "<group>"; };
+		195418BE21C9D7F0000A4C81 /* TestRecorderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRecorderViewController.m; sourceTree = "<group>"; };
+		195418C121C9D841000A4C81 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		195418C221C9D841000A4C81 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		195418C521C9D961000A4C81 /* recorder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = recorder.wav; sourceTree = "<group>"; };
+		195418C721C9DEA0000A4C81 /* GlRecorderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlRecorderManager.m; sourceTree = "<group>"; };
+		195418C821C9DEA0000A4C81 /* GlRecorderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlRecorderManager.h; sourceTree = "<group>"; };
+		195418CA21C9DFA4000A4C81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		195418D221CA1FF1000A4C81 /* LYPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPlayer.h; sourceTree = "<group>"; };
+		195418D321CA1FF1000A4C81 /* LYPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPlayer.m; sourceTree = "<group>"; };
+		195418D521CA2024000A4C81 /* recorder.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = recorder.pcm; sourceTree = "<group>"; };
 		1954C0782117EDCB00251404 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1954C0A02117FB5C00251404 /* AAJSFiles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AAJSFiles.bundle; sourceTree = "<group>"; };
 		1954C0A22117FB5C00251404 /* AAArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAArea.h; sourceTree = "<group>"; };
@@ -261,7 +285,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195418CB21C9DFA5000A4C81 /* AudioToolbox.framework in Frameworks */,
 				1952DABE217706B8001D9FED /* AVFoundation.framework in Frameworks */,
+				195418C321C9D841000A4C81 /* libmp3lame.a in Frameworks */,
 				1954C0792117EDCB00251404 /* QuartzCore.framework in Frameworks */,
 				19D1C4AEFA95F4FAAFB62632 /* Pods_GlOCDemo.framework in Frameworks */,
 			);
@@ -307,8 +333,12 @@
 		193C31D42194161E00A42551 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				195418D221CA1FF1000A4C81 /* LYPlayer.h */,
+				195418D321CA1FF1000A4C81 /* LYPlayer.m */,
 				193C31D52194163400A42551 /* MCTestModel.h */,
 				193C31D62194163400A42551 /* MCTestModel.m */,
+				195418C821C9DEA0000A4C81 /* GlRecorderManager.h */,
+				195418C721C9DEA0000A4C81 /* GlRecorderManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +357,7 @@
 		193E36DB219972220010E772 /* vender */ = {
 			isa = PBXGroup;
 			children = (
+				195418C021C9D841000A4C81 /* lame */,
 				197984CC21C0A4550036C551 /* NavAlphaChange */,
 				193E36DC219972330010E772 /* DZNEmptyDataSet */,
 			);
@@ -374,8 +405,30 @@
 				193E36D9219960800010E772 /* TestTableViewController.m */,
 				197984C921C09C640036C551 /* TestWkwebViewViewController.h */,
 				197984CA21C09C640036C551 /* TestWkwebViewViewController.m */,
+				193B3E0C21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.h */,
+				193B3E0D21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m */,
+				195418BD21C9D7F0000A4C81 /* TestRecorderViewController.h */,
+				195418BE21C9D7F0000A4C81 /* TestRecorderViewController.m */,
 			);
 			path = testVC;
+			sourceTree = "<group>";
+		};
+		195418C021C9D841000A4C81 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				195418C121C9D841000A4C81 /* libmp3lame.a */,
+				195418C221C9D841000A4C81 /* lame.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		195418C421C9D956000A4C81 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				195418D521CA2024000A4C81 /* recorder.pcm */,
+				195418C521C9D961000A4C81 /* recorder.wav */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		1954C09F2117FB5C00251404 /* AAChartKitLib */ = {
@@ -521,6 +574,8 @@
 			children = (
 				197984C421C093910036C551 /* GlWebViewProgressView.h */,
 				197984C521C093910036C551 /* GlWebViewProgressView.m */,
+				193B3E0F21C254C200FE1AF1 /* GlScrollview.h */,
+				193B3E1021C254C200FE1AF1 /* GlScrollview.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -576,6 +631,7 @@
 		19B01D542112AF2B003ECDD9 /* GlOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				195418C421C9D956000A4C81 /* Resource */,
 				197984C821C09C150036C551 /* Base */,
 				193D79D421B613AB001D928F /* Manager */,
 				1977C0ED219EA2E000B42354 /* Category */,
@@ -626,6 +682,7 @@
 		775650C0DA3002E8AF1592D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				195418CA21C9DFA4000A4C81 /* AudioToolbox.framework */,
 				1952DABD217706B8001D9FED /* AVFoundation.framework */,
 				1954C0782117EDCB00251404 /* QuartzCore.framework */,
 				EA63704800171C6D311C8A49 /* Pods_GlOCDemo.framework */,
@@ -738,9 +795,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195418D621CA2024000A4C81 /* recorder.pcm in Resources */,
 				193E36E4219972330010E772 /* README.md in Resources */,
 				19B01D622112AF2C003ECDD9 /* LaunchScreen.storyboard in Resources */,
 				19B01D5F2112AF2C003ECDD9 /* Assets.xcassets in Resources */,
+				195418C621C9D961000A4C81 /* recorder.wav in Resources */,
 				1954C0DF2117FB5C00251404 /* AAJSFiles.bundle in Resources */,
 				19B01D5D2112AF2B003ECDD9 /* Main.storyboard in Resources */,
 				193E36E2219972330010E772 /* LICENSE in Resources */,
@@ -844,6 +903,7 @@
 				1954C0E12117FB5C00251404 /* AALabels.m in Sources */,
 				197984C621C093910036C551 /* GlWebViewProgressView.m in Sources */,
 				1954C0F42117FB5C00251404 /* AAMarker.m in Sources */,
+				195418BF21C9D7F0000A4C81 /* TestRecorderViewController.m in Sources */,
 				1954C1042118393800251404 /* RoundedView.m in Sources */,
 				1954C0F02117FB5C00251404 /* AATitle.m in Sources */,
 				1954C0F72117FB5C00251404 /* AAPie.m in Sources */,
@@ -863,10 +923,12 @@
 				1954C0EB2117FB5C00251404 /* AAColumn.m in Sources */,
 				193A9E00215B071D00BD6AC0 /* GlCompareTextModel.m in Sources */,
 				1963E426218AFF5F0029294B /* MCStudentProgressViewController.m in Sources */,
+				193B3E1121C254C200FE1AF1 /* GlScrollview.m in Sources */,
 				197984D221C0A4750036C551 /* UINavigationController+Cloudox.m in Sources */,
 				1977C0EC219EA2A000B42354 /* TestNavigationViewController.m in Sources */,
 				19307AF52142024E00FC3910 /* ViewController1.m in Sources */,
 				190CFBA821785B9C00A482F9 /* CPPTestViewController.mm in Sources */,
+				195418C921C9DEA0000A4C81 /* GlRecorderManager.m in Sources */,
 				1954C0E52117FB5C00251404 /* AADataLabels.m in Sources */,
 				1954C0E72117FB5C00251404 /* AATooltip.m in Sources */,
 				1954C0E02117FB5C00251404 /* AAAreaspline.m in Sources */,
@@ -876,6 +938,8 @@
 				1954C0E62117FB5C00251404 /* AALine.m in Sources */,
 				193D79DA21B61451001D928F /* MyManager.m in Sources */,
 				1963E42B218AFFF30029294B /* MCStudentProgressTableViewCell.m in Sources */,
+				193B3E0E21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m in Sources */,
+				195418D421CA1FF1000A4C81 /* LYPlayer.m in Sources */,
 				1954C0F22117FB5C00251404 /* AAAnimation.m in Sources */,
 				193D79D721B613D0001D928F /* TestManager1.m in Sources */,
 				194941F82148C45F00D207A3 /* ViewController2.m in Sources */,
@@ -1055,6 +1119,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB25QSQKV6;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GlOCDemo.pch";
 				INFOPLIST_FILE = GlOCDemo/Info.plist;
@@ -1062,6 +1127,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GlOCDemo/vender/lame",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lengmeng.GlOCDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1076,6 +1145,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB25QSQKV6;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GlOCDemo.pch";
 				INFOPLIST_FILE = GlOCDemo/Info.plist;
@@ -1083,6 +1153,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GlOCDemo/vender/lame",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lengmeng.GlOCDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";

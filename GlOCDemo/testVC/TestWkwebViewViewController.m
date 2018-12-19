@@ -55,4 +55,7 @@
     }
 }
 
+- (void)dealloc {
+    NSLog(@"dealloc webvc");
+}
 @end

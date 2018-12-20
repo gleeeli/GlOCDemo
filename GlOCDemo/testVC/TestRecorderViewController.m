@@ -15,6 +15,7 @@
 
 #define LocalEncMp3Path [NSString stringWithFormat:@"%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]]
 
+#define mp3rate 16 //之前8
 @interface TestRecorderViewController ()
 //@property (nonatomic, strong) GlRecorderManager *manager;
 @property (nonatomic, strong) XJJAudioPlayer *xjjplayer;
@@ -151,10 +152,10 @@
         
         lame_t lame = lame_init();
         lame_set_num_channels(lame,1);
-        lame_set_in_samplerate(lame, kDefaultSampleRate / 2);//录音16000，这里8000测试则较正确
+        lame_set_in_samplerate(lame, kDefaultSampleRate);
         
         lame_set_VBR(lame, vbr_default);//压缩级别参数：
-        lame_set_brate(lame,8);/* 比特率 */
+        lame_set_brate(lame,mp3rate);/* 比特率 */
         
         lame_set_mode(lame,3);
         

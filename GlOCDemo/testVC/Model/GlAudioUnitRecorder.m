@@ -33,7 +33,7 @@
         
         NSString *path = [paths objectAtIndex:0];
         self.pcmPath = [path stringByAppendingPathComponent:@"recorder.pcm"];
-        [self delete];
+//        [self delete];
         
         [self initInputAudioUnitWithRate:kDefaultSampleRate bit:16 channel:1];
     }
@@ -122,16 +122,55 @@
                                   sizeof(inputCallBackStruce));
     CheckError(status, "setProperty InputCallback error");
     
-//    UInt32 echoCancellation;
-//    UInt32 size = sizeof(echoCancellation);
-//    status = AudioUnitSetProperty(audioUnit,
+    if ([self isAGCOn]) {
+        NSLog(@"ACG have open ");
+    }else {
+        NSLog(@"ready ACG open ");
+        [self setAGCOn:YES];
+    }
+}
+
+-(BOOL)isAGCOn{
+    UInt32 agc;
+    UInt32 size = sizeof(agc);
+    AudioUnitGetProperty(audioUnit,
+                         kAUVoiceIOProperty_VoiceProcessingEnableAGC,
+                         kAudioUnitScope_Global,
+                         0,
+                         &agc,
+                         &size);
+    if (agc==1) {
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
+-(void)setAGCOn: (BOOL)isOn{
+    UInt32 agc;
+    if(isOn){
+        agc = 1;
+    }else{
+        agc = 0;
+    }
+    
+//   OSStatus status = AudioUnitSetProperty(audioUnit,
 //                         kAUVoiceIOProperty_VoiceProcessingEnableAGC,
 //                         kAudioUnitScope_Global,
 //                         0,
-//                         &echoCancellation,
-//                                  size);
-//    
-//    CheckError(status, "setProperty passVoiceProcessing error");
+//                         &agc,
+//                         sizeof(agc));
+    
+//    CheckError(status, "set ACG");
+    
+//    const UInt32 kInputBus = 1;
+    const UInt32 one = 1;
+    const UInt32 zero = 0;
+    OSStatus status1 = AudioUnitSetProperty(audioUnit, kAUVoiceIOProperty_BypassVoiceProcessing, kAudioUnitScope_Global, kInputBus, &zero, sizeof(zero));
+    OSStatus status2 = AudioUnitSetProperty(audioUnit, kAUVoiceIOProperty_VoiceProcessingEnableAGC, kAudioUnitScope_Global, kInputBus, &one, sizeof(one));
+    
+    NSLog(@"status1：%d,status2：%d",status1,status2);
+//    AudioUnitSetProperty(audioUnit, kAUVoiceIOProperty_DuckNonVoiceAudio, kAudioUnitScope_Global, kInputBus, &one, sizeof(one));
 }
 
 static OSStatus inputCallBackFun(    void *                            inRefCon,

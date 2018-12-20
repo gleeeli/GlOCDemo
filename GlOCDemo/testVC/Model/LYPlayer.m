@@ -10,6 +10,7 @@
 #import <AudioUnit/AudioUnit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <assert.h>
+//#import "GlHeader_audio.h"
 
 const uint32_t CONST_BUFFER_SIZE = 0x10000;
 
@@ -127,6 +128,25 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
     
     OSStatus result = AudioUnitInitialize(audioUnit);
     NSLog(@"result %d", result);
+    [self setAGCOn:YES];
+}
+
+-(void)setAGCOn: (BOOL)isOn{
+    UInt32 agc;
+    if(isOn){
+        agc = 1;
+    }else{
+        agc = 0;
+    }
+    
+    OSStatus status = AudioUnitSetProperty(audioUnit,
+                                           kAUVoiceIOProperty_VoiceProcessingEnableAGC,
+                                           kAudioUnitScope_Global,
+                                           0,
+                                           &agc,
+                                           sizeof(agc));
+    NSLog(@"status:%d",status);
+//    CheckError(status, "set ACG");
 }
 
 

@@ -42,11 +42,7 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
 
 
 - (void)initPlayer {
-    // open pcm stream
-    NSString *file = [[NSBundle mainBundle] pathForResource:@"recorder" ofType:@"pcm"];
-    
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"abc" withExtension:@"pcm"];
-    url = [NSURL fileURLWithPath:file];
+    NSURL *url = self.url;
     inputSteam = [NSInputStream inputStreamWithURL:url];
     if (!inputSteam) {
         NSLog(@"打开文件失败 %@", url);
@@ -96,7 +92,7 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
     // format
     AudioStreamBasicDescription outputFormat;
     memset(&outputFormat, 0, sizeof(outputFormat));
-    outputFormat.mSampleRate       = 44100; // 采样率
+    outputFormat.mSampleRate       = self.samplerate; // 采样率
     outputFormat.mFormatID         = kAudioFormatLinearPCM; // PCM格式
     outputFormat.mFormatFlags      = kLinearPCMFormatFlagIsSignedInteger; // 整形
     outputFormat.mFramesPerPacket  = 1; // 每帧只有1个packet

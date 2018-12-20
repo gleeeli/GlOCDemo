@@ -24,6 +24,9 @@
 		193E36E4219972330010E772 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 193E36E1219972330010E772 /* README.md */; };
 		1942CE682119479A00EC7B4C /* UITestDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 1942CE672119479A00EC7B4C /* UITestDefault.m */; };
 		1942CE6B21194A2A00EC7B4C /* BaseAutoLayoutScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1942CE6921194A2A00EC7B4C /* BaseAutoLayoutScrollView.m */; };
+		1944B67B21CB19CD00A19BC2 /* GlAudioUnitRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1944B67A21CB19CD00A19BC2 /* GlAudioUnitRecorder.m */; };
+		1944B67E21CB1A4900A19BC2 /* XBAudioDataWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1944B67D21CB1A4900A19BC2 /* XBAudioDataWriter.m */; };
+		1944B68221CB1D7900A19BC2 /* XBAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1944B68021CB1D7900A19BC2 /* XBAudioTool.m */; };
 		194941F82148C45F00D207A3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 194941F72148C45F00D207A3 /* ViewController2.m */; };
 		1952DABC217704DA001D9FED /* TestAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1952DABB217704DA001D9FED /* TestAudioViewController.m */; };
 		1952DABE217706B8001D9FED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1952DABD217706B8001D9FED /* AVFoundation.framework */; };
@@ -144,6 +147,13 @@
 		1942CE672119479A00EC7B4C /* UITestDefault.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestDefault.m; sourceTree = "<group>"; };
 		1942CE6921194A2A00EC7B4C /* BaseAutoLayoutScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAutoLayoutScrollView.m; sourceTree = "<group>"; };
 		1942CE6A21194A2A00EC7B4C /* BaseAutoLayoutScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAutoLayoutScrollView.h; sourceTree = "<group>"; };
+		1944B67921CB19CD00A19BC2 /* GlAudioUnitRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlAudioUnitRecorder.h; sourceTree = "<group>"; };
+		1944B67A21CB19CD00A19BC2 /* GlAudioUnitRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlAudioUnitRecorder.m; sourceTree = "<group>"; };
+		1944B67C21CB1A4900A19BC2 /* XBAudioDataWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAudioDataWriter.h; sourceTree = "<group>"; };
+		1944B67D21CB1A4900A19BC2 /* XBAudioDataWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAudioDataWriter.m; sourceTree = "<group>"; };
+		1944B67F21CB1C5C00A19BC2 /* GlHeader_audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlHeader_audio.h; sourceTree = "<group>"; };
+		1944B68021CB1D7900A19BC2 /* XBAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBAudioTool.m; sourceTree = "<group>"; };
+		1944B68121CB1D7900A19BC2 /* XBAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAudioTool.h; sourceTree = "<group>"; };
 		194941F62148C45F00D207A3 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		194941F72148C45F00D207A3 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		1952DABA217704DA001D9FED /* TestAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAudioViewController.h; sourceTree = "<group>"; };
@@ -344,6 +354,13 @@
 				195418C721C9DEA0000A4C81 /* GlRecorderManager.m */,
 				196F818A21CA468900FD39E5 /* XJJAudioPlayer.h */,
 				196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */,
+				1944B67921CB19CD00A19BC2 /* GlAudioUnitRecorder.h */,
+				1944B67A21CB19CD00A19BC2 /* GlAudioUnitRecorder.m */,
+				1944B67C21CB1A4900A19BC2 /* XBAudioDataWriter.h */,
+				1944B67D21CB1A4900A19BC2 /* XBAudioDataWriter.m */,
+				1944B67F21CB1C5C00A19BC2 /* GlHeader_audio.h */,
+				1944B68121CB1D7900A19BC2 /* XBAudioTool.h */,
+				1944B68021CB1D7900A19BC2 /* XBAudioTool.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -892,6 +909,7 @@
 				1954C0FC2117FB5C00251404 /* AASeriesElement.m in Sources */,
 				19DF7C3621868AFC000708FA /* GlBaseAutoLayoutScrollview.m in Sources */,
 				197984D121C0A4750036C551 /* UIViewController+Cloudox.m in Sources */,
+				1944B67E21CB1A4900A19BC2 /* XBAudioDataWriter.m in Sources */,
 				1942CE6B21194A2A00EC7B4C /* BaseAutoLayoutScrollView.m in Sources */,
 				1954C0F12117FB5C00251404 /* AAArea.m in Sources */,
 				1954C0E32117FB5C00251404 /* AAXAxis.m in Sources */,
@@ -909,6 +927,7 @@
 				197984C621C093910036C551 /* GlWebViewProgressView.m in Sources */,
 				1954C0F42117FB5C00251404 /* AAMarker.m in Sources */,
 				195418BF21C9D7F0000A4C81 /* TestRecorderViewController.m in Sources */,
+				1944B68221CB1D7900A19BC2 /* XBAudioTool.m in Sources */,
 				1954C1042118393800251404 /* RoundedView.m in Sources */,
 				1954C0F02117FB5C00251404 /* AATitle.m in Sources */,
 				1954C0F72117FB5C00251404 /* AAPie.m in Sources */,
@@ -952,6 +971,7 @@
 				1952DABC217704DA001D9FED /* TestAudioViewController.m in Sources */,
 				1954C0ED2117FB5C00251404 /* AAOptions3d.m in Sources */,
 				193E36E3219972330010E772 /* UIScrollView+EmptyDataSet.m in Sources */,
+				1944B67B21CB19CD00A19BC2 /* GlAudioUnitRecorder.m in Sources */,
 				1954C0F32117FB5C00251404 /* AALegend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,16 +7,18 @@
 //
 
 #import "TestRecorderViewController.h"
-//#import "lame.h"
-#import "GlRecorderManager.h"
+#import "lame.h"
+//#import "GlRecorderManager.h"
 #import "LYPlayer.h"
 #import "XJJAudioPlayer.h"
+#import "GlAudioUnitRecorder.h"
 
 #define LocalEncMp3Path [NSString stringWithFormat:@"%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]]
 
 @interface TestRecorderViewController ()
-@property (nonatomic, strong) GlRecorderManager *manager;
+//@property (nonatomic, strong) GlRecorderManager *manager;
 @property (nonatomic, strong) XJJAudioPlayer *xjjplayer;
+@property (nonatomic, strong) GlAudioUnitRecorder *audioUnit;
 @end
 
 @implementation TestRecorderViewController
@@ -25,7 +27,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.manager = [[GlRecorderManager alloc] init];
+    //self.manager = [[GlRecorderManager alloc] init];
+    self.audioUnit = [[GlAudioUnitRecorder alloc] init];
     
 //    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"recorder44100" ofType:@"wav"];
 //    [self switchTomp3filePath:filePath];
@@ -35,6 +38,12 @@
     [btn setTitle:@"pause" forState:UIControlStateSelected];
     [btn addTarget:self action:@selector(startBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    CGFloat resetX = CGRectGetMaxX(btn.frame) + 50;
+    UIButton *resetbtn = [[UIButton alloc] initWithFrame:CGRectMake(resetX, 150, 100, 50)];
+    [resetbtn setTitle:@"reset" forState:UIControlStateNormal];
+    [resetbtn addTarget:self action:@selector(resetBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:resetbtn];
     
     UIButton *pbtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 250, 100, 50)];
     [pbtn setTitle:@"play pcm" forState:UIControlStateNormal];
@@ -53,17 +62,30 @@
 - (void)startBtnClick:(UIButton *)btn {
     btn.selected = !btn.selected;
     if (btn.selected) {
-        [self.manager startRecorder];
+        //[self.manager startRecorder];
+        [self.audioUnit start];
     }else {
-        [self.manager pauseRecorder];
-        [self switchTomp3filePath:self.manager.wavPath];
+        //[self.manager pauseRecorder];
+        [self.audioUnit pause];
+        
+        NSString *pcmpath = self.audioUnit.pcmPath;
+        
+        [self switchTomp3filePath:pcmpath];
     }
     
 }
 
+- (void)resetBtnClick:(UIButton *)btn {
+    [self.audioUnit reset];
+}
+
 - (void)onDecodeStart {
+    NSURL *url = [NSURL fileURLWithPath:self.audioUnit.pcmPath];
+    
     player = [[LYPlayer alloc] init];
-    player.delegate = self;
+    player.samplerate = kDefaultSampleRate;
+    player.url = url;
+    //player.delegate = self;
     [player play];
 }
 
@@ -75,7 +97,7 @@
     [self.xjjplayer playsoundBlock:^(AVAudioPlayer *audioPlayer) {
         
         
-        weakSelf.xjjplayer.audioPlayer.delegate = self;
+        //weakSelf.xjjplayer.audioPlayer.delegate = self;
     }];
 }
 

@@ -2,7 +2,7 @@
 //  GlChartConfig.h
 //  YKCharts
 //
-//  Created by 小柠檬 on 2018/9/5.
+//  Created by gleeeli on 2018/9/5.
 //  Copyright © 2018年 gleeeli. All rights reserved.
 //
 
@@ -24,6 +24,7 @@
 @property (nonatomic,assign) CGFloat lineWidth ;
 @property (nonatomic,retain) UIColor *lineColor;
 @property (nonatomic,assign) CGFloat circleWidth;
+@property (nonatomic, strong) NSArray<UIColor *> *lineColors;
 
 //选中节点是否显示某个竖线
 @property (nonatomic, assign) BOOL selectedLineViewIsShow;

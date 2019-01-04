@@ -84,6 +84,10 @@
 		197984D121C0A4750036C551 /* UIViewController+Cloudox.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984CD21C0A4750036C551 /* UIViewController+Cloudox.m */; };
 		197984D221C0A4750036C551 /* UINavigationController+Cloudox.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984CE21C0A4750036C551 /* UINavigationController+Cloudox.m */; };
 		19A57CA221B7685B0015F664 /* TestPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A57CA121B7685B0015F664 /* TestPlayerViewController.m */; };
+		19A75BCA21DCB855005DDBE9 /* BomAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A75BC921DCB855005DDBE9 /* BomAnimationViewController.m */; };
+		19A75BCD21DCB8E4005DDBE9 /* BomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A75BCC21DCB8E4005DDBE9 /* BomObject.m */; };
+		19A75BCF21DCBE10005DDBE9 /* Bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A75BCE21DCBE10005DDBE9 /* Bomb.png */; };
+		19A75BD121DCBE55005DDBE9 /* bom2.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A75BD021DCBE55005DDBE9 /* bom2.png */; };
 		19B01D572112AF2B003ECDD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B01D562112AF2B003ECDD9 /* AppDelegate.m */; };
 		19B01D5A2112AF2B003ECDD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B01D592112AF2B003ECDD9 /* ViewController.m */; };
 		19B01D5D2112AF2B003ECDD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B01D5B2112AF2B003ECDD9 /* Main.storyboard */; };
@@ -266,6 +270,12 @@
 		197984D021C0A4750036C551 /* UINavigationController+Cloudox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Cloudox.h"; sourceTree = "<group>"; };
 		19A57CA021B7685B0015F664 /* TestPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPlayerViewController.h; sourceTree = "<group>"; };
 		19A57CA121B7685B0015F664 /* TestPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPlayerViewController.m; sourceTree = "<group>"; };
+		19A75BC821DCB855005DDBE9 /* BomAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BomAnimationViewController.h; sourceTree = "<group>"; };
+		19A75BC921DCB855005DDBE9 /* BomAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BomAnimationViewController.m; sourceTree = "<group>"; };
+		19A75BCB21DCB8E4005DDBE9 /* BomObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BomObject.h; sourceTree = "<group>"; };
+		19A75BCC21DCB8E4005DDBE9 /* BomObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BomObject.m; sourceTree = "<group>"; };
+		19A75BCE21DCBE10005DDBE9 /* Bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bomb.png; sourceTree = "<group>"; };
+		19A75BD021DCBE55005DDBE9 /* bom2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bom2.png; sourceTree = "<group>"; };
 		19B01D522112AF2B003ECDD9 /* GlOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B01D552112AF2B003ECDD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19B01D562112AF2B003ECDD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -626,6 +636,19 @@
 			path = NavAlphaChange;
 			sourceTree = "<group>";
 		};
+		19A75BC721DCB834005DDBE9 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				19A75BD021DCBE55005DDBE9 /* bom2.png */,
+				19A75BCE21DCBE10005DDBE9 /* Bomb.png */,
+				19A75BC821DCB855005DDBE9 /* BomAnimationViewController.h */,
+				19A75BC921DCB855005DDBE9 /* BomAnimationViewController.m */,
+				19A75BCB21DCB8E4005DDBE9 /* BomObject.h */,
+				19A75BCC21DCB8E4005DDBE9 /* BomObject.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		19B01D492112AF2B003ECDD9 = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +676,7 @@
 		19B01D542112AF2B003ECDD9 /* GlOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				19A75BC721DCB834005DDBE9 /* Animation */,
 				195418C421C9D956000A4C81 /* Resource */,
 				197984C821C09C150036C551 /* Base */,
 				193D79D421B613AB001D928F /* Manager */,
@@ -817,6 +841,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A75BCF21DCBE10005DDBE9 /* Bomb.png in Resources */,
+				19A75BD121DCBE55005DDBE9 /* bom2.png in Resources */,
 				196F818921CA456100FD39E5 /* gleelirecorder.mp3 in Resources */,
 				195418D621CA2024000A4C81 /* recorder.pcm in Resources */,
 				193E36E4219972330010E772 /* README.md in Resources */,
@@ -920,6 +946,7 @@
 				19B01D652112AF2C003ECDD9 /* main.m in Sources */,
 				19B01D572112AF2B003ECDD9 /* AppDelegate.m in Sources */,
 				1954C0EF2117FB5C00251404 /* AABar.m in Sources */,
+				19A75BCA21DCB855005DDBE9 /* BomAnimationViewController.m in Sources */,
 				1954C10A21183D5500251404 /* UIImage+Additions.m in Sources */,
 				1954C0EA2117FB5C00251404 /* AACrosshair.m in Sources */,
 				1954C0EC2117FB5C00251404 /* AAPlotLinesElement.m in Sources */,
@@ -960,6 +987,7 @@
 				1954C0FB2117FB5C00251404 /* AAOptions.m in Sources */,
 				1954C0E42117FB5C00251404 /* AAPlotOptions.m in Sources */,
 				197984C221C092AA0036C551 /* BaseWKWebViewViewController.m in Sources */,
+				19A75BCD21DCB8E4005DDBE9 /* BomObject.m in Sources */,
 				1954C0E62117FB5C00251404 /* AALine.m in Sources */,
 				193D79DA21B61451001D928F /* MyManager.m in Sources */,
 				1963E42B218AFFF30029294B /* MCStudentProgressTableViewCell.m in Sources */,

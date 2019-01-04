@@ -1,5 +1,5 @@
 PODS:
-  - GlChartView (1.0.0):
+  - GlChartView (1.0.5):
     - GlPopView
   - GlPopView (1.0.2)
   - HMSegmentedControl (1.5.5)
@@ -29,7 +29,7 @@ SPEC REPOS:
     - YYKit
 
 SPEC CHECKSUMS:
-  GlChartView: 09eeb57e9b945fc839c56f27d4ce72b6115d6110
+  GlChartView: 1aa747e7f3849707ab9f799735a3bb1155dd2849
   GlPopView: 21533a3d4aabdb41d40c85039aff87356bbeede1
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201

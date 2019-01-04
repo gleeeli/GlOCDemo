@@ -121,7 +121,7 @@
                                   &inputCallBackStruce,
                                   sizeof(inputCallBackStruce));
     CheckError(status, "setProperty InputCallback error");
-    
+    kAudioUnitErr_InvalidParameter;
     if ([self isAGCOn]) {
         NSLog(@"ACG have open ");
     }else {

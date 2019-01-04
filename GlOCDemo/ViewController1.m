@@ -17,6 +17,7 @@
 #import "TestWkwebViewViewController.h"
 #import "TestScrollviewToTableviewViewController.h"
 #import "TestRecorderViewController.h"
+#import "BomAnimationViewController.h"
 
 @interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) WKWebView         *webView;
@@ -33,6 +34,7 @@
     [self.array addObject:@"wkwebview"];
     [self.array addObject:@"scrollviewToTableview"];
     [self.array addObject:@"recorder"];
+    [self.array addObject:@"bomAnimation"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
@@ -141,6 +143,10 @@
         vc.hidesBottomBarWhenPushed = YES;
     }else if ([title isEqualToString:@"recorder"]) {
         vc = [[TestRecorderViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    else if ([title isEqualToString:@"bomAnimation"]) {
+        vc = [[BomAnimationViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
     }
     

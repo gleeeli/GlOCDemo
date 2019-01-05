@@ -66,7 +66,6 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineCap(context, kCGLineCapSquare);
     CGContextSetLineWidth(context, 1.0);
-    CGContextSetRGBStrokeColor(context, 1.0, 0, 0, 1);
     CGContextSetBlendMode(context, kCGBlendModeLighten);
     CGContextClearRect(context, rect);
     CGContextBeginPath(context);

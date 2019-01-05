@@ -61,9 +61,19 @@
 - (void)render:(CGContextRef)context {
     CGContextSaveGState(context);
     CGContextSetLineWidth(context, self.lineWidth);
-    CGContextSetRGBStrokeColor(context, 1.0, 0, 0, self.alpha);
+    CGContextSetRGBStrokeColor(context, 1.0, 107/255.0, 0, self.alpha);
     CGContextMoveToPoint(context, self.ox, self.oy);
     CGContextAddLineToPoint(context, self.x, self.y);
+    
+//    if (self.vy > 0) {
+//        CGContextStrokePath(context);
+//       
+//        CGContextAddArc(context, self.x, self.y, 10.0, 0, M_PI * 2, YES);
+//        CGContextSetRGBFillColor(context, 1.0, 0, 0, 0.5);
+//        CGContextFillPath(context);
+//        CGContextStrokePath(context);
+//    }
+    
     CGContextStrokePath(context);
     CGContextRestoreGState(context);
 }

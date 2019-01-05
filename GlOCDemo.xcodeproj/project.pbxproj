@@ -16,6 +16,9 @@
 		193B3E0E21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193B3E0D21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m */; };
 		193B3E1121C254C200FE1AF1 /* GlScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 193B3E1021C254C200FE1AF1 /* GlScrollview.m */; };
 		193C31D72194163400A42551 /* MCTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193C31D62194163400A42551 /* MCTestModel.m */; };
+		193D6ECF21E07AA30073BBEA /* FountainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 193D6ECE21E07AA30073BBEA /* FountainView.m */; };
+		193D6ED221E07C010073BBEA /* FountainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193D6ED121E07C010073BBEA /* FountainModel.m */; };
+		193D6ED521E088920073BBEA /* FountainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193D6ED421E088910073BBEA /* FountainViewController.m */; };
 		193D79D721B613D0001D928F /* TestManager1.m in Sources */ = {isa = PBXBuildFile; fileRef = 193D79D621B613D0001D928F /* TestManager1.m */; };
 		193D79DA21B61451001D928F /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 193D79D921B61451001D928F /* MyManager.m */; };
 		193E36DA219960800010E772 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 193E36D9219960800010E772 /* TestTableViewController.m */; };
@@ -138,6 +141,12 @@
 		193B3E1021C254C200FE1AF1 /* GlScrollview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlScrollview.m; sourceTree = "<group>"; };
 		193C31D52194163400A42551 /* MCTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCTestModel.h; sourceTree = "<group>"; };
 		193C31D62194163400A42551 /* MCTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCTestModel.m; sourceTree = "<group>"; };
+		193D6ECD21E07AA30073BBEA /* FountainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainView.h; sourceTree = "<group>"; };
+		193D6ECE21E07AA30073BBEA /* FountainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FountainView.m; sourceTree = "<group>"; };
+		193D6ED021E07C010073BBEA /* FountainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainModel.h; sourceTree = "<group>"; };
+		193D6ED121E07C010073BBEA /* FountainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FountainModel.m; sourceTree = "<group>"; };
+		193D6ED321E088910073BBEA /* FountainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainViewController.h; sourceTree = "<group>"; };
+		193D6ED421E088910073BBEA /* FountainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FountainViewController.m; sourceTree = "<group>"; };
 		193D79D521B613D0001D928F /* TestManager1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestManager1.h; sourceTree = "<group>"; };
 		193D79D621B613D0001D928F /* TestManager1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestManager1.m; sourceTree = "<group>"; };
 		193D79D821B61451001D928F /* MyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
@@ -645,6 +654,12 @@
 				19A75BC921DCB855005DDBE9 /* BomAnimationViewController.m */,
 				19A75BCB21DCB8E4005DDBE9 /* BomObject.h */,
 				19A75BCC21DCB8E4005DDBE9 /* BomObject.m */,
+				193D6ECD21E07AA30073BBEA /* FountainView.h */,
+				193D6ECE21E07AA30073BBEA /* FountainView.m */,
+				193D6ED021E07C010073BBEA /* FountainModel.h */,
+				193D6ED121E07C010073BBEA /* FountainModel.m */,
+				193D6ED321E088910073BBEA /* FountainViewController.h */,
+				193D6ED421E088910073BBEA /* FountainViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -934,6 +949,7 @@
 				19307AF2214201FE00FC3910 /* TestNavigationView.m in Sources */,
 				1954C0FC2117FB5C00251404 /* AASeriesElement.m in Sources */,
 				19DF7C3621868AFC000708FA /* GlBaseAutoLayoutScrollview.m in Sources */,
+				193D6ED521E088920073BBEA /* FountainViewController.m in Sources */,
 				197984D121C0A4750036C551 /* UIViewController+Cloudox.m in Sources */,
 				1944B67E21CB1A4900A19BC2 /* XBAudioDataWriter.m in Sources */,
 				1942CE6B21194A2A00EC7B4C /* BaseAutoLayoutScrollView.m in Sources */,
@@ -986,8 +1002,10 @@
 				1954C0E02117FB5C00251404 /* AAAreaspline.m in Sources */,
 				1954C0FB2117FB5C00251404 /* AAOptions.m in Sources */,
 				1954C0E42117FB5C00251404 /* AAPlotOptions.m in Sources */,
+				193D6ECF21E07AA30073BBEA /* FountainView.m in Sources */,
 				197984C221C092AA0036C551 /* BaseWKWebViewViewController.m in Sources */,
 				19A75BCD21DCB8E4005DDBE9 /* BomObject.m in Sources */,
+				193D6ED221E07C010073BBEA /* FountainModel.m in Sources */,
 				1954C0E62117FB5C00251404 /* AALine.m in Sources */,
 				193D79DA21B61451001D928F /* MyManager.m in Sources */,
 				1963E42B218AFFF30029294B /* MCStudentProgressTableViewCell.m in Sources */,

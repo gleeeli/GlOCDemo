@@ -18,6 +18,7 @@
 #import "TestScrollviewToTableviewViewController.h"
 #import "TestRecorderViewController.h"
 #import "BomAnimationViewController.h"
+#import "FountainViewController.h"
 
 @interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) WKWebView         *webView;
@@ -35,6 +36,7 @@
     [self.array addObject:@"scrollviewToTableview"];
     [self.array addObject:@"recorder"];
     [self.array addObject:@"bomAnimation"];
+    [self.array addObject:@"fountain"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
@@ -147,6 +149,10 @@
     }
     else if ([title isEqualToString:@"bomAnimation"]) {
         vc = [[BomAnimationViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    else if ([title isEqualToString:@"fountain"]) {
+        vc = [[FountainViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
     }
     

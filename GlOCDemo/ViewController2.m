@@ -48,6 +48,14 @@ struct LocationRegional {
     NSDate *date = [self date:@"2018-09-21T08:12:33.000Z" WithFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZ"];
     
     NSLog(@"打印日期:%@",date);
+    
+    
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    btn.frame =CGRectMake(50, 300, 100, 50);
+    [btn setTitle:@"点我点我" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.view addSubview:btn];
 }
 
 - (NSDateFormatter *)getLocalDataFormatter

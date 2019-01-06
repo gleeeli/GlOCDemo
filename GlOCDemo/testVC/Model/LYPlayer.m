@@ -10,6 +10,7 @@
 #import <AudioUnit/AudioUnit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <assert.h>
+//#import "GlHeader_audio.h"
 
 const uint32_t CONST_BUFFER_SIZE = 0x10000;
 
@@ -57,7 +58,8 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
 
 - (void)initPlayer {
     // open pcm stream
-    inputSteam = [NSInputStream inputStreamWithURL:self.url];
+    NSURL *url = self.url;
+    inputSteam = [NSInputStream inputStreamWithURL:url];
     if (!inputSteam) {
         NSLog(@"打开文件失败 %@", self.url);
     }
@@ -106,7 +108,7 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
     // format
     AudioStreamBasicDescription outputFormat;
     memset(&outputFormat, 0, sizeof(outputFormat));
-    outputFormat.mSampleRate       = 44100; // 采样率
+    outputFormat.mSampleRate       = self.samplerate; // 采样率
     outputFormat.mFormatID         = kAudioFormatLinearPCM; // PCM格式
     outputFormat.mFormatFlags      = kLinearPCMFormatFlagIsSignedInteger; // 整形
     outputFormat.mFramesPerPacket  = 1; // 每帧只有1个packet
@@ -141,6 +143,25 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
     
     OSStatus result = AudioUnitInitialize(audioUnit);
     NSLog(@"result %d", result);
+    [self setAGCOn:YES];
+}
+
+-(void)setAGCOn: (BOOL)isOn{
+    UInt32 agc;
+    if(isOn){
+        agc = 1;
+    }else{
+        agc = 0;
+    }
+    
+    OSStatus status = AudioUnitSetProperty(audioUnit,
+                                           kAUVoiceIOProperty_VoiceProcessingEnableAGC,
+                                           kAudioUnitScope_Global,
+                                           0,
+                                           &agc,
+                                           sizeof(agc));
+    NSLog(@"status:%d",status);
+//    CheckError(status, "set ACG");
 }
 
 

@@ -17,7 +17,8 @@
 
 
 @interface LYPlayer : NSObject
-
+@property (nonatomic, assign) NSInteger samplerate;
+@property (nonatomic, copy) NSURL *url;
 @property (nonatomic, weak) id<LYPlayerDelegate> delegate;
 
 - (instancetype)initWithUrl:(NSURL *)url;

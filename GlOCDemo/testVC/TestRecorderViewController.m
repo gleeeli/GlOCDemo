@@ -7,18 +7,21 @@
 //
 
 #import "TestRecorderViewController.h"
-//#import "lame.h"
-#import "GlRecorderManager.h"
+#import "lame.h"
+//#import "GlRecorderManager.h"
 #import "LYPlayer.h"
 #import "XJJAudioPlayer.h"
 #import "LLAudioUnit.h"
+#import "GlAudioUnitRecorder.h"
 
 #define LocalEncMp3Path [NSString stringWithFormat:@"%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]]
 
+#define mp3rate 16 //之前8
 @interface TestRecorderViewController ()
-@property (nonatomic, strong) GlRecorderManager *manager;
+//@property (nonatomic, strong) GlRecorderManager *manager;
 @property (nonatomic, strong) XJJAudioPlayer *xjjplayer;
 @property (nonatomic, strong) LLAudioUnit *llrecorder;
+@property (nonatomic, strong) GlAudioUnitRecorder *audioUnit;
 @end
 
 @implementation TestRecorderViewController
@@ -27,7 +30,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.manager = [[GlRecorderManager alloc] init];
+    //self.manager = [[GlRecorderManager alloc] init];
+    self.audioUnit = [[GlAudioUnitRecorder alloc] init];
     
 //    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"recorder44100" ofType:@"wav"];
 //    [self switchTomp3filePath:filePath];
@@ -37,6 +41,12 @@
     [btn setTitle:@"pause" forState:UIControlStateSelected];
     [btn addTarget:self action:@selector(startBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    CGFloat resetX = CGRectGetMaxX(btn.frame) + 50;
+    UIButton *resetbtn = [[UIButton alloc] initWithFrame:CGRectMake(resetX, 150, 100, 50)];
+    [resetbtn setTitle:@"reset" forState:UIControlStateNormal];
+    [resetbtn addTarget:self action:@selector(resetBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:resetbtn];
     
     UIButton *pbtn = [[UIButton alloc] initWithFrame:CGRectMake(50, 250, 100, 50)];
     [pbtn setTitle:@"play pcm" forState:UIControlStateNormal];
@@ -60,14 +70,33 @@
     }else {
         [self.llrecorder pauseAudioUnitRecorder];
 //        [self.manager pauseRecorder];
-//        [self switchTomp3filePath:self.manager.wavPath];
+//        [self switchTomp3filePath:self.manager.wavPath]
+        //[self.manager startRecorder];
+        [self.audioUnit start];
+    }else {
+        //[self.manager pauseRecorder];
+        [self.audioUnit pause];
+        
+        NSString *pcmpath = self.audioUnit.pcmPath;
+        
+        [self switchTomp3filePath:pcmpath];
     }
     
+}
+
+- (void)resetBtnClick:(UIButton *)btn {
+    [self.audioUnit reset];
 }
 
 - (void)onDecodeStart {
     player = [[LYPlayer alloc] initWithUrl:[NSURL fileURLWithPath:self.manager.wavPath]];
     player.delegate = self;
+    NSURL *url = [NSURL fileURLWithPath:self.audioUnit.pcmPath];
+    
+    player = [[LYPlayer alloc] init];
+    player.samplerate = kDefaultSampleRate;
+    player.url = url;
+    //player.delegate = self;
     [player play];
 }
 
@@ -79,7 +108,7 @@
     [self.xjjplayer playsoundBlock:^(AVAudioPlayer *audioPlayer) {
         
         
-        weakSelf.xjjplayer.audioPlayer.delegate = self;
+        //weakSelf.xjjplayer.audioPlayer.delegate = self;
     }];
 }
 
@@ -140,10 +169,10 @@
         
         lame_t lame = lame_init();
         lame_set_num_channels(lame,1);
-        lame_set_in_samplerate(lame, kDefaultSampleRate / 2);//录音16000，这里8000测试则较正确
+        lame_set_in_samplerate(lame, kDefaultSampleRate);
         
         lame_set_VBR(lame, vbr_default);//压缩级别参数：
-        lame_set_brate(lame,8);/* 比特率 */
+        lame_set_brate(lame,mp3rate);/* 比特率 */
         
         lame_set_mode(lame,3);
         

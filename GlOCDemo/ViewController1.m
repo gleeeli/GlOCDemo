@@ -2,8 +2,8 @@
 //  ViewController1.m
 //  GlOCDemo
 //
-//  Created by 小柠檬 on 2018/9/7.
-//  Copyright © 2018年 小柠檬. All rights reserved.
+//  Created by gleeeli on 2018/9/7.
+//  Copyright © 2018年 gleeeli. All rights reserved.
 //
 
 #import "ViewController1.h"
@@ -19,6 +19,7 @@
 #import "TestRecorderViewController.h"
 #import "BomAnimationViewController.h"
 #import "FountainViewController.h"
+#import "GlFountainLineViewController.h"
 
 @interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) WKWebView         *webView;
@@ -37,6 +38,7 @@
     [self.array addObject:@"recorder"];
     [self.array addObject:@"bomAnimation"];
     [self.array addObject:@"fountain"];
+    [self.array addObject:@"线型喷泉"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
@@ -155,8 +157,10 @@
         vc = [[FountainViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
     }
-    
-    
+    else if ([title isEqualToString:@"线型喷泉"]) {
+        vc = [[GlFountainLineViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
     
     [self.navigationController pushViewController:vc animated:YES];
 }

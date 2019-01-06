@@ -2,8 +2,8 @@
 //  TestRecorderViewController.m
 //  GlOCDemo
 //
-//  Created by 小柠檬 on 2018/12/19.
-//  Copyright © 2018年 小柠檬. All rights reserved.
+//  Created by gleeeli on 2018/12/19.
+//  Copyright © 2018年 gleeeli. All rights reserved.
 //
 
 #import "TestRecorderViewController.h"
@@ -73,14 +73,15 @@
 //        [self switchTomp3filePath:self.manager.wavPath]
         //[self.manager startRecorder];
         [self.audioUnit start];
-    }else {
-        //[self.manager pauseRecorder];
-        [self.audioUnit pause];
-        
-        NSString *pcmpath = self.audioUnit.pcmPath;
-        
-        [self switchTomp3filePath:pcmpath];
     }
+//    else {
+//        //[self.manager pauseRecorder];
+//        [self.audioUnit pause];
+//        
+//        NSString *pcmpath = self.audioUnit.pcmPath;
+//        
+//        [self switchTomp3filePath:pcmpath];
+//    }
     
 }
 
@@ -89,8 +90,8 @@
 }
 
 - (void)onDecodeStart {
-    player = [[LYPlayer alloc] initWithUrl:[NSURL fileURLWithPath:self.manager.wavPath]];
-    player.delegate = self;
+//    player = [[LYPlayer alloc] initWithUrl:[NSURL fileURLWithPath:self.manager.wavPath]];
+//    player.delegate = self;
     NSURL *url = [NSURL fileURLWithPath:self.audioUnit.pcmPath];
     
     player = [[LYPlayer alloc] init];

@@ -2,8 +2,8 @@
 //  BomAnimationViewController.m
 //  GlOCDemo
 //
-//  Created by 小柠檬 on 2019/1/2.
-//  Copyright © 2019年 小柠檬. All rights reserved.
+//  Created by gleeeli on 2019/1/2.
+//  Copyright © 2019年 gleeeli. All rights reserved.
 //
 
 #import "BomAnimationViewController.h"

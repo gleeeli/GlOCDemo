@@ -2,8 +2,8 @@
 //  GlHeader_audio.h
 //  GlOCDemo
 //
-//  Created by 小柠檬 on 2018/12/20.
-//  Copyright © 2018年 小柠檬. All rights reserved.
+//  Created by gleeeli on 2018/12/20.
+//  Copyright © 2018年 gleeeli. All rights reserved.
 //
 
 #ifndef GlHeader_audio_h

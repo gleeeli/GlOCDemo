@@ -18,7 +18,7 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
 #define OUTPUT_BUS 0
 
 @interface LYPlayer()
-@property (nonatomic, strong) NSURL *url;
+@property (nonatomic, strong) NSURL *url1;
 @end
 
 @implementation LYPlayer

@@ -2,8 +2,8 @@
 //  TestAutoScorllviewViewController.h
 //  GlOCDemo
 //
-//  Created by 小柠檬 on 2018/10/29.
-//  Copyright © 2018年 小柠檬. All rights reserved.
+//  Created by gleeeli on 2018/10/29.
+//  Copyright © 2018年 gleeeli. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

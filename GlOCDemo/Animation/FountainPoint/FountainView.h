@@ -1,5 +1,5 @@
 //
-//  FountainViewController.h
+//  FountainView.h
 //  GlOCDemo
 //
 //  Created by gleeeli on 2019/1/5.
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FountainViewController : UIViewController
-
+@interface FountainView : UIView
+@property (nonatomic, assign) CGFloat scale;
 @end
 
 NS_ASSUME_NONNULL_END

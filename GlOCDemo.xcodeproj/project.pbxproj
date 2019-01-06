@@ -103,6 +103,10 @@
 		19D1C4AEFA95F4FAAFB62632 /* Pods_GlOCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA63704800171C6D311C8A49 /* Pods_GlOCDemo.framework */; };
 		19DF7C3321868AD1000708FA /* TestAutoScorllviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */; };
 		19DF7C3621868AFC000708FA /* GlBaseAutoLayoutScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3421868AFC000708FA /* GlBaseAutoLayoutScrollview.m */; };
+		69601E5421E208FA00F410AE /* GlFountainLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69601E5321E208FA00F410AE /* GlFountainLineView.m */; };
+		69601E5A21E2100900F410AE /* GlFountainDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 69601E5921E2100900F410AE /* GlFountainDraw.m */; };
+		69601E5D21E2195300F410AE /* GlWaterLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 69601E5C21E2195300F410AE /* GlWaterLine.m */; };
+		69601E6021E2291E00F410AE /* GlFountainLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69601E5F21E2291E00F410AE /* GlFountainLineViewController.m */; };
 		6981450321CA7E8A0071DDFB /* LLAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6981450221CA7E8A0071DDFB /* LLAudioUnit.m */; };
 /* End PBXBuildFile section */
 
@@ -309,6 +313,14 @@
 		19DF7C3421868AFC000708FA /* GlBaseAutoLayoutScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlBaseAutoLayoutScrollview.m; sourceTree = "<group>"; };
 		19DF7C3521868AFC000708FA /* GlBaseAutoLayoutScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlBaseAutoLayoutScrollview.h; sourceTree = "<group>"; };
 		4478A9E1F6EEECBDF1FD22F9 /* Pods-GlOCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlOCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		69601E5221E208FA00F410AE /* GlFountainLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlFountainLineView.h; sourceTree = "<group>"; };
+		69601E5321E208FA00F410AE /* GlFountainLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlFountainLineView.m; sourceTree = "<group>"; };
+		69601E5821E2100900F410AE /* GlFountainDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlFountainDraw.h; sourceTree = "<group>"; };
+		69601E5921E2100900F410AE /* GlFountainDraw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlFountainDraw.m; sourceTree = "<group>"; };
+		69601E5B21E2195300F410AE /* GlWaterLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlWaterLine.h; sourceTree = "<group>"; };
+		69601E5C21E2195300F410AE /* GlWaterLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlWaterLine.m; sourceTree = "<group>"; };
+		69601E5E21E2291E00F410AE /* GlFountainLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlFountainLineViewController.h; sourceTree = "<group>"; };
+		69601E5F21E2291E00F410AE /* GlFountainLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlFountainLineViewController.m; sourceTree = "<group>"; };
 		6981450121CA7E8A0071DDFB /* LLAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAudioUnit.h; sourceTree = "<group>"; };
 		6981450221CA7E8A0071DDFB /* LLAudioUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAudioUnit.m; sourceTree = "<group>"; };
 		7A86CBA8A16C3F49871466F9 /* Pods-GlOCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlOCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -652,18 +664,18 @@
 		19A75BC721DCB834005DDBE9 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				69601E4E21E2087400F410AE /* FountainLine */,
+				69601E4D21E2085500F410AE /* FountainPoint */,
 				19A75BD021DCBE55005DDBE9 /* bom2.png */,
 				19A75BCE21DCBE10005DDBE9 /* Bomb.png */,
 				19A75BC821DCB855005DDBE9 /* BomAnimationViewController.h */,
 				19A75BC921DCB855005DDBE9 /* BomAnimationViewController.m */,
 				19A75BCB21DCB8E4005DDBE9 /* BomObject.h */,
 				19A75BCC21DCB8E4005DDBE9 /* BomObject.m */,
-				193D6ECD21E07AA30073BBEA /* FountainView.h */,
-				193D6ECE21E07AA30073BBEA /* FountainView.m */,
-				193D6ED021E07C010073BBEA /* FountainModel.h */,
-				193D6ED121E07C010073BBEA /* FountainModel.m */,
 				193D6ED321E088910073BBEA /* FountainViewController.h */,
 				193D6ED421E088910073BBEA /* FountainViewController.m */,
+				69601E5E21E2291E00F410AE /* GlFountainLineViewController.h */,
+				69601E5F21E2291E00F410AE /* GlFountainLineViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -742,6 +754,30 @@
 				1942CE672119479A00EC7B4C /* UITestDefault.m */,
 			);
 			path = GlOCDemoUITests;
+			sourceTree = "<group>";
+		};
+		69601E4D21E2085500F410AE /* FountainPoint */ = {
+			isa = PBXGroup;
+			children = (
+				193D6ECD21E07AA30073BBEA /* FountainView.h */,
+				193D6ECE21E07AA30073BBEA /* FountainView.m */,
+				193D6ED021E07C010073BBEA /* FountainModel.h */,
+				193D6ED121E07C010073BBEA /* FountainModel.m */,
+			);
+			path = FountainPoint;
+			sourceTree = "<group>";
+		};
+		69601E4E21E2087400F410AE /* FountainLine */ = {
+			isa = PBXGroup;
+			children = (
+				69601E5221E208FA00F410AE /* GlFountainLineView.h */,
+				69601E5321E208FA00F410AE /* GlFountainLineView.m */,
+				69601E5821E2100900F410AE /* GlFountainDraw.h */,
+				69601E5921E2100900F410AE /* GlFountainDraw.m */,
+				69601E5B21E2195300F410AE /* GlWaterLine.h */,
+				69601E5C21E2195300F410AE /* GlWaterLine.m */,
+			);
+			path = FountainLine;
 			sourceTree = "<group>";
 		};
 		6981450021CA7E750071DDFB /* Audio */ = {
@@ -968,6 +1004,7 @@
 				1942CE6B21194A2A00EC7B4C /* BaseAutoLayoutScrollView.m in Sources */,
 				1954C0F12117FB5C00251404 /* AAArea.m in Sources */,
 				1954C0E32117FB5C00251404 /* AAXAxis.m in Sources */,
+				69601E5A21E2100900F410AE /* GlFountainDraw.m in Sources */,
 				19A57CA221B7685B0015F664 /* TestPlayerViewController.m in Sources */,
 				1954C10721183BA800251404 /* RoundedButton.m in Sources */,
 				19B01D5A2112AF2B003ECDD9 /* ViewController.m in Sources */,
@@ -982,6 +1019,7 @@
 				1954C0E12117FB5C00251404 /* AALabels.m in Sources */,
 				197984C621C093910036C551 /* GlWebViewProgressView.m in Sources */,
 				1954C0F42117FB5C00251404 /* AAMarker.m in Sources */,
+				69601E5D21E2195300F410AE /* GlWaterLine.m in Sources */,
 				195418BF21C9D7F0000A4C81 /* TestRecorderViewController.m in Sources */,
 				1944B68221CB1D7900A19BC2 /* XBAudioTool.m in Sources */,
 				1954C1042118393800251404 /* RoundedView.m in Sources */,
@@ -995,6 +1033,7 @@
 				196F818C21CA468900FD39E5 /* XJJAudioPlayer.m in Sources */,
 				1954C0E92117FB5C00251404 /* AAYAxis.m in Sources */,
 				195AF66F217962CB0068A3AD /* GlTwoTextEditDistance.m in Sources */,
+				69601E5421E208FA00F410AE /* GlFountainLineView.m in Sources */,
 				1954C0E82117FB5C00251404 /* AASubtitle.m in Sources */,
 				193C31D72194163400A42551 /* MCTestModel.m in Sources */,
 				197984CB21C09C640036C551 /* TestWkwebViewViewController.m in Sources */,
@@ -1028,6 +1067,7 @@
 				1954C0F22117FB5C00251404 /* AAAnimation.m in Sources */,
 				193D79D721B613D0001D928F /* TestManager1.m in Sources */,
 				194941F82148C45F00D207A3 /* ViewController2.m in Sources */,
+				69601E6021E2291E00F410AE /* GlFountainLineViewController.m in Sources */,
 				1952DABC217704DA001D9FED /* TestAudioViewController.m in Sources */,
 				1954C0ED2117FB5C00251404 /* AAOptions3d.m in Sources */,
 				193E36E3219972330010E772 /* UIScrollView+EmptyDataSet.m in Sources */,

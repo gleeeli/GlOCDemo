@@ -2,8 +2,8 @@
 //  GlCompareTwoText.m
 //  GlOCDemo
 //
-//  Created by 小柠檬 on 2018/9/25.
-//  Copyright © 2018年 小柠檬. All rights reserved.
+//  Created by gleeeli on 2018/9/25.
+//  Copyright © 2018年 gleeeli. All rights reserved.
 //
 
 #import "GlCompareTwoText.h"

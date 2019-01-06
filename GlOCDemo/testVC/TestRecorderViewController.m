@@ -11,12 +11,14 @@
 #import "GlRecorderManager.h"
 #import "LYPlayer.h"
 #import "XJJAudioPlayer.h"
+#import "LLAudioUnit.h"
 
 #define LocalEncMp3Path [NSString stringWithFormat:@"%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]]
 
 @interface TestRecorderViewController ()
 @property (nonatomic, strong) GlRecorderManager *manager;
 @property (nonatomic, strong) XJJAudioPlayer *xjjplayer;
+@property (nonatomic, strong) LLAudioUnit *llrecorder;
 @end
 
 @implementation TestRecorderViewController
@@ -53,16 +55,18 @@
 - (void)startBtnClick:(UIButton *)btn {
     btn.selected = !btn.selected;
     if (btn.selected) {
-        [self.manager startRecorder];
+        [self.llrecorder startAudioUnitRecorder];
+//        [self.manager startRecorder];
     }else {
-        [self.manager pauseRecorder];
-        [self switchTomp3filePath:self.manager.wavPath];
+        [self.llrecorder pauseAudioUnitRecorder];
+//        [self.manager pauseRecorder];
+//        [self switchTomp3filePath:self.manager.wavPath];
     }
     
 }
 
 - (void)onDecodeStart {
-    player = [[LYPlayer alloc] init];
+    player = [[LYPlayer alloc] initWithUrl:[NSURL fileURLWithPath:self.manager.wavPath]];
     player.delegate = self;
     [player play];
 }
@@ -84,6 +88,13 @@
         _xjjplayer = [[XJJAudioPlayer alloc]init];
     }
     return _xjjplayer;
+}
+
+- (LLAudioUnit *)llrecorder {
+    if (_llrecorder == nil) {
+        _llrecorder = [[LLAudioUnit alloc] init];
+    }
+    return _llrecorder;
 }
 
 - (NSString *)getmp3path {

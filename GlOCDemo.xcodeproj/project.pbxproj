@@ -93,6 +93,7 @@
 		19D1C4AEFA95F4FAAFB62632 /* Pods_GlOCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA63704800171C6D311C8A49 /* Pods_GlOCDemo.framework */; };
 		19DF7C3321868AD1000708FA /* TestAutoScorllviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */; };
 		19DF7C3621868AFC000708FA /* GlBaseAutoLayoutScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3421868AFC000708FA /* GlBaseAutoLayoutScrollview.m */; };
+		6981450321CA7E8A0071DDFB /* LLAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6981450221CA7E8A0071DDFB /* LLAudioUnit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,6 +280,8 @@
 		19DF7C3421868AFC000708FA /* GlBaseAutoLayoutScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlBaseAutoLayoutScrollview.m; sourceTree = "<group>"; };
 		19DF7C3521868AFC000708FA /* GlBaseAutoLayoutScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlBaseAutoLayoutScrollview.h; sourceTree = "<group>"; };
 		4478A9E1F6EEECBDF1FD22F9 /* Pods-GlOCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlOCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6981450121CA7E8A0071DDFB /* LLAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAudioUnit.h; sourceTree = "<group>"; };
+		6981450221CA7E8A0071DDFB /* LLAudioUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAudioUnit.m; sourceTree = "<group>"; };
 		7A86CBA8A16C3F49871466F9 /* Pods-GlOCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlOCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA63704800171C6D311C8A49 /* Pods_GlOCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlOCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -391,6 +394,7 @@
 		1952DAB9217704BC001D9FED /* testVC */ = {
 			isa = PBXGroup;
 			children = (
+				6981450021CA7E750071DDFB /* Audio */,
 				197984C321C092E40036C551 /* View */,
 				190CFBA621785B9C00A482F9 /* CPPTestViewController.h */,
 				190CFBA721785B9C00A482F9 /* CPPTestViewController.mm */,
@@ -684,6 +688,15 @@
 			path = GlOCDemoUITests;
 			sourceTree = "<group>";
 		};
+		6981450021CA7E750071DDFB /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				6981450121CA7E8A0071DDFB /* LLAudioUnit.h */,
+				6981450221CA7E8A0071DDFB /* LLAudioUnit.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		775650C0DA3002E8AF1592D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -928,6 +941,7 @@
 				1954C0E22117FB5C00251404 /* AASeries.m in Sources */,
 				1954C0EB2117FB5C00251404 /* AAColumn.m in Sources */,
 				193A9E00215B071D00BD6AC0 /* GlCompareTextModel.m in Sources */,
+				6981450321CA7E8A0071DDFB /* LLAudioUnit.m in Sources */,
 				1963E426218AFF5F0029294B /* MCStudentProgressViewController.m in Sources */,
 				193B3E1121C254C200FE1AF1 /* GlScrollview.m in Sources */,
 				197984D221C0A4750036C551 /* UINavigationController+Cloudox.m in Sources */,

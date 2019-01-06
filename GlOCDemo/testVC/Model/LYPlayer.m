@@ -16,12 +16,26 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
 #define INPUT_BUS 1
 #define OUTPUT_BUS 0
 
+@interface LYPlayer()
+@property (nonatomic, strong) NSURL *url;
+@end
+
 @implementation LYPlayer
 {
     AudioUnit audioUnit;
     AudioBufferList *buffList;
     
     NSInputStream *inputSteam;
+}
+
+- (instancetype)initWithUrl:(NSURL *)url
+{
+    self = [super init];
+    if (self)
+    {
+        self.url = url;
+    }
+    return self;
 }
 
 - (void)play {
@@ -43,13 +57,9 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
 
 - (void)initPlayer {
     // open pcm stream
-    NSString *file = [[NSBundle mainBundle] pathForResource:@"recorder" ofType:@"pcm"];
-    
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"abc" withExtension:@"pcm"];
-    url = [NSURL fileURLWithPath:file];
-    inputSteam = [NSInputStream inputStreamWithURL:url];
+    inputSteam = [NSInputStream inputStreamWithURL:self.url];
     if (!inputSteam) {
-        NSLog(@"打开文件失败 %@", url);
+        NSLog(@"打开文件失败 %@", self.url);
     }
     else {
         [inputSteam open];

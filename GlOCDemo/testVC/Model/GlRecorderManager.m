@@ -57,14 +57,14 @@
     [self setupAudioFormat:kAudioFormatLinearPCM SampleRate:kDefaultSampleRate];
     _audioFormat.mSampleRate = kDefaultSampleRate;
     
-    UInt32 echoCancellation;
-    UInt32 size = sizeof(echoCancellation);
-    AudioUnitGetProperty(_inputQueue,
-                         kAUVoiceIOProperty_BypassVoiceProcessing,
-                         kAudioUnitScope_Global,
-                         0,
-                         &echoCancellation,
-                         &size);
+//    UInt32 echoCancellation;
+//    UInt32 size = sizeof(echoCancellation);
+//    AudioUnitGetProperty(_inputQueue,
+//                         kAUVoiceIOProperty_BypassVoiceProcessing,
+//                         kAudioUnitScope_Global,
+//                         0,
+//                         &echoCancellation,
+//                         &size);
 
     //创建一个录制音频队列
     AudioQueueNewInput (&(_audioFormat),GenericInputCallback,(__bridge void *)self,NULL,NULL,0,&_inputQueue);

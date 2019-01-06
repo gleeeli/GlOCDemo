@@ -20,6 +20,8 @@
 
 @property (nonatomic, weak) id<LYPlayerDelegate> delegate;
 
+- (instancetype)initWithUrl:(NSURL *)url;
+
 - (void)play;
 
 - (double)getCurrentTime;

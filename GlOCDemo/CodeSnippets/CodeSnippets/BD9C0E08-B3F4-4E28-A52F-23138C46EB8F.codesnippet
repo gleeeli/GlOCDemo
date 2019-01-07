@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>NSMutableAttributedString_Code</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSMutableAttributedString *muStr = [[NSMutableAttributedString alloc] initWithString:&lt;#str#&gt;];
+    // 名字
+    [muStr addAttribute:NSForegroundColorAttributeName value:&lt;#color#&gt; range:&lt;#rang#&gt;];
+    [muStr addAttribute:NSFontAttributeName value:&lt;#font#&gt; range:&lt;#rang#&gt;];
+    
+    // 喇叭
+    NSTextAttachment *attchImage = [[NSTextAttachment alloc] init];
+    attchImage.image = &lt;#image#&gt;;
+    attchImage.bounds = &lt;#rect#&gt;;
+    NSAttributedString *stringImage = [NSAttributedString attributedStringWithAttachment:attchImage];
+    [muStr insertAttributedString:stringImage atIndex:0];
+    
+    [muStr addAttribute:NSBaselineOffsetAttributeName value:&lt;#NSnumber#&gt; range:&lt;#rang#&gt;];
+    
+    // 设置段落样式 行间距
+    NSMutableParagraphStyle *muParagraph = [[NSMutableParagraphStyle alloc]init];
+    muParagraph.lineSpacing = &lt;#lineSpacing#&gt;; // 行距
+    [muStr addAttribute:NSParagraphStyleAttributeName value:muParagraph range:NSMakeRange(0, muStr.length)];
+    
+    &lt;#label#&gt;.attributedText = muStr;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BD9C0E08-B3F4-4E28-A52F-23138C46EB8F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建富文本</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

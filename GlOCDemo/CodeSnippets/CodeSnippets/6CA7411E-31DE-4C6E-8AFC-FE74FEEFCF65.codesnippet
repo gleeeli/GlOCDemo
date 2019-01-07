@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>NSMutableAttributedString_code</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString *allStr = [NSString stringWithFormat:@"完成人数：%@人",&lt;#key#&gt;];
+    NSRange range = [completeNum rangeOfString:&lt;#key#&gt;];
+    
+    NSMutableAttributedString *attStr = [[NSMutableAttributedString alloc] initWithString:allStr];
+    [attStr addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:@"#252A33"] range:range];
+    [attStr addAttribute:NSFontAttributeName value:SYSTEMFONT(21) range:range];
+    
+    self.&lt;#label#&gt;.attributedText = attStr;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6CA7411E-31DE-4C6E-8AFC-FE74FEEFCF65</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>富文本</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

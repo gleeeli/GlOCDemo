@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>UIimageView_code</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIImageView *imageView = [[UIImageView alloc] init];
+    [backView addSubview:imageView];
+    imageView.sd_layout
+    .leftEqualToView(backView)
+    .topSpaceToView(backView, autoScaleW(8))
+    .widthIs(autoScaleW(80))
+    .heightIs(autoScaleW(113));</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D07E4FAA-9124-4E23-9EF5-0C9A2F537E4E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建imgeView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>NSMutableAttributedString_code3</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString *key = [pn oneDecimalString];
+    NSString *allStr = [NSString stringWithFormat:@"批改进度 %@",key];
+    NSRange rang = [allStr rangeOfString:key];
+    NSMutableAttributedString *muStr = [[NSMutableAttributedString alloc] initWithString:allStr];
+    [muStr addAttribute:NSForegroundColorAttributeName value:&lt;#color#&gt; range:&lt;#rang#&gt;];
+    [muStr addAttribute:NSFontAttributeName value:&lt;#font#&gt; range:&lt;#rang#&gt;];
+    self.progressLabel.attributedText = muStr;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>036FDBBE-5069-4073-835C-120897C627E5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>富文本简洁版</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

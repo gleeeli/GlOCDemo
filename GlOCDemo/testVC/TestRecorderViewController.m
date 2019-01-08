@@ -8,20 +8,19 @@
 
 #import "TestRecorderViewController.h"
 #import "lame.h"
-//#import "GlRecorderManager.h"
 #import "LYPlayer.h"
 #import "XJJAudioPlayer.h"
-#import "LLAudioUnit.h"
-#import "GlAudioUnitRecorder.h"
+#import "GlRecorderFactory.h"
+
 
 #define LocalEncMp3Path [NSString stringWithFormat:@"%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]]
 
-#define mp3rate 16 //之前8
+#define mp3rate 32
+
 @interface TestRecorderViewController ()
-//@property (nonatomic, strong) GlRecorderManager *manager;
+
 @property (nonatomic, strong) XJJAudioPlayer *xjjplayer;
-@property (nonatomic, strong) LLAudioUnit *llrecorder;
-@property (nonatomic, strong) GlAudioUnitRecorder *audioUnit;
+@property (nonatomic, strong) GlRecorderFactory *factory;
 @end
 
 @implementation TestRecorderViewController
@@ -30,8 +29,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //self.manager = [[GlRecorderManager alloc] init];
-    self.audioUnit = [[GlAudioUnitRecorder alloc] init];
+    self.factory = [[GlRecorderFactory alloc] initWithType:GlRecorderQueue];
     
 //    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"recorder44100" ofType:@"wav"];
 //    [self switchTomp3filePath:filePath];
@@ -65,34 +63,21 @@
 - (void)startBtnClick:(UIButton *)btn {
     btn.selected = !btn.selected;
     if (btn.selected) {
-        [self.llrecorder startAudioUnitRecorder];
-//        [self.manager startRecorder];
+        [self.factory start];
     }else {
-        [self.llrecorder pauseAudioUnitRecorder];
-//        [self.manager pauseRecorder];
-//        [self switchTomp3filePath:self.manager.wavPath]
-        //[self.manager startRecorder];
-        [self.audioUnit start];
+        [self.factory pause];
+        
+        NSString *pcmpath = [self.factory getPCMPath];
+        [self switchTomp3filePath:pcmpath];
     }
-//    else {
-//        //[self.manager pauseRecorder];
-//        [self.audioUnit pause];
-//        
-//        NSString *pcmpath = self.audioUnit.pcmPath;
-//        
-//        [self switchTomp3filePath:pcmpath];
-//    }
-    
 }
 
 - (void)resetBtnClick:(UIButton *)btn {
-    [self.audioUnit reset];
+    [self.factory reset];
 }
 
 - (void)onDecodeStart {
-//    player = [[LYPlayer alloc] initWithUrl:[NSURL fileURLWithPath:self.manager.wavPath]];
-//    player.delegate = self;
-    NSURL *url = [NSURL fileURLWithPath:self.audioUnit.pcmPath];
+    NSURL *url = [NSURL fileURLWithPath:[self.factory getPCMPath]];
     
     player = [[LYPlayer alloc] init];
     player.samplerate = kDefaultSampleRate;
@@ -105,7 +90,7 @@
     NSString *path = [self getmp3path];
     
     self.xjjplayer.wavPath = path;
-    __weak typeof(self) weakSelf = self;
+    //__weak typeof(self) weakSelf = self;
     [self.xjjplayer playsoundBlock:^(AVAudioPlayer *audioPlayer) {
         
         
@@ -118,13 +103,6 @@
         _xjjplayer = [[XJJAudioPlayer alloc]init];
     }
     return _xjjplayer;
-}
-
-- (LLAudioUnit *)llrecorder {
-    if (_llrecorder == nil) {
-        _llrecorder = [[LLAudioUnit alloc] init];
-    }
-    return _llrecorder;
 }
 
 - (NSString *)getmp3path {
@@ -142,14 +120,6 @@
         return nil;
     }
     
-    NSDate *date = [NSDate date];
-    
-    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
-    
-    [formatter setDateFormat:@"YYYYMMddHHmmss"];
-    
-    NSString * currentTimeString = [formatter stringFromDate:date];
-    
     NSFileManager *fm  = [NSFileManager defaultManager];
     if (![fm fileExistsAtPath:LocalEncMp3Path]) {
         [fm createDirectoryAtPath:LocalEncMp3Path withIntermediateDirectories:YES attributes:nil error:nil];
@@ -162,31 +132,32 @@
         FILE *pcm = fopen([filePath cStringUsingEncoding:1], "rb");//被转换的文件
         fseek(pcm, 4*1024, SEEK_CUR);
         FILE *mp3 = fopen([mp3FilePath cStringUsingEncoding:1], "wb");//转换后文件的存放位置
-        
+        int channel = 1;
         const int PCM_SIZE = 8192;
         const int MP3_SIZE = 8192;
         short int pcm_buffer[PCM_SIZE*2];
         unsigned char mp3_buffer[MP3_SIZE];
         
         lame_t lame = lame_init();
-        lame_set_num_channels(lame,1);
+        lame_set_num_channels(lame,channel);
         lame_set_in_samplerate(lame, kDefaultSampleRate);
         
         lame_set_VBR(lame, vbr_default);//压缩级别参数：
         lame_set_brate(lame,mp3rate);/* 比特率 */
         
-        lame_set_mode(lame,3);
+        lame_set_mode(lame,MONO);
         
         lame_set_quality(lame,2);/* 2=high  5 = medium  7=low */
         
         lame_init_params(lame);
         
         do {
-            read = (int)fread(pcm_buffer, 2*sizeof(short int), PCM_SIZE, pcm);
+            read = (int)fread(pcm_buffer, channel*sizeof(short int), PCM_SIZE, pcm);
             if (read == 0)
                 write = lame_encode_flush(lame, mp3_buffer, MP3_SIZE);
             else
-                write = lame_encode_buffer_interleaved(lame, pcm_buffer, read, mp3_buffer, MP3_SIZE);
+                write = lame_encode_buffer(lame, pcm_buffer, NULL, read, mp3_buffer, MP3_SIZE);
+                //write = lame_encode_buffer_interleaved(lame, pcm_buffer, read, mp3_buffer, MP3_SIZE);
             
             fwrite(mp3_buffer, write, 1, mp3);
             

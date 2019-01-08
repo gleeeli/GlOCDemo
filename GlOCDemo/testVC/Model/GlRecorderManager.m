@@ -78,7 +78,6 @@
 }
 
 - (void)deleteFilePath:(NSString *)path {
-    return;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL fileExists = [fileManager fileExistsAtPath:path];
     if (fileExists) {

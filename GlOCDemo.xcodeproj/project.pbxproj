@@ -99,6 +99,7 @@
 		1963E42B218AFFF30029294B /* MCStudentProgressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963E42A218AFFF30029294B /* MCStudentProgressTableViewCell.m */; };
 		196F818921CA456100FD39E5 /* gleelirecorder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 196F818821CA456100FD39E5 /* gleelirecorder.mp3 */; };
 		196F818C21CA468900FD39E5 /* XJJAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */; };
+		1971245B21E497AC00FAE928 /* GlRecorderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1971245A21E497AC00FAE928 /* GlRecorderFactory.m */; };
 		1977C0EC219EA2A000B42354 /* TestNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1977C0EB219EA2A000B42354 /* TestNavigationViewController.m */; };
 		1977C0F0219EA2F400B42354 /* UIButton+NMHitRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1977C0EF219EA2F400B42354 /* UIButton+NMHitRect.m */; };
 		197984C221C092AA0036C551 /* BaseWKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984C121C092AA0036C551 /* BaseWKWebViewViewController.m */; };
@@ -307,6 +308,8 @@
 		196F818821CA456100FD39E5 /* gleelirecorder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gleelirecorder.mp3; sourceTree = "<group>"; };
 		196F818A21CA468900FD39E5 /* XJJAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJJAudioPlayer.h; sourceTree = "<group>"; };
 		196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJJAudioPlayer.m; sourceTree = "<group>"; };
+		1971245921E497AC00FAE928 /* GlRecorderFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlRecorderFactory.h; sourceTree = "<group>"; };
+		1971245A21E497AC00FAE928 /* GlRecorderFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlRecorderFactory.m; sourceTree = "<group>"; };
 		1977C0EA219EA2A000B42354 /* TestNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNavigationViewController.h; sourceTree = "<group>"; };
 		1977C0EB219EA2A000B42354 /* TestNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNavigationViewController.m; sourceTree = "<group>"; };
 		1977C0EE219EA2F400B42354 /* UIButton+NMHitRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NMHitRect.h"; sourceTree = "<group>"; };
@@ -861,6 +864,8 @@
 			children = (
 				6981450121CA7E8A0071DDFB /* LLAudioUnit.h */,
 				6981450221CA7E8A0071DDFB /* LLAudioUnit.m */,
+				1971245921E497AC00FAE928 /* GlRecorderFactory.h */,
+				1971245A21E497AC00FAE928 /* GlRecorderFactory.m */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -1089,6 +1094,7 @@
 				1954C0FA2117FB5C00251404 /* AAChartModel.m in Sources */,
 				19B5D9D72195364700186417 /* TestHsegmentViewController.m in Sources */,
 				1954C0F92117FB5C00251404 /* AAChartView.m in Sources */,
+				1971245B21E497AC00FAE928 /* GlRecorderFactory.m in Sources */,
 				1954C0F82117FB5C00251404 /* AAChart.m in Sources */,
 				1954C1012118286300251404 /* IBCustomView.m in Sources */,
 				19307AF2214201FE00FC3910 /* TestNavigationView.m in Sources */,

@@ -17,7 +17,7 @@
 /**
  *  采样率，要转码为amr的话必须为8000
  */
-#define kDefaultSampleRate 44100//16000
+#define kDefaultSampleRate 16000//16000
 
 #define kDefaultInputBufferSize 7360   //2000
 

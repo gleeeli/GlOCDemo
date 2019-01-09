@@ -19,6 +19,16 @@
  */
 #define kDefaultSampleRate 16000//16000
 
+/**
+ 通道数
+ */
+#define kDefaultChannel 1
+
+/**
+ 线性采样位数
+ */
+#define kDefaultBitsPerSample 16
+
 #define kDefaultInputBufferSize 7360   //2000
 
 @protocol GlRecorderDelegate <NSObject>

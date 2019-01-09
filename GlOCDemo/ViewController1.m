@@ -60,6 +60,38 @@
     
     [testManager method1];
     [myManager method1];
+    
+//    NSString *path = [self testTry];
+//    NSLog(@"结果:%@",path);
+    
+    [self testDict];
+}
+
+- (void)testDict {
+    NSDictionary *dict = @{@"key1":@"test"};
+    NSDictionary *dict1 = @{@"key2":@"test",@"activity":dict};
+    
+    NSString *result = dict1[@"test"][@"key1"];
+    
+    NSLog(@"result:%@",result);
+}
+
+- (NSString *)testTry {
+    NSLog(@"start****");
+    NSString *path = @"my path1";
+    @try {
+        path = @"my path2";
+        NSArray *array = @[];
+//        array[2];
+    } @catch (NSException *exception) {
+        NSLog(@"exception-----%@",[exception description]);
+    } @finally {
+        NSLog(@"@finally****************");
+//        return path;
+    }
+    
+    NSLog(@"allend****");
+    return path;
 }
 
 - (IBAction)tohmsegment:(id)sender {
@@ -164,4 +196,5 @@
     
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 @end

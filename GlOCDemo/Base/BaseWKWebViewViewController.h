@@ -10,7 +10,7 @@
 #import "WebViewJavascriptBridge.h"
 
 typedef void(^UpdateContentHeight)(CGFloat height);
-@interface BaseWKWebViewViewController : UIViewController<WKNavigationDelegate,WKUIDelegate>
+@interface BaseWKWebViewViewController : UIViewController<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 
 @property (strong, nonatomic) WKWebView *webView;
 @property (copy, nonatomic) NSString *baseURL;

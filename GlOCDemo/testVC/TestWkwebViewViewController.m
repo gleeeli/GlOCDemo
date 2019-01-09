@@ -4,7 +4,7 @@
 //
 //  Created by gleeeli on 2018/12/12.
 //  Copyright © 2018年 gleeeli. All rights reserved.
-//
+//测试滑动webview隐藏导航栏
 
 #import "TestWkwebViewViewController.h"
 #import "UINavigationController+Cloudox.h"

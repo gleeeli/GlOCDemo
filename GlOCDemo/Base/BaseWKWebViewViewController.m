@@ -158,6 +158,7 @@
     if (_webView == nil) {
         WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
         configuration.userContentController = [WKUserContentController new];
+        [configuration.userContentController addScriptMessageHandler:self name:@"myName"];
         
         WKPreferences *preferences = [WKPreferences new];
         preferences.javaScriptCanOpenWindowsAutomatically = YES;
@@ -308,7 +309,12 @@
     NSLog(@"页面加载完成之后调用：%s\n%@", __FUNCTION__,nowUrl);
     
     [self readGainContentHeight];
-    [self checkUrlRunJavaScript:nowUrl jsCode:nil];
+    [self checkUrlRunJavaScript:nowUrl jsCode:[self getMustRunJscodeWithUrl:nil]];
+}
+
+- (NSString *)getMustRunJscodeWithUrl:(NSString *)url {
+    
+    return @"var obj={\"name\":\"download\",\"age\":123456};window.webkit.messageHandlers.myName.postMessage(obj)";
 }
 
 - (void)readGainContentHeight
@@ -326,7 +332,7 @@
 - (void)checkUrlRunJavaScript:(NSString *)url jsCode:(NSString *)jsCode{
     if (jsCode) {
         [self.webView evaluateJavaScript:jsCode completionHandler:^(id _Nullable sender, NSError * _Nullable error) {
-            
+            NSLog(@"checkUrlRunJavaScript error:%@",error);
         }];
 
     }
@@ -490,6 +496,15 @@
     
 -(void)viewDidLayoutSubviews{
      [self.webView setNeedsLayout];
+}
+
+#pragma mark 收到桥接消息
+- (void)userContentController:(WKUserContentController *)userContentController
+
+      didReceiveScriptMessage:(WKScriptMessage *)message
+
+{
+    NSLog(@"第二种方法收到消息：%@",message.body);
 }
 
 #pragma mark - 监听WkWebView加载进度事件 KVO

@@ -58,6 +58,11 @@
     [mp3btn addTarget:self action:@selector(playMp3) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:mp3btn];
     
+//    [self switchPCMToMp3Path];
+    
+//    NSString *pcmpath = [self.factory getPCMPath];
+//    [self switchTomp3filePath:pcmpath];
+    
 }
 
 - (void)startBtnClick:(UIButton *)btn {
@@ -135,7 +140,7 @@
         int channel = 1;
         const int PCM_SIZE = 8192;
         const int MP3_SIZE = 8192;
-        short int pcm_buffer[PCM_SIZE*2];
+        short int pcm_buffer[PCM_SIZE*channel];
         unsigned char mp3_buffer[MP3_SIZE];
         
         lame_t lame = lame_init();
@@ -180,5 +185,4 @@
     NSLog(@"mp3:%@",mp3FilePath);
     return mp3FilePath;
 }
-
 @end

@@ -1,0 +1,3 @@
+(?<text>(<div\s*?id=(\""|&quot;|&\#34;)"
++ @"content(\""|&quot;|&\#34;).*?>)(?>.*?</div>|.*?<div "
++ @"(?>depth)|.*?</div> (?>-depth))*)(?(depth)(?!)).*?</div>

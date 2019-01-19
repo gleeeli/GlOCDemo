@@ -21,6 +21,7 @@
 #import "FountainViewController.h"
 #import "GlFountainLineViewController.h"
 #import "TestAnimationViewController.h"
+#import "CommLogicViewController.h"
 
 @interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) WKWebView         *webView;
@@ -41,6 +42,7 @@
     [self.array addObject:@"fountain"];
     [self.array addObject:@"线型喷泉"];
     [self.array addObject:@"animation"];
+    [self.array addObject:@"logic"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
@@ -66,16 +68,16 @@
 //    NSString *path = [self testTry];
 //    NSLog(@"结果:%@",path);
     
-    [self testDict];
+//    [self testDict];
     
-    [self requestShareInfoComplete:^(BOOL isSuccess, NSString *bookName, NSString *bookCoverKey) {
-        if (isSuccess == NO) {
-            bookName = @"booknamehh";
-        }
-        NSLog(@"bookName:%@",bookName);
-    }];
+//    [self requestShareInfoComplete:^(BOOL isSuccess, NSString *bookName, NSString *bookCoverKey) {
+//        if (isSuccess == NO) {
+//            bookName = @"booknamehh";
+//        }
+//        NSLog(@"bookName:%@",bookName);
+//    }];
     
-    [self testNumTostr:@"12345金木水火土，天地分上下"];
+//    [self testNumTostr:@"12345金木水火土，天地分上下"];
 }
 
 - (void)testNumTostr:(NSString *)str {
@@ -237,6 +239,11 @@
         vc = [[TestAnimationViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
     }
+    else if ([title isEqualToString:@"logic"]) {
+        vc = [[CommLogicViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    
     
     [self.navigationController pushViewController:vc animated:YES];
 }

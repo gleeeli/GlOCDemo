@@ -7,7 +7,7 @@
 //
 
 #import "GlRecorderManager.h"
-#import "lame/lame.h"
+#import "lame.h"
 
 @interface GlRecorderManager ()
 

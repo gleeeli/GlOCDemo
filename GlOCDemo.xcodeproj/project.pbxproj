@@ -101,6 +101,10 @@
 		196F818921CA456100FD39E5 /* gleelirecorder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 196F818821CA456100FD39E5 /* gleelirecorder.mp3 */; };
 		196F818C21CA468900FD39E5 /* XJJAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */; };
 		1971245B21E497AC00FAE928 /* GlRecorderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1971245A21E497AC00FAE928 /* GlRecorderFactory.m */; };
+		1972E39421F31A2D003C5CFC /* CommLogicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1972E39321F31A2D003C5CFC /* CommLogicViewController.m */; };
+		1972E39621F32117003C5CFC /* newyear.html in Resources */ = {isa = PBXBuildFile; fileRef = 1972E39521F32117003C5CFC /* newyear.html */; };
+		1972E39A21F32386003C5CFC /* newyear2.html in Resources */ = {isa = PBXBuildFile; fileRef = 1972E39921F32386003C5CFC /* newyear2.html */; };
+		1972E39C21F32418003C5CFC /* pattern2 in Resources */ = {isa = PBXBuildFile; fileRef = 1972E39B21F32418003C5CFC /* pattern2 */; };
 		1977C0EC219EA2A000B42354 /* TestNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1977C0EB219EA2A000B42354 /* TestNavigationViewController.m */; };
 		1977C0F0219EA2F400B42354 /* UIButton+NMHitRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1977C0EF219EA2F400B42354 /* UIButton+NMHitRect.m */; };
 		197984C221C092AA0036C551 /* BaseWKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984C121C092AA0036C551 /* BaseWKWebViewViewController.m */; };
@@ -313,6 +317,11 @@
 		196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJJAudioPlayer.m; sourceTree = "<group>"; };
 		1971245921E497AC00FAE928 /* GlRecorderFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlRecorderFactory.h; sourceTree = "<group>"; };
 		1971245A21E497AC00FAE928 /* GlRecorderFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlRecorderFactory.m; sourceTree = "<group>"; };
+		1972E39221F31A2D003C5CFC /* CommLogicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommLogicViewController.h; sourceTree = "<group>"; };
+		1972E39321F31A2D003C5CFC /* CommLogicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommLogicViewController.m; sourceTree = "<group>"; };
+		1972E39521F32117003C5CFC /* newyear.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = newyear.html; sourceTree = "<group>"; };
+		1972E39921F32386003C5CFC /* newyear2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = newyear2.html; sourceTree = "<group>"; };
+		1972E39B21F32418003C5CFC /* pattern2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = pattern2; sourceTree = "<group>"; };
 		1977C0EA219EA2A000B42354 /* TestNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNavigationViewController.h; sourceTree = "<group>"; };
 		1977C0EB219EA2A000B42354 /* TestNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNavigationViewController.m; sourceTree = "<group>"; };
 		1977C0EE219EA2F400B42354 /* UIButton+NMHitRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NMHitRect.h"; sourceTree = "<group>"; };
@@ -426,21 +435,8 @@
 		193C31D42194161E00A42551 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				195418D221CA1FF1000A4C81 /* LYPlayer.h */,
-				195418D321CA1FF1000A4C81 /* LYPlayer.m */,
 				193C31D52194163400A42551 /* MCTestModel.h */,
 				193C31D62194163400A42551 /* MCTestModel.m */,
-				195418C821C9DEA0000A4C81 /* GlRecorderManager.h */,
-				195418C721C9DEA0000A4C81 /* GlRecorderManager.m */,
-				196F818A21CA468900FD39E5 /* XJJAudioPlayer.h */,
-				196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */,
-				1944B67921CB19CD00A19BC2 /* GlAudioUnitRecorder.h */,
-				1944B67A21CB19CD00A19BC2 /* GlAudioUnitRecorder.m */,
-				1944B67C21CB1A4900A19BC2 /* XBAudioDataWriter.h */,
-				1944B67D21CB1A4900A19BC2 /* XBAudioDataWriter.m */,
-				1944B67F21CB1C5C00A19BC2 /* GlHeader_audio.h */,
-				1944B68121CB1D7900A19BC2 /* XBAudioTool.h */,
-				1944B68021CB1D7900A19BC2 /* XBAudioTool.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -488,32 +484,15 @@
 		1952DAB9217704BC001D9FED /* testVC */ = {
 			isa = PBXGroup;
 			children = (
+				1972E38E21F2BD68003C5CFC /* Logical */,
+				1972E38D21F2BD24003C5CFC /* Video */,
+				1972E38C21F2BCFE003C5CFC /* Animation */,
+				1972E38A21F2BBE4003C5CFC /* Web */,
+				1972E38921F2BB7B003C5CFC /* UI */,
 				6981450021CA7E750071DDFB /* Audio */,
 				197984C321C092E40036C551 /* View */,
-				190CFBA621785B9C00A482F9 /* CPPTestViewController.h */,
-				190CFBA721785B9C00A482F9 /* CPPTestViewController.mm */,
 				1963E427218AFFC90029294B /* MCStudent */,
 				193C31D42194161E00A42551 /* Model */,
-				1952DABA217704DA001D9FED /* TestAudioViewController.h */,
-				1952DABB217704DA001D9FED /* TestAudioViewController.m */,
-				19DF7C3121868AD1000708FA /* TestAutoScorllviewViewController.h */,
-				19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */,
-				19B5D9D52195364700186417 /* TestHsegmentViewController.h */,
-				19B5D9D62195364700186417 /* TestHsegmentViewController.m */,
-				1977C0EA219EA2A000B42354 /* TestNavigationViewController.h */,
-				1977C0EB219EA2A000B42354 /* TestNavigationViewController.m */,
-				19A57CA021B7685B0015F664 /* TestPlayerViewController.h */,
-				19A57CA121B7685B0015F664 /* TestPlayerViewController.m */,
-				193E36D8219960800010E772 /* TestTableViewController.h */,
-				193E36D9219960800010E772 /* TestTableViewController.m */,
-				197984C921C09C640036C551 /* TestWkwebViewViewController.h */,
-				197984CA21C09C640036C551 /* TestWkwebViewViewController.m */,
-				193B3E0C21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.h */,
-				193B3E0D21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m */,
-				195418BD21C9D7F0000A4C81 /* TestRecorderViewController.h */,
-				195418BE21C9D7F0000A4C81 /* TestRecorderViewController.m */,
-				1955AF0A21F15C43009B87D8 /* TestAnimationViewController.h */,
-				1955AF0B21F15C43009B87D8 /* TestAnimationViewController.m */,
 			);
 			path = testVC;
 			sourceTree = "<group>";
@@ -700,6 +679,88 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1972E38921F2BB7B003C5CFC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				193B3E0C21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.h */,
+				193B3E0D21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m */,
+				1977C0EA219EA2A000B42354 /* TestNavigationViewController.h */,
+				1977C0EB219EA2A000B42354 /* TestNavigationViewController.m */,
+				193E36D8219960800010E772 /* TestTableViewController.h */,
+				193E36D9219960800010E772 /* TestTableViewController.m */,
+				19DF7C3121868AD1000708FA /* TestAutoScorllviewViewController.h */,
+				19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */,
+				19B5D9D52195364700186417 /* TestHsegmentViewController.h */,
+				19B5D9D62195364700186417 /* TestHsegmentViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1972E38A21F2BBE4003C5CFC /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				197984C921C09C640036C551 /* TestWkwebViewViewController.h */,
+				197984CA21C09C640036C551 /* TestWkwebViewViewController.m */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		1972E38C21F2BCFE003C5CFC /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1955AF0A21F15C43009B87D8 /* TestAnimationViewController.h */,
+				1955AF0B21F15C43009B87D8 /* TestAnimationViewController.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		1972E38D21F2BD24003C5CFC /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				19A57CA021B7685B0015F664 /* TestPlayerViewController.h */,
+				19A57CA121B7685B0015F664 /* TestPlayerViewController.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		1972E38E21F2BD68003C5CFC /* Logical */ = {
+			isa = PBXGroup;
+			children = (
+				1972E39921F32386003C5CFC /* newyear2.html */,
+				1972E39521F32117003C5CFC /* newyear.html */,
+				190CFBA621785B9C00A482F9 /* CPPTestViewController.h */,
+				190CFBA721785B9C00A482F9 /* CPPTestViewController.mm */,
+				1972E39221F31A2D003C5CFC /* CommLogicViewController.h */,
+				1972E39321F31A2D003C5CFC /* CommLogicViewController.m */,
+				1972E39B21F32418003C5CFC /* pattern2 */,
+			);
+			path = Logical;
+			sourceTree = "<group>";
+		};
+		1972E38F21F2BDAB003C5CFC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1944B68121CB1D7900A19BC2 /* XBAudioTool.h */,
+				1944B68021CB1D7900A19BC2 /* XBAudioTool.m */,
+				6981450121CA7E8A0071DDFB /* LLAudioUnit.h */,
+				6981450221CA7E8A0071DDFB /* LLAudioUnit.m */,
+				1971245921E497AC00FAE928 /* GlRecorderFactory.h */,
+				1971245A21E497AC00FAE928 /* GlRecorderFactory.m */,
+				195418D221CA1FF1000A4C81 /* LYPlayer.h */,
+				195418D321CA1FF1000A4C81 /* LYPlayer.m */,
+				195418C821C9DEA0000A4C81 /* GlRecorderManager.h */,
+				195418C721C9DEA0000A4C81 /* GlRecorderManager.m */,
+				196F818A21CA468900FD39E5 /* XJJAudioPlayer.h */,
+				196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */,
+				1944B67921CB19CD00A19BC2 /* GlAudioUnitRecorder.h */,
+				1944B67A21CB19CD00A19BC2 /* GlAudioUnitRecorder.m */,
+				1944B67C21CB1A4900A19BC2 /* XBAudioDataWriter.h */,
+				1944B67D21CB1A4900A19BC2 /* XBAudioDataWriter.m */,
+				1944B67F21CB1C5C00A19BC2 /* GlHeader_audio.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		1977C0ED219EA2E000B42354 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -867,10 +928,11 @@
 		6981450021CA7E750071DDFB /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				6981450121CA7E8A0071DDFB /* LLAudioUnit.h */,
-				6981450221CA7E8A0071DDFB /* LLAudioUnit.m */,
-				1971245921E497AC00FAE928 /* GlRecorderFactory.h */,
-				1971245A21E497AC00FAE928 /* GlRecorderFactory.m */,
+				1972E38F21F2BDAB003C5CFC /* model */,
+				195418BD21C9D7F0000A4C81 /* TestRecorderViewController.h */,
+				195418BE21C9D7F0000A4C81 /* TestRecorderViewController.m */,
+				1952DABA217704DA001D9FED /* TestAudioViewController.h */,
+				1952DABB217704DA001D9FED /* TestAudioViewController.m */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -993,6 +1055,7 @@
 			files = (
 				19599EFB21E2D606004BD6B2 /* EFC41739-1E1F-4EAE-A240-CD9E5394C70A.codesnippet in Resources */,
 				19A75BCF21DCBE10005DDBE9 /* Bomb.png in Resources */,
+				1972E39C21F32418003C5CFC /* pattern2 in Resources */,
 				19599EF921E2D606004BD6B2 /* 6CA7411E-31DE-4C6E-8AFC-FE74FEEFCF65.codesnippet in Resources */,
 				19A75BD121DCBE55005DDBE9 /* bom2.png in Resources */,
 				19599EF821E2D606004BD6B2 /* BC94999F-05C9-4AA2-9C50-E9E177CB08EC.codesnippet in Resources */,
@@ -1014,12 +1077,14 @@
 				19599EEF21E2D606004BD6B2 /* 01E8194F-DEC8-453F-B67E-833728C58A20.codesnippet in Resources */,
 				19B01D5F2112AF2C003ECDD9 /* Assets.xcassets in Resources */,
 				1954C0DF2117FB5C00251404 /* AAJSFiles.bundle in Resources */,
+				1972E39621F32117003C5CFC /* newyear.html in Resources */,
 				19B01D5D2112AF2B003ECDD9 /* Main.storyboard in Resources */,
 				19599EF621E2D606004BD6B2 /* BD9C0E08-B3F4-4E28-A52F-23138C46EB8F.codesnippet in Resources */,
 				193E36E2219972330010E772 /* LICENSE in Resources */,
 				19599EED21E2D606004BD6B2 /* 7206685D-6A29-454B-94F9-885F2C19DD5E.codesnippet in Resources */,
 				19599EFA21E2D606004BD6B2 /* D07E4FAA-9124-4E23-9EF5-0C9A2F537E4E.codesnippet in Resources */,
 				19599EF121E2D606004BD6B2 /* 0FCBD4D1-BE0F-495E-A21F-AF7909019AB0.codesnippet in Resources */,
+				1972E39A21F32386003C5CFC /* newyear2.html in Resources */,
 				19599EF421E2D606004BD6B2 /* 64B313C1-0279-4CD0-94B5-CBFC206BB634.codesnippet in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1171,6 +1236,7 @@
 				193D79DA21B61451001D928F /* MyManager.m in Sources */,
 				1963E42B218AFFF30029294B /* MCStudentProgressTableViewCell.m in Sources */,
 				193B3E0E21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m in Sources */,
+				1972E39421F31A2D003C5CFC /* CommLogicViewController.m in Sources */,
 				195418D421CA1FF1000A4C81 /* LYPlayer.m in Sources */,
 				1954C0F22117FB5C00251404 /* AAAnimation.m in Sources */,
 				193D79D721B613D0001D928F /* TestManager1.m in Sources */,

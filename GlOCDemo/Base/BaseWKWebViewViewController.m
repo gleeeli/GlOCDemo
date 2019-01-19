@@ -317,6 +317,15 @@
     return @"var obj={\"name\":\"download\",\"age\":123456};window.webkit.messageHandlers.myName.postMessage(obj)";
 }
 
+- (void)checkUrlRunJavaScript:(NSString *)url jsCode:(NSString *)jsCode{
+    if (jsCode) {
+        [self.webView evaluateJavaScript:jsCode completionHandler:^(id _Nullable sender, NSError * _Nullable error) {
+            NSLog(@"checkUrlRunJavaScript error:%@",error);
+        }];
+        
+    }
+}
+
 - (void)readGainContentHeight
 {
     [self startGainContentHeight];
@@ -329,14 +338,7 @@
     });
     
 }
-- (void)checkUrlRunJavaScript:(NSString *)url jsCode:(NSString *)jsCode{
-    if (jsCode) {
-        [self.webView evaluateJavaScript:jsCode completionHandler:^(id _Nullable sender, NSError * _Nullable error) {
-            NSLog(@"checkUrlRunJavaScript error:%@",error);
-        }];
 
-    }
-}
 
 
 

@@ -74,6 +74,7 @@
 		1954C1042118393800251404 /* RoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1954C1032118393800251404 /* RoundedView.m */; };
 		1954C10721183BA800251404 /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1954C10621183BA800251404 /* RoundedButton.m */; };
 		1954C10A21183D5500251404 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1954C10821183D5400251404 /* UIImage+Additions.m */; };
+		1955AF0C21F15C43009B87D8 /* TestAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1955AF0B21F15C43009B87D8 /* TestAnimationViewController.m */; };
 		19599EE821E2D606004BD6B2 /* 备注.txt in Resources */ = {isa = PBXBuildFile; fileRef = 19599ED321E2D606004BD6B2 /* 备注.txt */; };
 		19599EE921E2D606004BD6B2 /* F76AD569-91A7-42CE-B309-A3CB6D2C9260.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 19599ED521E2D606004BD6B2 /* F76AD569-91A7-42CE-B309-A3CB6D2C9260.codesnippet */; };
 		19599EEA21E2D606004BD6B2 /* 9C438741-435F-4671-9455-B2FF008AAAF4.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 19599ED621E2D606004BD6B2 /* 9C438741-435F-4671-9455-B2FF008AAAF4.codesnippet */; };
@@ -279,6 +280,8 @@
 		1954C10621183BA800251404 /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedButton.m; sourceTree = "<group>"; };
 		1954C10821183D5400251404 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
 		1954C10921183D5500251404 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		1955AF0A21F15C43009B87D8 /* TestAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAnimationViewController.h; sourceTree = "<group>"; };
+		1955AF0B21F15C43009B87D8 /* TestAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAnimationViewController.m; sourceTree = "<group>"; };
 		19599ED321E2D606004BD6B2 /* 备注.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "备注.txt"; sourceTree = "<group>"; };
 		19599ED521E2D606004BD6B2 /* F76AD569-91A7-42CE-B309-A3CB6D2C9260.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "F76AD569-91A7-42CE-B309-A3CB6D2C9260.codesnippet"; sourceTree = "<group>"; };
 		19599ED621E2D606004BD6B2 /* 9C438741-435F-4671-9455-B2FF008AAAF4.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "9C438741-435F-4671-9455-B2FF008AAAF4.codesnippet"; sourceTree = "<group>"; };
@@ -509,6 +512,8 @@
 				193B3E0D21C2499700FE1AF1 /* TestScrollviewToTableviewViewController.m */,
 				195418BD21C9D7F0000A4C81 /* TestRecorderViewController.h */,
 				195418BE21C9D7F0000A4C81 /* TestRecorderViewController.m */,
+				1955AF0A21F15C43009B87D8 /* TestAnimationViewController.h */,
+				1955AF0B21F15C43009B87D8 /* TestAnimationViewController.m */,
 			);
 			path = testVC;
 			sourceTree = "<group>";
@@ -1148,6 +1153,7 @@
 				1963E426218AFF5F0029294B /* MCStudentProgressViewController.m in Sources */,
 				193B3E1121C254C200FE1AF1 /* GlScrollview.m in Sources */,
 				197984D221C0A4750036C551 /* UINavigationController+Cloudox.m in Sources */,
+				1955AF0C21F15C43009B87D8 /* TestAnimationViewController.m in Sources */,
 				1977C0EC219EA2A000B42354 /* TestNavigationViewController.m in Sources */,
 				19307AF52142024E00FC3910 /* ViewController1.m in Sources */,
 				190CFBA821785B9C00A482F9 /* CPPTestViewController.mm in Sources */,

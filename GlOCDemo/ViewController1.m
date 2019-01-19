@@ -20,6 +20,7 @@
 #import "BomAnimationViewController.h"
 #import "FountainViewController.h"
 #import "GlFountainLineViewController.h"
+#import "TestAnimationViewController.h"
 
 @interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) WKWebView         *webView;
@@ -39,6 +40,7 @@
     [self.array addObject:@"bomAnimation"];
     [self.array addObject:@"fountain"];
     [self.array addObject:@"线型喷泉"];
+    [self.array addObject:@"animation"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
@@ -65,6 +67,44 @@
 //    NSLog(@"结果:%@",path);
     
     [self testDict];
+    
+    [self requestShareInfoComplete:^(BOOL isSuccess, NSString *bookName, NSString *bookCoverKey) {
+        if (isSuccess == NO) {
+            bookName = @"booknamehh";
+        }
+        NSLog(@"bookName:%@",bookName);
+    }];
+    
+    [self testNumTostr:@"12345金木水火土，天地分上下"];
+}
+
+- (void)testNumTostr:(NSString *)str {
+    NSDictionary *dict = @{@"0":@"零",@"1":@"一",@"2":@"二",@"3":@"三",@"4":@"四",@"5":@"五",@"6":@"六",@"7":@"七",@"8":@"八",@"9":@"九"};
+    NSMutableString *mustr = [[NSMutableString alloc] initWithString:str];
+    for (int i = 0; i < str.length; i++) {
+        NSString *substr = [str substringWithRange:NSMakeRange(i,1)];
+        if ([self isPureInt:substr] && [dict objectForKey:substr]) {
+            [mustr replaceCharactersInRange:NSMakeRange(i,1) withString:[dict objectForKey:substr]];
+        }
+    }
+    
+    NSLog(@"转换后:%@",mustr);
+}
+
+- (BOOL)isPureInt:(NSString*)string{
+    
+    NSScanner* scan = [NSScanner scannerWithString:string];
+    
+    int val;
+    
+    return[scan scanInt:&val] && [scan isAtEnd];
+    
+}
+
+- (void)requestShareInfoComplete:(void(^)(BOOL isSuccess,NSString *bookName,NSString *bookCoverKey))complete {
+    if (complete) {
+        complete(NO,nil,nil);
+    }
 }
 
 - (void)testDict {
@@ -191,6 +231,10 @@
     }
     else if ([title isEqualToString:@"线型喷泉"]) {
         vc = [[GlFountainLineViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    else if ([title isEqualToString:@"animation"]) {
+        vc = [[TestAnimationViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
     }
     

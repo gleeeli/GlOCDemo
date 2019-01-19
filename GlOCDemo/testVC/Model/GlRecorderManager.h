@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-#import "lame.h"
+
 /**
  *  缓存区的个数，一般3个
  */
@@ -17,7 +17,7 @@
 /**
  *  采样率，要转码为amr的话必须为8000
  */
-#define kDefaultSampleRate 16000//16000
+#define kDefaultSampleRate 16000
 
 /**
  通道数
@@ -29,7 +29,7 @@
  */
 #define kDefaultBitsPerSample 16
 
-#define kDefaultInputBufferSize 7360   //2000
+#define kDefaultInputBufferSize 7360   //7360
 
 @protocol GlRecorderDelegate <NSObject>
 @optional
@@ -52,6 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) AudioQueueRef                 inputQueue;
 @property(nonatomic,strong) NSMutableArray *receiveData;//接收录音数据的数组
 @property (nonatomic, copy) NSString *wavPath;
+@property (nonatomic, copy) NSString *filePath;
 @property (nonatomic, weak, nullable) id <GlRecorderDelegate> delegate;
 
 /**
@@ -67,7 +68,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)resetRecorcer;
 
+- (CGFloat)decibels;
 
+/**
+ 将pcm转mp3
+ */
+- (BOOL)switchPCMToMp3Path:(NSString *)mp3FilePath;
+
+- (void)deleteFilePath:(NSString *)path;
 @end
 
 

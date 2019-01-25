@@ -22,9 +22,11 @@
 #import "GlFountainLineViewController.h"
 #import "TestAnimationViewController.h"
 #import "CommLogicViewController.h"
+#import "SmallLogicTestViewController.h"
+#import "TestShadowViewController.h"
+#import <AVKit/AVKit.h>
 
 @interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic, strong) WKWebView         *webView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *array;
 @end
@@ -33,7 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    id data = nil;
+
     self.array = [[NSMutableArray alloc] init];
     [self.array addObject:@"wkwebview"];
     [self.array addObject:@"scrollviewToTableview"];
@@ -43,140 +45,42 @@
     [self.array addObject:@"线型喷泉"];
     [self.array addObject:@"animation"];
     [self.array addObject:@"logic"];
+    [self.array addObject:@"small logic"];
+    [self.array addObject:@"Table view"];
+    [self.array addObject:@"Hsegment 选项"];
+    [self.array addObject:@"shadow 阴影"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
-    
-    
+
     //NSAssert(nil, @"token为空");
-    MCTestModel *model = [MCTestModel modelWithJSON:data];
-    
-    [self.view addSubview:self.webView];
-    [self.webView loadHTMLString:@"<p>test</p>" baseURL:nil];
-    
-    [self.view sendSubviewToBack:self.webView];
+    //MCTestModel *model = [MCTestModel modelWithJSON:data];
     
     
-    TestManager1 *testManager = [TestManager1 sharedManager];
-    MyManager *myManager = [MyManager sharedManager];
-    
-    NSLog(@"单列名字1:%@",testManager.myName);
-    NSLog(@"单列名字:%@",myManager.myName);
-    
-    [testManager method1];
-    [myManager method1];
-    
-//    NSString *path = [self testTry];
-//    NSLog(@"结果:%@",path);
-    
-//    [self testDict];
-    
-//    [self requestShareInfoComplete:^(BOOL isSuccess, NSString *bookName, NSString *bookCoverKey) {
-//        if (isSuccess == NO) {
-//            bookName = @"booknamehh";
-//        }
-//        NSLog(@"bookName:%@",bookName);
-//    }];
-    
-//    [self testNumTostr:@"12345金木水火土，天地分上下"];
-}
-
-- (void)testNumTostr:(NSString *)str {
-    NSDictionary *dict = @{@"0":@"零",@"1":@"一",@"2":@"二",@"3":@"三",@"4":@"四",@"5":@"五",@"6":@"六",@"7":@"七",@"8":@"八",@"9":@"九"};
-    NSMutableString *mustr = [[NSMutableString alloc] initWithString:str];
-    for (int i = 0; i < str.length; i++) {
-        NSString *substr = [str substringWithRange:NSMakeRange(i,1)];
-        if ([self isPureInt:substr] && [dict objectForKey:substr]) {
-            [mustr replaceCharactersInRange:NSMakeRange(i,1) withString:[dict objectForKey:substr]];
-        }
-    }
-    
-    NSLog(@"转换后:%@",mustr);
-}
-
-- (BOOL)isPureInt:(NSString*)string{
-    
-    NSScanner* scan = [NSScanner scannerWithString:string];
-    
-    int val;
-    
-    return[scan scanInt:&val] && [scan isAtEnd];
-    
-}
-
-- (void)requestShareInfoComplete:(void(^)(BOOL isSuccess,NSString *bookName,NSString *bookCoverKey))complete {
-    if (complete) {
-        complete(NO,nil,nil);
-    }
-}
-
-- (void)testDict {
-    NSDictionary *dict = @{@"key1":@"test"};
-    NSDictionary *dict1 = @{@"key2":@"test",@"activity":dict};
-    
-    NSString *result = dict1[@"test"][@"key1"];
-    
-    NSLog(@"result:%@",result);
-}
-
-- (NSString *)testTry {
-    NSLog(@"start****");
-    NSString *path = @"my path1";
-    @try {
-        path = @"my path2";
-        NSArray *array = @[];
-//        array[2];
-    } @catch (NSException *exception) {
-        NSLog(@"exception-----%@",[exception description]);
-    } @finally {
-        NSLog(@"@finally****************");
-//        return path;
-    }
-    
-    NSLog(@"allend****");
-    return path;
-}
-
-- (IBAction)tohmsegment:(id)sender {
-    TestHsegmentViewController *vc = [[TestHsegmentViewController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
-}
-
-- (IBAction)textBtnClick:(id)sender {
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com/"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:20];
-    [self.webView loadRequest:request];
-}
-
-- (IBAction)testTableview:(id)sender {
-    TestTableViewController *tableVC = [[TestTableViewController alloc] init];
-    [self presentViewController:tableVC animated:YES completion:nil];
-}
-
-//- (void)matchText:(NSString *)nowText originText:(NSString *)originText{
-//    NSInteger nowCount = nowText.length;
-//    NSInteger originCount = originText.length;
+//    TestManager1 *testManager = [TestManager1 sharedManager];
+//    MyManager *myManager = [MyManager sharedManager];
 //
-//    NSInteger replaceCount = 0;//替换错误
-//    NSInteger deleteCount = 0;//删除错误
-//    NSInteger insertCount = 0;//插入错误
+//    NSLog(@"单列名字1:%@",testManager.myName);
+//    NSLog(@"单列名字:%@",myManager.myName);
 //
-//    for (int i = 0; i < nowCount; i++) {
-//
-//    }
-//}
+//    [testManager method1];
+//    [myManager method1];
 
-- (WKWebView *)webView {
-    if (!_webView) {
-        _webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 64, 320, 480)];
-        _webView.navigationDelegate                   = self;
-        _webView.scrollView.backgroundColor = [UIColor whiteColor];
-        if (@available(iOS 11.0, *)) {
-            _webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
-        } else {
-            self.automaticallyAdjustsScrollViewInsets = NO;
-        }
-    }
-    return _webView;
+    [self getMP3Duartion:nil];
 }
+
+
+//获取音频时间的时长
+-(float)getMP3Duartion:(NSString *)mp3Path
+{
+    NSURL *url = [NSURL URLWithString:@"http://recitation.lemonread.com/1548034954.371522.mp3"];
+    AVURLAsset* audioAsset =[AVURLAsset URLAssetWithURL:url options:nil];
+    CMTime audioDuration = audioAsset.duration;
+    float audioDurationSeconds = CMTimeGetSeconds(audioDuration);
+    
+    NSLog(@"音频时长:%f",audioDurationSeconds);
+    return audioDurationSeconds;
+}
+
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -191,10 +95,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-}
-
-- (void)testsort {
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -243,6 +143,23 @@
         vc = [[CommLogicViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
     }
+    else if ([title isEqualToString:@"small logic"]) {
+        vc = [[SmallLogicTestViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    else if ([title isEqualToString:@"Table view"]) {
+        vc = [[TestTableViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    else if ([title isEqualToString:@"Hsegment 选项"]) {
+        vc = [[TestHsegmentViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    else if ([title isEqualToString:@"shadow 阴影"]) {
+        vc = [[TestShadowViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    
     
     
     [self.navigationController pushViewController:vc animated:YES];

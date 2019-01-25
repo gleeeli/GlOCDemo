@@ -25,12 +25,14 @@
 		193E36E2219972330010E772 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 193E36DD219972330010E772 /* LICENSE */; };
 		193E36E3219972330010E772 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 193E36DF219972330010E772 /* UIScrollView+EmptyDataSet.m */; };
 		193E36E4219972330010E772 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 193E36E1219972330010E772 /* README.md */; };
+		1940022821F9AEC4008A3E82 /* TestShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1940022721F9AEC4008A3E82 /* TestShadowViewController.m */; };
 		1942CE682119479A00EC7B4C /* UITestDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 1942CE672119479A00EC7B4C /* UITestDefault.m */; };
 		1942CE6B21194A2A00EC7B4C /* BaseAutoLayoutScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1942CE6921194A2A00EC7B4C /* BaseAutoLayoutScrollView.m */; };
 		1944B67B21CB19CD00A19BC2 /* GlAudioUnitRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1944B67A21CB19CD00A19BC2 /* GlAudioUnitRecorder.m */; };
 		1944B67E21CB1A4900A19BC2 /* XBAudioDataWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1944B67D21CB1A4900A19BC2 /* XBAudioDataWriter.m */; };
 		1944B68221CB1D7900A19BC2 /* XBAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1944B68021CB1D7900A19BC2 /* XBAudioTool.m */; };
 		194941F82148C45F00D207A3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 194941F72148C45F00D207A3 /* ViewController2.m */; };
+		1951FED921F6E8A90047C0DA /* SmallLogicTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1951FED821F6E8A90047C0DA /* SmallLogicTestViewController.m */; };
 		1952DABC217704DA001D9FED /* TestAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1952DABB217704DA001D9FED /* TestAudioViewController.m */; };
 		1952DABE217706B8001D9FED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1952DABD217706B8001D9FED /* AVFoundation.framework */; };
 		195418BF21C9D7F0000A4C81 /* TestRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 195418BE21C9D7F0000A4C81 /* TestRecorderViewController.m */; };
@@ -100,6 +102,7 @@
 		1963E42B218AFFF30029294B /* MCStudentProgressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963E42A218AFFF30029294B /* MCStudentProgressTableViewCell.m */; };
 		196F818921CA456100FD39E5 /* gleelirecorder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 196F818821CA456100FD39E5 /* gleelirecorder.mp3 */; };
 		196F818C21CA468900FD39E5 /* XJJAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */; };
+		197099B521FB100C004BB249 /* recorder3006.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 197099B421FB100C004BB249 /* recorder3006.pcm */; };
 		1971245B21E497AC00FAE928 /* GlRecorderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1971245A21E497AC00FAE928 /* GlRecorderFactory.m */; };
 		1972E39421F31A2D003C5CFC /* CommLogicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1972E39321F31A2D003C5CFC /* CommLogicViewController.m */; };
 		1972E39621F32117003C5CFC /* newyear.html in Resources */ = {isa = PBXBuildFile; fileRef = 1972E39521F32117003C5CFC /* newyear.html */; };
@@ -188,6 +191,8 @@
 		193E36DF219972330010E772 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		193E36E0219972330010E772 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		193E36E1219972330010E772 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1940022621F9AEC4008A3E82 /* TestShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestShadowViewController.h; sourceTree = "<group>"; };
+		1940022721F9AEC4008A3E82 /* TestShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestShadowViewController.m; sourceTree = "<group>"; };
 		1942CE672119479A00EC7B4C /* UITestDefault.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestDefault.m; sourceTree = "<group>"; };
 		1942CE6921194A2A00EC7B4C /* BaseAutoLayoutScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAutoLayoutScrollView.m; sourceTree = "<group>"; };
 		1942CE6A21194A2A00EC7B4C /* BaseAutoLayoutScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAutoLayoutScrollView.h; sourceTree = "<group>"; };
@@ -200,6 +205,8 @@
 		1944B68121CB1D7900A19BC2 /* XBAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBAudioTool.h; sourceTree = "<group>"; };
 		194941F62148C45F00D207A3 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		194941F72148C45F00D207A3 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		1951FED721F6E8A90047C0DA /* SmallLogicTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmallLogicTestViewController.h; sourceTree = "<group>"; };
+		1951FED821F6E8A90047C0DA /* SmallLogicTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmallLogicTestViewController.m; sourceTree = "<group>"; };
 		1952DABA217704DA001D9FED /* TestAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAudioViewController.h; sourceTree = "<group>"; };
 		1952DABB217704DA001D9FED /* TestAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAudioViewController.m; sourceTree = "<group>"; };
 		1952DABD217706B8001D9FED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -315,6 +322,7 @@
 		196F818821CA456100FD39E5 /* gleelirecorder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gleelirecorder.mp3; sourceTree = "<group>"; };
 		196F818A21CA468900FD39E5 /* XJJAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJJAudioPlayer.h; sourceTree = "<group>"; };
 		196F818B21CA468900FD39E5 /* XJJAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJJAudioPlayer.m; sourceTree = "<group>"; };
+		197099B421FB100C004BB249 /* recorder3006.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = recorder3006.pcm; sourceTree = "<group>"; };
 		1971245921E497AC00FAE928 /* GlRecorderFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlRecorderFactory.h; sourceTree = "<group>"; };
 		1971245A21E497AC00FAE928 /* GlRecorderFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlRecorderFactory.m; sourceTree = "<group>"; };
 		1972E39221F31A2D003C5CFC /* CommLogicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommLogicViewController.h; sourceTree = "<group>"; };
@@ -511,6 +519,7 @@
 			children = (
 				196F818821CA456100FD39E5 /* gleelirecorder.mp3 */,
 				195418D521CA2024000A4C81 /* recorder.pcm */,
+				197099B421FB100C004BB249 /* recorder3006.pcm */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -692,6 +701,8 @@
 				19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */,
 				19B5D9D52195364700186417 /* TestHsegmentViewController.h */,
 				19B5D9D62195364700186417 /* TestHsegmentViewController.m */,
+				1940022621F9AEC4008A3E82 /* TestShadowViewController.h */,
+				1940022721F9AEC4008A3E82 /* TestShadowViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -733,6 +744,8 @@
 				1972E39221F31A2D003C5CFC /* CommLogicViewController.h */,
 				1972E39321F31A2D003C5CFC /* CommLogicViewController.m */,
 				1972E39B21F32418003C5CFC /* pattern2 */,
+				1951FED721F6E8A90047C0DA /* SmallLogicTestViewController.h */,
+				1951FED821F6E8A90047C0DA /* SmallLogicTestViewController.m */,
 			);
 			path = Logical;
 			sourceTree = "<group>";
@@ -1080,6 +1093,7 @@
 				1972E39621F32117003C5CFC /* newyear.html in Resources */,
 				19B01D5D2112AF2B003ECDD9 /* Main.storyboard in Resources */,
 				19599EF621E2D606004BD6B2 /* BD9C0E08-B3F4-4E28-A52F-23138C46EB8F.codesnippet in Resources */,
+				197099B521FB100C004BB249 /* recorder3006.pcm in Resources */,
 				193E36E2219972330010E772 /* LICENSE in Resources */,
 				19599EED21E2D606004BD6B2 /* 7206685D-6A29-454B-94F9-885F2C19DD5E.codesnippet in Resources */,
 				19599EFA21E2D606004BD6B2 /* D07E4FAA-9124-4E23-9EF5-0C9A2F537E4E.codesnippet in Resources */,
@@ -1211,6 +1225,7 @@
 				197984CB21C09C640036C551 /* TestWkwebViewViewController.m in Sources */,
 				193A9DFF215B071D00BD6AC0 /* GlCompareTwoText.m in Sources */,
 				19DF7C3321868AD1000708FA /* TestAutoScorllviewViewController.m in Sources */,
+				1940022821F9AEC4008A3E82 /* TestShadowViewController.m in Sources */,
 				1954C0E22117FB5C00251404 /* AASeries.m in Sources */,
 				1954C0EB2117FB5C00251404 /* AAColumn.m in Sources */,
 				193A9E00215B071D00BD6AC0 /* GlCompareTextModel.m in Sources */,
@@ -1220,6 +1235,7 @@
 				197984D221C0A4750036C551 /* UINavigationController+Cloudox.m in Sources */,
 				1955AF0C21F15C43009B87D8 /* TestAnimationViewController.m in Sources */,
 				1977C0EC219EA2A000B42354 /* TestNavigationViewController.m in Sources */,
+				1951FED921F6E8A90047C0DA /* SmallLogicTestViewController.m in Sources */,
 				19307AF52142024E00FC3910 /* ViewController1.m in Sources */,
 				190CFBA821785B9C00A482F9 /* CPPTestViewController.mm in Sources */,
 				195418C921C9DEA0000A4C81 /* GlRecorderManager.m in Sources */,

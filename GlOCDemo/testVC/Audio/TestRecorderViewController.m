@@ -63,6 +63,13 @@
 //    NSString *pcmpath = [self.factory getPCMPath];
 //    [self switchTomp3filePath:pcmpath];
     
+    [self test];
+}
+
+- (void)test {
+    NSString *tomp3 = [self getmp3path];
+    [self.factory switchPCMToMp3Path:tomp3];
+    NSLog(@"转换mp3完成：%@",tomp3);
 }
 
 - (void)startBtnClick:(UIButton *)btn {

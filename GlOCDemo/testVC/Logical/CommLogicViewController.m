@@ -29,14 +29,60 @@
 //    }
     
     NSString *pattern = @"(?is)<div class='left'[^>]*>(?><div[^>]*>(?<o>)|</div>(?<-o>)|(?:(?!</?div\b).)*)*(?(o)(?!))</div>";
-    pattern = @"<style .*>([\\d\\D]*)</style>";
+//    pattern = @"<style .*>([\\d\\D]*)</style>";
     pattern = @"<div class=\"content\">([\\d\\D]*)</div>";
-//    pattern = [self getPattern];
     
+    content = @"<div class=\"content\">dddd</div>";
+//    [self startPattern:pattern content:content];
+
+//    [self replaceWithPattern:pattern content:content];
     
-    [self startPattern:pattern content:content];
+    pattern = @"<style .*>([\\d\\D]*)[^(<style)]</style>";
+//    [self findMultipleWithPattern:pattern content:content];
     
+    [self testDeleteStyle];
+}
+
+/*
+ enum {
+ NSRegularExpressionCaseInsensitive             = 1 << 0,   // 不区分大小写的
+ NSRegularExpressionAllowCommentsAndWhitespace  = 1 << 1,   // 忽略空格和# -
+ NSRegularExpressionIgnoreMetacharacters        = 1 << 2,   // 整体化
+ NSRegularExpressionDotMatchesLineSeparators    = 1 << 3,   // 匹配任何字符，包括行分隔符
+ NSRegularExpressionAnchorsMatchLines           = 1 << 4,   // 允许^和$在匹配的开始和结束行
+ NSRegularExpressionUseUnixLineSeparators       = 1 << 5,   // (查找范围为整个的话无效)
+ NSRegularExpressionUseUnicodeWordBoundaries    = 1 << 6    // (查找范围为整个的话无效)
+ }
+ */
+
+/*
+ typedef NS_OPTIONS(NSUInteger, NSMatchingOptions) {
+ NSMatchingReportProgress         = 1 << 0, //找到最长的匹配字符串后调用block回调
+ NSMatchingReportCompletion       = 1 << 1, //找到任何一个匹配串后都回调一次block
+ NSMatchingAnchored               = 1 << 2, //从匹配范围的开始出进行极限匹配
+ NSMatchingWithTransparentBounds  = 1 << 3, //允许匹配的范围超出设置的范围
+ NSMatchingWithoutAnchoringBounds = 1 << 4  //禁止^和$自动匹配行还是和结束
+ };
+ */
+
+- (void)testFindMultipleEmail {
+    //测试找出多个邮箱
+    NSString *testString1 = @"clc_cfzxyq@163.com wcowfjwogjwoiejfiow 12321@qq.com 298349845fwe ctftf:iLoveiOS@qq.com";
+    NSError *error;
+    //正则表达式，解析邮箱
+    NSString* regexString = @"\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+}
+
+- (void)testDeleteStyle {
+    NSString *content = @"<style> 7 </style><style>没有我</style>";
+    NSString *pattern = @"<style.*>((?!^style$).)*</style>";
+    pattern = @"(?is)<(script|style)\\b[^>]*>(?(?!\\1\\b).)*</\\1>";
+//    pattern = @"(<style.*>((?!没有我).)*</style>)/g";
     
+    content = @"before (nope (yes (here) okay) after";
+    pattern = @"\((?>[^()]+|\((?<DEPTH>)|\)(?<-DEPTH>))*(?(DEPTH)(?!))\)";
+    
+    [self findMultipleWithPattern:pattern content:content];
 }
 
 - (void)startPattern:(NSString *)pattern content:(NSString *)content{
@@ -116,6 +162,29 @@
 
     
     return range;
+}
+
+- (void)findMultipleWithPattern:(NSString *)pattern content:(NSString *)content {
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
+    
+    //方法二 查找多个 NSMatchingReportCompletion NSMatchingReportProgress
+    NSArray *results = [regex matchesInString:content options:NSMatchingReportCompletion range:NSMakeRange(0, content.length)];
+    for (NSTextCheckingResult *result in results) {
+        NSString *tmp = [content substringWithRange:result.range];
+        NSLog(@"----找到的：\n%@",tmp);
+    }
+    if ([results count] == 0) {
+        NSLog(@"未找到：%@",pattern);
+    }
+}
+
+- (void)replaceWithPattern:(NSString *)pattern content:(NSString *)content {
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
+    //方法一 替换
+    NSMutableString *muStr = [NSMutableString stringWithString:content];
+    NSInteger result = [regex replaceMatchesInString:muStr options:NSMatchingReportCompletion range:NSMakeRange(0, content.length) withTemplate:@"***gleeeli***"];
+
+    NSLog(@"结果:%zd,%@",result,muStr);
 }
 
 /*

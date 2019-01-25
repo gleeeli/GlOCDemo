@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)pause;
 
 - (NSString *)getPCMPath;
+
+- (BOOL)switchPCMToMp3Path:(NSString *)mp3FilePath;
 @end
 
 NS_ASSUME_NONNULL_END

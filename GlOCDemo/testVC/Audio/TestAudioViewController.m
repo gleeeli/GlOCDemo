@@ -20,6 +20,8 @@
     
 }
 
+
+
 - (IBAction)testclick:(id)sender {
     [self showOpenPermission];
     if (![self canRecord]) {//开始录音判断是否有麦克风权限

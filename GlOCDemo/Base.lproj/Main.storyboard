@@ -18,38 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbo-oB-562">
-                                <rect key="frame" x="35" y="108" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="test nav"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="7N8-sf-ZUW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5a-AF-hmq">
-                                <rect key="frame" x="35" y="175" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="test audio request"/>
-                                <connections>
-                                    <segue destination="CRf-k5-lEV" kind="push" id="FUg-dD-JOl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJy-Vn-0ds">
-                                <rect key="frame" x="35" y="240" width="99" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="test hsegment"/>
-                                <connections>
-                                    <action selector="tohmsegment:" destination="t4K-lz-dtG" eventType="touchUpInside" id="ygn-8H-NW5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBL-16-Vtr">
-                                <rect key="frame" x="12" y="278" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="testtableview"/>
-                                <connections>
-                                    <action selector="testTableview:" destination="t4K-lz-dtG" eventType="touchUpInside" id="C1F-wA-TYG"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bOT-aX-mBn">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -166,7 +134,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3d-fc-fb4" customClass="RoundedButton">
-                                <rect key="frame" x="10" y="588" width="30" height="20"/>
+                                <rect key="frame" x="10" y="637" width="7" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="T5X-lC-oPK"/>
                                 </constraints>
@@ -184,7 +152,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPh-AT-5Cv" customClass="RoundedButton">
-                                <rect key="frame" x="50" y="588" width="30" height="20"/>
+                                <rect key="frame" x="27" y="637" width="9" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="gWD-ka-kKK"/>
                                 </constraints>
@@ -236,16 +204,6 @@
                     <view key="view" contentMode="scaleToFill" id="dps-At-7tM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCp-uK-Gvf">
-                                <rect key="frame" x="32" y="110" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="textBtnClick:" destination="SD6-cd-F1B" eventType="touchUpInside" id="iMU-jW-nIj"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Apw-s9-ihX"/>
                     </view>
@@ -255,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lq3-2z-yjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1490" y="1728"/>
+            <point key="canvasLocation" x="1695" y="1728"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="iqV-tr-kv8">

@@ -284,7 +284,12 @@ void GenericInputCallback (
 }
 
 - (BOOL)switchPCMToMp3Path:(NSString *)mp3FilePath {
-    NSString *filePath = self.filePath;
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"recorder3006" ofType:@"pcm"];
+    [self createWavPathFileFromPcmData:filePath];
+    
+    
+//    NSString *filePath = self.filePath;
     
     NSFileManager *manager = [NSFileManager defaultManager];
     long long l = [[manager attributesOfItemAtPath:filePath error:nil] fileSize];
@@ -308,21 +313,24 @@ void GenericInputCallback (
         
         lame_t lame = lame_init();
         lame_set_num_channels(lame,channel);
-        lame_set_in_samplerate(lame, kDefaultSampleRate);//录音16000
+        lame_set_in_samplerate(lame, kDefaultSampleRate);//录音16000 kDefaultSampleRate
         
-        lame_set_VBR(lame, vbr_default);//压缩级别参数：
-        lame_set_brate(lame,32);/* 比特率 */
+//        lame_set_VBR(lame, vbr_default);//压缩级别参数：
+        lame_set_brate(lame,16);/* 比特率 */
         
         lame_set_mode(lame,MONO);
+        lame_set_VBR_mean_bitrate_kbps(lame, 24);
         
         lame_set_quality(lame,2);/* 2=high  5 = medium  7=low */
-        
+        lame_mp3_tags_fid(lame, mp3);
         lame_init_params(lame);
         
         do {
             read = (int)fread(pcm_buffer, channel*sizeof(short int), PCM_SIZE, pcm);
-            if (read == 0)
+            if (read == 0){
                 write = lame_encode_flush(lame, mp3_buffer, MP3_SIZE);
+                
+            }
             else {
                 if (channel == 2) {
                     write = lame_encode_buffer_interleaved(lame, pcm_buffer, read, mp3_buffer, MP3_SIZE);

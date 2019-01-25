@@ -107,4 +107,21 @@
     }
     return nil;
 }
+
+- (BOOL)switchPCMToMp3Path:(NSString *)mp3FilePath {
+    switch (self.type) {
+        case GlRecorderQueue:{
+            return [self.manager switchPCMToMp3Path:mp3FilePath];
+        }
+            break;
+        case GlRecorderAudioUnit:{
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+    return NO;
+}
 @end

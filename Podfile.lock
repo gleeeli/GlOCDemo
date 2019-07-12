@@ -1,7 +1,7 @@
 PODS:
   - GlChartView (1.0.5):
     - GlPopView
-  - GlPopView (1.0.2)
+  - GlPopView (1.0.3)
   - HMSegmentedControl (1.5.5)
   - Masonry (1.1.0)
   - SDAutoLayout (2.1.9)
@@ -30,7 +30,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   GlChartView: 1aa747e7f3849707ab9f799735a3bb1155dd2849
-  GlPopView: 21533a3d4aabdb41d40c85039aff87356bbeede1
+  GlPopView: 3e744cf0c9c42f775b8376d25559c919dab525be
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
@@ -39,4 +39,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 791468ad19ed4af1da30406438c79e1f783afcab
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.2

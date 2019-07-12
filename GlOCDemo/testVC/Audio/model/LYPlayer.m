@@ -35,8 +35,23 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
     if (self)
     {
         self.url = url;
+        [self baseInit];
     }
     return self;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self baseInit];
+    }
+    
+    return self;
+}
+
+- (void)baseInit {
+    self.nb_samples = 1;
 }
 
 - (void)play {
@@ -109,13 +124,37 @@ const uint32_t CONST_BUFFER_SIZE = 0x10000;
     AudioStreamBasicDescription outputFormat;
     memset(&outputFormat, 0, sizeof(outputFormat));
     outputFormat.mSampleRate       = self.samplerate; // 采样率
-    outputFormat.mFormatID         = kAudioFormatLinearPCM; // PCM格式
-    outputFormat.mFormatFlags      = kLinearPCMFormatFlagIsSignedInteger; // 整形
-    outputFormat.mFramesPerPacket  = 1; // 每帧只有1个packet
-    outputFormat.mChannelsPerFrame = 1; // 声道数
-    outputFormat.mBytesPerFrame    = 2; // 每帧只有2个byte 声道*位深*Packet数
-    outputFormat.mBytesPerPacket   = 2; // 每个Packet只有2个byte
-    outputFormat.mBitsPerChannel   = 16; // 位深
+    outputFormat.mFormatID         =  kAudioFormatLinearPCM; // PCM格式
+    
+    if ([self.formatFlags isEqualToString:@"int16"]) {
+        outputFormat.mFormatFlags      = kLinearPCMFormatFlagIsSignedInteger;
+        if (self.isBigEndian) {
+            outputFormat.mFormatFlags      = (kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsBigEndian);
+        }
+    }else if ([self.formatFlags isEqualToString:@"float32"]) {
+        outputFormat.mFormatFlags      = kLinearPCMFormatFlagIsFloat;
+        if (self.isBigEndian) {
+            outputFormat.mFormatFlags      = (kLinearPCMFormatFlagIsFloat | kLinearPCMFormatFlagIsBigEndian);
+        }
+    }
+    
+    //就是每个packet的中frame的个数
+    outputFormat.mFramesPerPacket  =  self.nb_samples;
+    outputFormat.mChannelsPerFrame = self.channel; // 声道数
+//    outputFormat.mBytesPerFrame    = 2; // 每帧只有2个byte 声道*位深*Packet数
+//    outputFormat.mBytesPerPacket   = 2; // 每个Packet只有2个byte
+    outputFormat.mBitsPerChannel   = self.mBitsPerChannel;//16; // 每个采样数据的位数
+    outputFormat.mReserved = 0;
+    
+    //方法一 此时outputFormat.mFramesPerPacket必须等于1
+//    outputFormat.mBytesPerPacket = outputFormat.mBytesPerFrame = (outputFormat.mBitsPerChannel/8) * outputFormat.mChannelsPerFrame;
+    
+    //方法二
+    outputFormat.mBytesPerFrame = (outputFormat.mBitsPerChannel/8   * outputFormat.mChannelsPerFrame);
+
+    //每个packet中数据的字节数。
+    outputFormat.mBytesPerPacket = outputFormat.mBytesPerFrame * outputFormat.mFramesPerPacket;
+    
     [self printAudioStreamBasicDescription:outputFormat];
 
     status = AudioUnitSetProperty(audioUnit,

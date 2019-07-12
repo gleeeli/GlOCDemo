@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GlChartView/GlChartView.framework
+${BUILT_PRODUCTS_DIR}/GlPopView/GlPopView.framework
+${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework
+${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework
+${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework

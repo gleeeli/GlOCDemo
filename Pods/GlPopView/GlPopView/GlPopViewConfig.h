@@ -27,9 +27,14 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) CGFloat widthArrow;
 @property (nonatomic, assign) CGFloat heightArrow;
 @property (nonatomic, assign) CGFloat radiusArrow;//0则不需要圆角
-@property (nonatomic, assign) GlArrowDirection directionArrow;//箭头方向
+//箭头方向
+@property (nonatomic, assign) GlArrowDirection directionArrow;
 
-@property (nonatomic, assign) GlArrowAlignment alignmentArrow;//箭头位置
-@property (nonatomic, assign) CGFloat paddingDirectionArrow;//间距 可调节箭头位置
+//箭头位置
+@property (nonatomic, assign) GlArrowAlignment alignmentArrow;
+
+//间距 可调节箭头位置
+@property (nonatomic, assign) CGFloat paddingDirectionArrow;
+
 @property (nonatomic, assign) CGFloat offsetopHorizontalArrow;//箭头顶部水平方向偏移值
 @end

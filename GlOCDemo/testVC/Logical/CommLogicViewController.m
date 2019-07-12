@@ -40,7 +40,10 @@
     pattern = @"<style .*>([\\d\\D]*)[^(<style)]</style>";
 //    [self findMultipleWithPattern:pattern content:content];
     
-    [self testDeleteStyle];
+//    [self testDeleteStyle];
+    
+    BOOL result = [self isOnlyLetterOrNumOrChines:@"中文123gg="];
+    NSLog(@"是否中文数字字母：%d",result);
 }
 
 /*
@@ -187,14 +190,10 @@
     NSLog(@"结果:%zd,%@",result,muStr);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (BOOL)isOnlyLetterOrNumOrChines:(NSString *)str {
+    NSString *regex =@"[A-Za-z0-9\u4e00-\u9fa5]+";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    return [pred evaluateWithObject:str];
 }
-*/
 
 @end

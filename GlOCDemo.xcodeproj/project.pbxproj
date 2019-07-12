@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1909E02022BB7A7300A2C24A /* audioPcm.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 1909E01F22BB7A7300A2C24A /* audioPcm.pcm */; };
+		1909E03622BB89D700A2C24A /* recorder_normal_44100_mono.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 1909E03522BB89D700A2C24A /* recorder_normal_44100_mono.pcm */; };
 		190CFBA821785B9C00A482F9 /* CPPTestViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 190CFBA721785B9C00A482F9 /* CPPTestViewController.mm */; };
+		1910F28322D82E1F00A42293 /* movie_audioPcm.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 1910F28222D82E1F00A42293 /* movie_audioPcm.pcm */; };
 		19307AF2214201FE00FC3910 /* TestNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19307AF1214201FE00FC3910 /* TestNavigationView.m */; };
 		19307AF52142024E00FC3910 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 19307AF42142024E00FC3910 /* ViewController1.m */; };
 		193A9DFF215B071D00BD6AC0 /* GlCompareTwoText.m in Sources */ = {isa = PBXBuildFile; fileRef = 193A9DFC215B071D00BD6AC0 /* GlCompareTwoText.m */; };
@@ -98,6 +101,7 @@
 		19599EFA21E2D606004BD6B2 /* D07E4FAA-9124-4E23-9EF5-0C9A2F537E4E.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 19599EE621E2D606004BD6B2 /* D07E4FAA-9124-4E23-9EF5-0C9A2F537E4E.codesnippet */; };
 		19599EFB21E2D606004BD6B2 /* EFC41739-1E1F-4EAE-A240-CD9E5394C70A.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 19599EE721E2D606004BD6B2 /* EFC41739-1E1F-4EAE-A240-CD9E5394C70A.codesnippet */; };
 		195AF66F217962CB0068A3AD /* GlTwoTextEditDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 195AF66E217962CB0068A3AD /* GlTwoTextEditDistance.m */; };
+		1962859D22BCC47300C5EAB0 /* audioMp2ToPcm.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 1962859C22BCC47300C5EAB0 /* audioMp2ToPcm.pcm */; };
 		1963E426218AFF5F0029294B /* MCStudentProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963E425218AFF5F0029294B /* MCStudentProgressViewController.m */; };
 		1963E42B218AFFF30029294B /* MCStudentProgressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963E42A218AFFF30029294B /* MCStudentProgressTableViewCell.m */; };
 		196F818921CA456100FD39E5 /* gleelirecorder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 196F818821CA456100FD39E5 /* gleelirecorder.mp3 */; };
@@ -115,6 +119,7 @@
 		197984CB21C09C640036C551 /* TestWkwebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984CA21C09C640036C551 /* TestWkwebViewViewController.m */; };
 		197984D121C0A4750036C551 /* UIViewController+Cloudox.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984CD21C0A4750036C551 /* UIViewController+Cloudox.m */; };
 		197984D221C0A4750036C551 /* UINavigationController+Cloudox.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984CE21C0A4750036C551 /* UINavigationController+Cloudox.m */; };
+		1992C0242223E5AF00DA018B /* TestMuattributeLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1992C0232223E5AF00DA018B /* TestMuattributeLabelViewController.m */; };
 		19A57CA221B7685B0015F664 /* TestPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A57CA121B7685B0015F664 /* TestPlayerViewController.m */; };
 		19A75BCA21DCB855005DDBE9 /* BomAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A75BC921DCB855005DDBE9 /* BomAnimationViewController.m */; };
 		19A75BCD21DCB8E4005DDBE9 /* BomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A75BCC21DCB8E4005DDBE9 /* BomObject.m */; };
@@ -157,8 +162,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1909E01F22BB7A7300A2C24A /* audioPcm.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = audioPcm.pcm; sourceTree = "<group>"; };
+		1909E03522BB89D700A2C24A /* recorder_normal_44100_mono.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = recorder_normal_44100_mono.pcm; sourceTree = "<group>"; };
 		190CFBA621785B9C00A482F9 /* CPPTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPPTestViewController.h; sourceTree = "<group>"; };
 		190CFBA721785B9C00A482F9 /* CPPTestViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CPPTestViewController.mm; sourceTree = "<group>"; };
+		1910F28222D82E1F00A42293 /* movie_audioPcm.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie_audioPcm.pcm; sourceTree = "<group>"; };
 		19307AF0214201FE00FC3910 /* TestNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNavigationView.h; sourceTree = "<group>"; };
 		19307AF1214201FE00FC3910 /* TestNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNavigationView.m; sourceTree = "<group>"; };
 		19307AF32142024E00FC3910 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
@@ -315,6 +323,7 @@
 		19599EE721E2D606004BD6B2 /* EFC41739-1E1F-4EAE-A240-CD9E5394C70A.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "EFC41739-1E1F-4EAE-A240-CD9E5394C70A.codesnippet"; sourceTree = "<group>"; };
 		195AF66D217962CB0068A3AD /* GlTwoTextEditDistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlTwoTextEditDistance.h; sourceTree = "<group>"; };
 		195AF66E217962CB0068A3AD /* GlTwoTextEditDistance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlTwoTextEditDistance.m; sourceTree = "<group>"; };
+		1962859C22BCC47300C5EAB0 /* audioMp2ToPcm.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = audioMp2ToPcm.pcm; sourceTree = "<group>"; };
 		1963E424218AFF5F0029294B /* MCStudentProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCStudentProgressViewController.h; sourceTree = "<group>"; };
 		1963E425218AFF5F0029294B /* MCStudentProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCStudentProgressViewController.m; sourceTree = "<group>"; };
 		1963E429218AFFF30029294B /* MCStudentProgressTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCStudentProgressTableViewCell.h; sourceTree = "<group>"; };
@@ -345,6 +354,8 @@
 		197984CE21C0A4750036C551 /* UINavigationController+Cloudox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Cloudox.m"; sourceTree = "<group>"; };
 		197984CF21C0A4750036C551 /* UIViewController+Cloudox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Cloudox.h"; sourceTree = "<group>"; };
 		197984D021C0A4750036C551 /* UINavigationController+Cloudox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Cloudox.h"; sourceTree = "<group>"; };
+		1992C0222223E5AF00DA018B /* TestMuattributeLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMuattributeLabelViewController.h; sourceTree = "<group>"; };
+		1992C0232223E5AF00DA018B /* TestMuattributeLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMuattributeLabelViewController.m; sourceTree = "<group>"; };
 		19A57CA021B7685B0015F664 /* TestPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPlayerViewController.h; sourceTree = "<group>"; };
 		19A57CA121B7685B0015F664 /* TestPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPlayerViewController.m; sourceTree = "<group>"; };
 		19A75BC821DCB855005DDBE9 /* BomAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BomAnimationViewController.h; sourceTree = "<group>"; };
@@ -517,6 +528,10 @@
 		195418C421C9D956000A4C81 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1910F28222D82E1F00A42293 /* movie_audioPcm.pcm */,
+				1962859C22BCC47300C5EAB0 /* audioMp2ToPcm.pcm */,
+				1909E03522BB89D700A2C24A /* recorder_normal_44100_mono.pcm */,
+				1909E01F22BB7A7300A2C24A /* audioPcm.pcm */,
 				196F818821CA456100FD39E5 /* gleelirecorder.mp3 */,
 				195418D521CA2024000A4C81 /* recorder.pcm */,
 				197099B421FB100C004BB249 /* recorder3006.pcm */,
@@ -703,6 +718,8 @@
 				19B5D9D62195364700186417 /* TestHsegmentViewController.m */,
 				1940022621F9AEC4008A3E82 /* TestShadowViewController.h */,
 				1940022721F9AEC4008A3E82 /* TestShadowViewController.m */,
+				1992C0222223E5AF00DA018B /* TestMuattributeLabelViewController.h */,
+				1992C0232223E5AF00DA018B /* TestMuattributeLabelViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1080,9 +1097,11 @@
 				19599EEB21E2D606004BD6B2 /* 2206F7F9-EAF3-4EDE-8421-FF4BEFD13F5B.codesnippet in Resources */,
 				19599EE821E2D606004BD6B2 /* 备注.txt in Resources */,
 				19599EF521E2D606004BD6B2 /* A05770DB-7EFA-46EF-BFDC-5E6485090FF9.codesnippet in Resources */,
+				1962859D22BCC47300C5EAB0 /* audioMp2ToPcm.pcm in Resources */,
 				19599EF021E2D606004BD6B2 /* 976B4CBC-F257-4DF1-8F12-915FD758B34F.codesnippet in Resources */,
 				19599EF221E2D606004BD6B2 /* 1CFAE795-134F-4031-85D9-1C4DDF856DA2.codesnippet in Resources */,
 				195418D621CA2024000A4C81 /* recorder.pcm in Resources */,
+				1909E02022BB7A7300A2C24A /* audioPcm.pcm in Resources */,
 				193E36E4219972330010E772 /* README.md in Resources */,
 				19599EEE21E2D606004BD6B2 /* 77BECAE8-AB2A-4AA7-8A86-1B1245AD16DF.codesnippet in Resources */,
 				19B01D622112AF2C003ECDD9 /* LaunchScreen.storyboard in Resources */,
@@ -1099,7 +1118,9 @@
 				19599EFA21E2D606004BD6B2 /* D07E4FAA-9124-4E23-9EF5-0C9A2F537E4E.codesnippet in Resources */,
 				19599EF121E2D606004BD6B2 /* 0FCBD4D1-BE0F-495E-A21F-AF7909019AB0.codesnippet in Resources */,
 				1972E39A21F32386003C5CFC /* newyear2.html in Resources */,
+				1909E03622BB89D700A2C24A /* recorder_normal_44100_mono.pcm in Resources */,
 				19599EF421E2D606004BD6B2 /* 64B313C1-0279-4CD0-94B5-CBFC206BB634.codesnippet in Resources */,
+				1910F28322D82E1F00A42293 /* movie_audioPcm.pcm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1125,29 +1146,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GlChartView/GlChartView.framework",
-				"${BUILT_PRODUCTS_DIR}/GlPopView/GlPopView.framework",
-				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
-				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
-				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlChartView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlPopView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5B5A701B0730B521C085DB00 /* [CP] Check Pods Manifest.lock */ = {
@@ -1244,6 +1252,7 @@
 				1954C0E02117FB5C00251404 /* AAAreaspline.m in Sources */,
 				1954C0FB2117FB5C00251404 /* AAOptions.m in Sources */,
 				1954C0E42117FB5C00251404 /* AAPlotOptions.m in Sources */,
+				1992C0242223E5AF00DA018B /* TestMuattributeLabelViewController.m in Sources */,
 				193D6ECF21E07AA30073BBEA /* FountainView.m in Sources */,
 				197984C221C092AA0036C551 /* BaseWKWebViewViewController.m in Sources */,
 				19A75BCD21DCB8E4005DDBE9 /* BomObject.m in Sources */,

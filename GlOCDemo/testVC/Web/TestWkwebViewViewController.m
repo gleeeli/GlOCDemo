@@ -36,7 +36,6 @@
 }
 - (void)viewSafeAreaInsetsDidChange {
     [super viewSafeAreaInsetsDidChange];
-    
 
 }
 

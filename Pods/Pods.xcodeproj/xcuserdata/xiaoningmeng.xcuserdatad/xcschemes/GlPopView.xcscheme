@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2DA9097FD863AD7F4EA40F4F855A92B3"
+               BlueprintIdentifier = "2C2E29E292BF50433EB2245B8161837C"
+               BuildableName = "GlPopView.framework"
                BlueprintName = "GlPopView"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "GlPopView.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

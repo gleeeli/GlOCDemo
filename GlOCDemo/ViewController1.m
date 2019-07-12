@@ -25,6 +25,7 @@
 #import "SmallLogicTestViewController.h"
 #import "TestShadowViewController.h"
 #import <AVKit/AVKit.h>
+#import "TestMuattributeLabelViewController.h"
 
 @interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -49,6 +50,7 @@
     [self.array addObject:@"Table view"];
     [self.array addObject:@"Hsegment 选项"];
     [self.array addObject:@"shadow 阴影"];
+    [self.array addObject:@"富文本"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
 
@@ -65,7 +67,14 @@
 //    [testManager method1];
 //    [myManager method1];
 
-    [self getMP3Duartion:nil];
+//    [self getMP3Duartion:nil];
+    
+    // XXX:有待修正
+    UILabel *leftLabel = [[UILabel alloc] init];
+    // FIXME:待修正
+    leftLabel.textColor = [UIColor redColor];
+    // TODO:todo
+    leftLabel.textColor = [UIColor redColor];
 }
 
 
@@ -159,9 +168,13 @@
         vc = [[TestShadowViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
     }
+    else if ([title isEqualToString:@"富文本"]) {
+        vc = [[TestMuattributeLabelViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }
     
     
-    
+    //1 2 3 4 5 6
     [self.navigationController pushViewController:vc animated:YES];
 }
 

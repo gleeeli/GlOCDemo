@@ -192,6 +192,32 @@
     [path fill];
 }
 
+- (CGFloat)getAlginmentCenterPointX:(CGFloat)width {
+    CGFloat pX = width * 0.5 + self.congfig.paddingDirectionArrow;
+    CGFloat minPx = self.lineWidth + self.cornerRadius + self.congfig.widthArrow * 0.5;
+    CGFloat maxPx = width - minPx;
+    if (pX < minPx) {//防止平移过小
+        pX = minPx;
+    }
+    else if(pX > maxPx){//防止平移过大
+        pX = maxPx;
+    }
+    return pX;
+}
+
+- (CGFloat)getAlginmentCenterPointY:(CGFloat)height {
+    CGFloat pY =  height * 0.5 + self.congfig.paddingDirectionArrow;
+    CGFloat minPy = self.lineWidth + self.cornerRadius + self.congfig.widthArrow * 0.5;
+    CGFloat maxPy = height - minPy;
+    if (pY < minPy) {//防止上移过小
+        pY = minPy;
+    }
+    else if(pY > maxPy){//防止下移过大
+        pY = maxPy;
+    }
+    return pY;
+}
+
 //箭头顶点坐标
 - (CGPoint)getArrowPointWithDirection:(GlArrowDirection)direction width:(CGFloat)width height:(CGFloat)height{
     CGPoint point = CGPointZero;
@@ -206,7 +232,8 @@
                     break;
                 case GlArrowAlignmentCenter:
                 {
-                    point = CGPointMake(width * 0.5  , self.lineWidth * 0.5);
+                    CGFloat pX = [self getAlginmentCenterPointX:width];
+                    point = CGPointMake(pX  , self.lineWidth * 0.5);
                 }
                     break;
                 case GlArrowAlignmentRight:
@@ -230,7 +257,8 @@
                     break;
                 case GlArrowAlignmentCenter:
                 {
-                    point = CGPointMake(self.lineWidth * 0.5, height * 0.5);
+                    CGFloat pY =  [self getAlginmentCenterPointY:height];
+                    point = CGPointMake(self.lineWidth * 0.5, pY);
                 }
                     break;
                 case GlArrowAlignmentRight:
@@ -254,7 +282,8 @@
                     break;
                 case GlArrowAlignmentCenter:
                 {
-                    point = CGPointMake(width * 0.5  , height - self.lineWidth * 0.5);
+                    CGFloat pX = [self getAlginmentCenterPointX:width];
+                    point = CGPointMake(pX, height - self.lineWidth * 0.5);
                 }
                     break;
                 case GlArrowAlignmentRight:
@@ -278,7 +307,8 @@
                     break;
                 case GlArrowAlignmentCenter:
                 {
-                    point = CGPointMake(width  - self.lineWidth * 0.5, height * 0.5);
+                    CGFloat pY =  [self getAlginmentCenterPointY:height];
+                    point = CGPointMake(width  - self.lineWidth * 0.5, pY);
                 }
                     break;
                 case GlArrowAlignmentRight:

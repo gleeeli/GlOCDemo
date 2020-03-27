@@ -46,7 +46,7 @@
     UIButton *recode3Btn = [UIButton buttonWithType:UIButtonTypeSystem];
     recode3Btn.tag = 303;
     recode3Btn.frame =CGRectMake(160, 140, 100, 50);
-    [recode3Btn setTitle:@"方式三 录屏" forState:UIControlStateNormal];
+    [recode3Btn setTitle:@"方式三 录屏，只能保存到相册" forState:UIControlStateNormal];
     [recode3Btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [recode3Btn addTarget:self action:@selector(recoderScreen:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:recode3Btn];
@@ -78,7 +78,7 @@
 
 
 
-//方式一：启动支持录制的列表sheet
+//方式一：启动支持录制的列表sheet，APP内容录屏，可获取码流。若要系统录屏则需要到控制中心 长按录制按钮选择APP
 - (void)starRecoderMethod1 {
     NSLog(@"方式一录屏");
     [RPBroadcastActivityViewController loadBroadcastActivityViewControllerWithHandler:^(RPBroadcastActivityViewController * _Nullable broadcastActivityViewController, NSError * _Nullable error) {

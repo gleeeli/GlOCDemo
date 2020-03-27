@@ -26,6 +26,8 @@
 #import "TestShadowViewController.h"
 #import <AVKit/AVKit.h>
 #import "TestMuattributeLabelViewController.h"
+#import "RecoderScreenViewController.h"
+#import "RecoderScreenExtensionViewController.h"
 
 @interface ViewController1 ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -51,6 +53,8 @@
     [self.array addObject:@"Hsegment 选项"];
     [self.array addObject:@"shadow 阴影"];
     [self.array addObject:@"富文本"];
+    [self.array addObject:@"录屏"];
+    [self.array addObject:@"录屏扩展"];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
 
@@ -170,6 +174,12 @@
     }
     else if ([title isEqualToString:@"富文本"]) {
         vc = [[TestMuattributeLabelViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }else if ([title isEqualToString:@"录屏"]) {
+        vc = [[RecoderScreenViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+    }else if ([title isEqualToString:@"录屏扩展"]) {
+        vc = [[RecoderScreenExtensionViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
     }
     

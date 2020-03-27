@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSVideoSubscriberAccountUsageDescription</key>
+	<string>电视权限</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>获取媒体库</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>获取相册权限</string>
+	<key>NSCameraUsageDescription</key>
+	<string>获取你的摄像头权限</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

@@ -117,8 +117,6 @@
 		197984C221C092AA0036C551 /* BaseWKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984C121C092AA0036C551 /* BaseWKWebViewViewController.m */; };
 		197984C621C093910036C551 /* GlWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984C521C093910036C551 /* GlWebViewProgressView.m */; };
 		197984CB21C09C640036C551 /* TestWkwebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984CA21C09C640036C551 /* TestWkwebViewViewController.m */; };
-		197984D121C0A4750036C551 /* UIViewController+Cloudox.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984CD21C0A4750036C551 /* UIViewController+Cloudox.m */; };
-		197984D221C0A4750036C551 /* UINavigationController+Cloudox.m in Sources */ = {isa = PBXBuildFile; fileRef = 197984CE21C0A4750036C551 /* UINavigationController+Cloudox.m */; };
 		1992C0242223E5AF00DA018B /* TestMuattributeLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1992C0232223E5AF00DA018B /* TestMuattributeLabelViewController.m */; };
 		19A57CA221B7685B0015F664 /* TestPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A57CA121B7685B0015F664 /* TestPlayerViewController.m */; };
 		19A75BCA21DCB855005DDBE9 /* BomAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A75BC921DCB855005DDBE9 /* BomAnimationViewController.m */; };
@@ -137,6 +135,20 @@
 		19D1C4AEFA95F4FAAFB62632 /* Pods_GlOCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA63704800171C6D311C8A49 /* Pods_GlOCDemo.framework */; };
 		19DF7C3321868AD1000708FA /* TestAutoScorllviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */; };
 		19DF7C3621868AFC000708FA /* GlBaseAutoLayoutScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3421868AFC000708FA /* GlBaseAutoLayoutScrollview.m */; };
+		21EA6E4C242DEC0100F39E03 /* RecoderScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA6E4B242DEC0100F39E03 /* RecoderScreenViewController.m */; };
+		21EA6E4E242DEC8500F39E03 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */; };
+		21EA6E54242E03A800F39E03 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */; };
+		21EA6E56242E03A800F39E03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EA6E55242E03A800F39E03 /* UIKit.framework */; };
+		21EA6E5A242E03A800F39E03 /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA6E59242E03A800F39E03 /* BroadcastSetupViewController.m */; };
+		21EA6E5F242E03A800F39E03 /* BroadcastSetupUIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21EA6E53242E03A800F39E03 /* BroadcastSetupUIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		21EA6E68242E042300F39E03 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */; };
+		21EA6E6C242E042300F39E03 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA6E6B242E042300F39E03 /* SampleHandler.m */; };
+		21EA6E73242E042300F39E03 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */; };
+		21EA6E74242E042300F39E03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EA6E55242E03A800F39E03 /* UIKit.framework */; };
+		21EA6E78242E042300F39E03 /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA6E77242E042300F39E03 /* BroadcastSetupViewController.m */; };
+		21EA6E7C242E042300F39E03 /* BroadcastUploadExtensionSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21EA6E72242E042300F39E03 /* BroadcastUploadExtensionSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		21EA6E7F242E042300F39E03 /* BroadcastUploadExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21EA6E67242E042300F39E03 /* BroadcastUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		21EA6E88242E081A00F39E03 /* RecoderScreenExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA6E87242E081A00F39E03 /* RecoderScreenExtensionViewController.m */; };
 		69601E5421E208FA00F410AE /* GlFountainLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69601E5321E208FA00F410AE /* GlFountainLineView.m */; };
 		69601E5A21E2100900F410AE /* GlFountainDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 69601E5921E2100900F410AE /* GlFountainDraw.m */; };
 		69601E5D21E2195300F410AE /* GlWaterLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 69601E5C21E2195300F410AE /* GlWaterLine.m */; };
@@ -159,7 +171,44 @@
 			remoteGlobalIDString = 19B01D512112AF2B003ECDD9;
 			remoteInfo = GlOCDemo;
 		};
+		21EA6E5C242E03A800F39E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B01D4A2112AF2B003ECDD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21EA6E52242E03A800F39E03;
+			remoteInfo = BroadcastSetupUIExtension;
+		};
+		21EA6E7A242E042300F39E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B01D4A2112AF2B003ECDD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21EA6E71242E042300F39E03;
+			remoteInfo = BroadcastUploadExtensionSetupUI;
+		};
+		21EA6E7D242E042300F39E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B01D4A2112AF2B003ECDD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21EA6E66242E042300F39E03;
+			remoteInfo = BroadcastUploadExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21EA6E5E242E03A800F39E03 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				21EA6E5F242E03A800F39E03 /* BroadcastSetupUIExtension.appex in Embed App Extensions */,
+				21EA6E7C242E042300F39E03 /* BroadcastUploadExtensionSetupUI.appex in Embed App Extensions */,
+				21EA6E7F242E042300F39E03 /* BroadcastUploadExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1909E01F22BB7A7300A2C24A /* audioPcm.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = audioPcm.pcm; sourceTree = "<group>"; };
@@ -350,10 +399,6 @@
 		197984C721C094120036C551 /* GlCommHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlCommHeader.h; sourceTree = "<group>"; };
 		197984C921C09C640036C551 /* TestWkwebViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestWkwebViewViewController.h; sourceTree = "<group>"; };
 		197984CA21C09C640036C551 /* TestWkwebViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWkwebViewViewController.m; sourceTree = "<group>"; };
-		197984CD21C0A4750036C551 /* UIViewController+Cloudox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Cloudox.m"; sourceTree = "<group>"; };
-		197984CE21C0A4750036C551 /* UINavigationController+Cloudox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Cloudox.m"; sourceTree = "<group>"; };
-		197984CF21C0A4750036C551 /* UIViewController+Cloudox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Cloudox.h"; sourceTree = "<group>"; };
-		197984D021C0A4750036C551 /* UINavigationController+Cloudox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Cloudox.h"; sourceTree = "<group>"; };
 		1992C0222223E5AF00DA018B /* TestMuattributeLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMuattributeLabelViewController.h; sourceTree = "<group>"; };
 		1992C0232223E5AF00DA018B /* TestMuattributeLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMuattributeLabelViewController.m; sourceTree = "<group>"; };
 		19A57CA021B7685B0015F664 /* TestPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPlayerViewController.h; sourceTree = "<group>"; };
@@ -386,6 +431,24 @@
 		19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAutoScorllviewViewController.m; sourceTree = "<group>"; };
 		19DF7C3421868AFC000708FA /* GlBaseAutoLayoutScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlBaseAutoLayoutScrollview.m; sourceTree = "<group>"; };
 		19DF7C3521868AFC000708FA /* GlBaseAutoLayoutScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlBaseAutoLayoutScrollview.h; sourceTree = "<group>"; };
+		21EA6E4A242DEC0100F39E03 /* RecoderScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoderScreenViewController.h; sourceTree = "<group>"; };
+		21EA6E4B242DEC0100F39E03 /* RecoderScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoderScreenViewController.m; sourceTree = "<group>"; };
+		21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		21EA6E53242E03A800F39E03 /* BroadcastSetupUIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastSetupUIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		21EA6E55242E03A800F39E03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21EA6E58242E03A800F39E03 /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		21EA6E59242E03A800F39E03 /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		21EA6E5B242E03A800F39E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21EA6E67242E042300F39E03 /* BroadcastUploadExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastUploadExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		21EA6E6A242E042300F39E03 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		21EA6E6B242E042300F39E03 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		21EA6E6D242E042300F39E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21EA6E72242E042300F39E03 /* BroadcastUploadExtensionSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastUploadExtensionSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		21EA6E76242E042300F39E03 /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		21EA6E77242E042300F39E03 /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		21EA6E79242E042300F39E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21EA6E86242E081A00F39E03 /* RecoderScreenExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoderScreenExtensionViewController.h; sourceTree = "<group>"; };
+		21EA6E87242E081A00F39E03 /* RecoderScreenExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoderScreenExtensionViewController.m; sourceTree = "<group>"; };
 		4478A9E1F6EEECBDF1FD22F9 /* Pods-GlOCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlOCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlOCDemo/Pods-GlOCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		69601E5221E208FA00F410AE /* GlFountainLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlFountainLineView.h; sourceTree = "<group>"; };
 		69601E5321E208FA00F410AE /* GlFountainLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlFountainLineView.m; sourceTree = "<group>"; };
@@ -406,6 +469,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EA6E4E242DEC8500F39E03 /* ReplayKit.framework in Frameworks */,
 				195418CB21C9DFA5000A4C81 /* AudioToolbox.framework in Frameworks */,
 				1952DABE217706B8001D9FED /* AVFoundation.framework in Frameworks */,
 				195418C321C9D841000A4C81 /* libmp3lame.a in Frameworks */,
@@ -425,6 +489,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21EA6E50242E03A800F39E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EA6E54242E03A800F39E03 /* ReplayKit.framework in Frameworks */,
+				21EA6E56242E03A800F39E03 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21EA6E64242E042300F39E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EA6E68242E042300F39E03 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21EA6E6F242E042300F39E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EA6E73242E042300F39E03 /* ReplayKit.framework in Frameworks */,
+				21EA6E74242E042300F39E03 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +565,6 @@
 			isa = PBXGroup;
 			children = (
 				195418C021C9D841000A4C81 /* lame */,
-				197984CC21C0A4550036C551 /* NavAlphaChange */,
 				193E36DC219972330010E772 /* DZNEmptyDataSet */,
 			);
 			path = vender;
@@ -824,17 +913,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		197984CC21C0A4550036C551 /* NavAlphaChange */ = {
-			isa = PBXGroup;
-			children = (
-				197984D021C0A4750036C551 /* UINavigationController+Cloudox.h */,
-				197984CE21C0A4750036C551 /* UINavigationController+Cloudox.m */,
-				197984CF21C0A4750036C551 /* UIViewController+Cloudox.h */,
-				197984CD21C0A4750036C551 /* UIViewController+Cloudox.m */,
-			);
-			path = NavAlphaChange;
-			sourceTree = "<group>";
-		};
 		19A75BC721DCB834005DDBE9 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -862,6 +940,9 @@
 				19B01D542112AF2B003ECDD9 /* GlOCDemo */,
 				19B01D6D2112AF2C003ECDD9 /* GlOCDemoTests */,
 				19B01D782112AF2C003ECDD9 /* GlOCDemoUITests */,
+				21EA6E57242E03A800F39E03 /* BroadcastSetupUIExtension */,
+				21EA6E69242E042300F39E03 /* BroadcastUploadExtension */,
+				21EA6E75242E042300F39E03 /* BroadcastUploadExtensionSetupUI */,
 				19B01D532112AF2B003ECDD9 /* Products */,
 				139CCB5C4C0F177C54D08C6B /* Pods */,
 				775650C0DA3002E8AF1592D7 /* Frameworks */,
@@ -874,6 +955,9 @@
 				19B01D522112AF2B003ECDD9 /* GlOCDemo.app */,
 				19B01D6A2112AF2C003ECDD9 /* GlOCDemoTests.xctest */,
 				19B01D752112AF2C003ECDD9 /* GlOCDemoUITests.xctest */,
+				21EA6E53242E03A800F39E03 /* BroadcastSetupUIExtension.appex */,
+				21EA6E67242E042300F39E03 /* BroadcastUploadExtension.appex */,
+				21EA6E72242E042300F39E03 /* BroadcastUploadExtensionSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -881,6 +965,7 @@
 		19B01D542112AF2B003ECDD9 /* GlOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				21EA6E49242DEBE000F39E03 /* RecoderScreen */,
 				19599ED221E2D5ED004BD6B2 /* CodeSnippets */,
 				19A75BC721DCB834005DDBE9 /* Animation */,
 				195418C421C9D956000A4C81 /* Resource */,
@@ -931,6 +1016,47 @@
 			path = GlOCDemoUITests;
 			sourceTree = "<group>";
 		};
+		21EA6E49242DEBE000F39E03 /* RecoderScreen */ = {
+			isa = PBXGroup;
+			children = (
+				21EA6E4A242DEC0100F39E03 /* RecoderScreenViewController.h */,
+				21EA6E4B242DEC0100F39E03 /* RecoderScreenViewController.m */,
+				21EA6E86242E081A00F39E03 /* RecoderScreenExtensionViewController.h */,
+				21EA6E87242E081A00F39E03 /* RecoderScreenExtensionViewController.m */,
+			);
+			path = RecoderScreen;
+			sourceTree = "<group>";
+		};
+		21EA6E57242E03A800F39E03 /* BroadcastSetupUIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				21EA6E58242E03A800F39E03 /* BroadcastSetupViewController.h */,
+				21EA6E59242E03A800F39E03 /* BroadcastSetupViewController.m */,
+				21EA6E5B242E03A800F39E03 /* Info.plist */,
+			);
+			path = BroadcastSetupUIExtension;
+			sourceTree = "<group>";
+		};
+		21EA6E69242E042300F39E03 /* BroadcastUploadExtension */ = {
+			isa = PBXGroup;
+			children = (
+				21EA6E6A242E042300F39E03 /* SampleHandler.h */,
+				21EA6E6B242E042300F39E03 /* SampleHandler.m */,
+				21EA6E6D242E042300F39E03 /* Info.plist */,
+			);
+			path = BroadcastUploadExtension;
+			sourceTree = "<group>";
+		};
+		21EA6E75242E042300F39E03 /* BroadcastUploadExtensionSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				21EA6E76242E042300F39E03 /* BroadcastSetupViewController.h */,
+				21EA6E77242E042300F39E03 /* BroadcastSetupViewController.m */,
+				21EA6E79242E042300F39E03 /* Info.plist */,
+			);
+			path = BroadcastUploadExtensionSetupUI;
+			sourceTree = "<group>";
+		};
 		69601E4D21E2085500F410AE /* FountainPoint */ = {
 			isa = PBXGroup;
 			children = (
@@ -970,10 +1096,12 @@
 		775650C0DA3002E8AF1592D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */,
 				195418CA21C9DFA4000A4C81 /* AudioToolbox.framework */,
 				1952DABD217706B8001D9FED /* AVFoundation.framework */,
 				1954C0782117EDCB00251404 /* QuartzCore.framework */,
 				EA63704800171C6D311C8A49 /* Pods_GlOCDemo.framework */,
+				21EA6E55242E03A800F39E03 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -990,10 +1118,14 @@
 				19B01D4F2112AF2B003ECDD9 /* Frameworks */,
 				19B01D502112AF2B003ECDD9 /* Resources */,
 				0FFD6BE723EFCB19E000F161 /* [CP] Embed Pods Frameworks */,
+				21EA6E5E242E03A800F39E03 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				21EA6E5D242E03A800F39E03 /* PBXTargetDependency */,
+				21EA6E7B242E042300F39E03 /* PBXTargetDependency */,
+				21EA6E7E242E042300F39E03 /* PBXTargetDependency */,
 			);
 			name = GlOCDemo;
 			productName = GlOCDemo;
@@ -1036,6 +1168,57 @@
 			productReference = 19B01D752112AF2C003ECDD9 /* GlOCDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		21EA6E52242E03A800F39E03 /* BroadcastSetupUIExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21EA6E60242E03A800F39E03 /* Build configuration list for PBXNativeTarget "BroadcastSetupUIExtension" */;
+			buildPhases = (
+				21EA6E4F242E03A800F39E03 /* Sources */,
+				21EA6E50242E03A800F39E03 /* Frameworks */,
+				21EA6E51242E03A800F39E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastSetupUIExtension;
+			productName = BroadcastSetupUIExtension;
+			productReference = 21EA6E53242E03A800F39E03 /* BroadcastSetupUIExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		21EA6E66242E042300F39E03 /* BroadcastUploadExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21EA6E83242E042300F39E03 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtension" */;
+			buildPhases = (
+				21EA6E63242E042300F39E03 /* Sources */,
+				21EA6E64242E042300F39E03 /* Frameworks */,
+				21EA6E65242E042300F39E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastUploadExtension;
+			productName = BroadcastUploadExtension;
+			productReference = 21EA6E67242E042300F39E03 /* BroadcastUploadExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		21EA6E71242E042300F39E03 /* BroadcastUploadExtensionSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21EA6E80242E042300F39E03 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtensionSetupUI" */;
+			buildPhases = (
+				21EA6E6E242E042300F39E03 /* Sources */,
+				21EA6E6F242E042300F39E03 /* Frameworks */,
+				21EA6E70242E042300F39E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastUploadExtensionSetupUI;
+			productName = BroadcastUploadExtensionSetupUI;
+			productReference = 21EA6E72242E042300F39E03 /* BroadcastUploadExtensionSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1056,6 +1239,15 @@
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 19B01D512112AF2B003ECDD9;
 					};
+					21EA6E52242E03A800F39E03 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					21EA6E66242E042300F39E03 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					21EA6E71242E042300F39E03 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 19B01D4D2112AF2B003ECDD9 /* Build configuration list for PBXProject "GlOCDemo" */;
@@ -1074,6 +1266,9 @@
 				19B01D512112AF2B003ECDD9 /* GlOCDemo */,
 				19B01D692112AF2C003ECDD9 /* GlOCDemoTests */,
 				19B01D742112AF2C003ECDD9 /* GlOCDemoUITests */,
+				21EA6E52242E03A800F39E03 /* BroadcastSetupUIExtension */,
+				21EA6E66242E042300F39E03 /* BroadcastUploadExtension */,
+				21EA6E71242E042300F39E03 /* BroadcastUploadExtensionSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -1138,6 +1333,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21EA6E51242E03A800F39E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21EA6E65242E042300F39E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21EA6E70242E042300F39E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1193,7 +1409,6 @@
 				1954C0FC2117FB5C00251404 /* AASeriesElement.m in Sources */,
 				19DF7C3621868AFC000708FA /* GlBaseAutoLayoutScrollview.m in Sources */,
 				193D6ED521E088920073BBEA /* FountainViewController.m in Sources */,
-				197984D121C0A4750036C551 /* UIViewController+Cloudox.m in Sources */,
 				1944B67E21CB1A4900A19BC2 /* XBAudioDataWriter.m in Sources */,
 				1942CE6B21194A2A00EC7B4C /* BaseAutoLayoutScrollView.m in Sources */,
 				1954C0F12117FB5C00251404 /* AAArea.m in Sources */,
@@ -1210,7 +1425,9 @@
 				1954C10A21183D5500251404 /* UIImage+Additions.m in Sources */,
 				1954C0EA2117FB5C00251404 /* AACrosshair.m in Sources */,
 				1954C0EC2117FB5C00251404 /* AAPlotLinesElement.m in Sources */,
+				21EA6E4C242DEC0100F39E03 /* RecoderScreenViewController.m in Sources */,
 				1954C0E12117FB5C00251404 /* AALabels.m in Sources */,
+				21EA6E88242E081A00F39E03 /* RecoderScreenExtensionViewController.m in Sources */,
 				197984C621C093910036C551 /* GlWebViewProgressView.m in Sources */,
 				1954C0F42117FB5C00251404 /* AAMarker.m in Sources */,
 				69601E5D21E2195300F410AE /* GlWaterLine.m in Sources */,
@@ -1240,7 +1457,6 @@
 				6981450321CA7E8A0071DDFB /* LLAudioUnit.m in Sources */,
 				1963E426218AFF5F0029294B /* MCStudentProgressViewController.m in Sources */,
 				193B3E1121C254C200FE1AF1 /* GlScrollview.m in Sources */,
-				197984D221C0A4750036C551 /* UINavigationController+Cloudox.m in Sources */,
 				1955AF0C21F15C43009B87D8 /* TestAnimationViewController.m in Sources */,
 				1977C0EC219EA2A000B42354 /* TestNavigationViewController.m in Sources */,
 				1951FED921F6E8A90047C0DA /* SmallLogicTestViewController.m in Sources */,
@@ -1292,6 +1508,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21EA6E4F242E03A800F39E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EA6E5A242E03A800F39E03 /* BroadcastSetupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21EA6E63242E042300F39E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EA6E6C242E042300F39E03 /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21EA6E6E242E042300F39E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EA6E78242E042300F39E03 /* BroadcastSetupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1304,6 +1544,21 @@
 			isa = PBXTargetDependency;
 			target = 19B01D512112AF2B003ECDD9 /* GlOCDemo */;
 			targetProxy = 19B01D762112AF2C003ECDD9 /* PBXContainerItemProxy */;
+		};
+		21EA6E5D242E03A800F39E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21EA6E52242E03A800F39E03 /* BroadcastSetupUIExtension */;
+			targetProxy = 21EA6E5C242E03A800F39E03 /* PBXContainerItemProxy */;
+		};
+		21EA6E7B242E042300F39E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21EA6E71242E042300F39E03 /* BroadcastUploadExtensionSetupUI */;
+			targetProxy = 21EA6E7A242E042300F39E03 /* PBXContainerItemProxy */;
+		};
+		21EA6E7E242E042300F39E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21EA6E66242E042300F39E03 /* BroadcastUploadExtension */;
+			targetProxy = 21EA6E7D242E042300F39E03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1559,6 +1814,129 @@
 			};
 			name = Release;
 		};
+		21EA6E61242E03A800F39E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GB25QSQKV6;
+				INFOPLIST_FILE = BroadcastSetupUIExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = lengmeng.GlOCDemo1.BroadcastSetupUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21EA6E62242E03A800F39E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GB25QSQKV6;
+				INFOPLIST_FILE = BroadcastSetupUIExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = lengmeng.GlOCDemo1.BroadcastSetupUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21EA6E81242E042300F39E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GB25QSQKV6;
+				INFOPLIST_FILE = BroadcastUploadExtensionSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = lengmeng.GlOCDemo1.BroadcastUploadExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21EA6E82242E042300F39E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GB25QSQKV6;
+				INFOPLIST_FILE = BroadcastUploadExtensionSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = lengmeng.GlOCDemo1.BroadcastUploadExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21EA6E84242E042300F39E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GB25QSQKV6;
+				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = lengmeng.GlOCDemo1.BroadcastUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21EA6E85242E042300F39E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GB25QSQKV6;
+				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = lengmeng.GlOCDemo1.BroadcastUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1594,6 +1972,33 @@
 			buildConfigurations = (
 				19B01D852112AF2C003ECDD9 /* Debug */,
 				19B01D862112AF2C003ECDD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21EA6E60242E03A800F39E03 /* Build configuration list for PBXNativeTarget "BroadcastSetupUIExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21EA6E61242E03A800F39E03 /* Debug */,
+				21EA6E62242E03A800F39E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21EA6E80242E042300F39E03 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtensionSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21EA6E81242E042300F39E03 /* Debug */,
+				21EA6E82242E042300F39E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21EA6E83242E042300F39E03 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21EA6E84242E042300F39E03 /* Debug */,
+				21EA6E85242E042300F39E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

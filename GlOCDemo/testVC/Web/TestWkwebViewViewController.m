@@ -7,8 +7,6 @@
 //测试滑动webview隐藏导航栏
 
 #import "TestWkwebViewViewController.h"
-#import "UINavigationController+Cloudox.h"
-#import "UIViewController+Cloudox.h"
 
 @interface TestWkwebViewViewController ()<UIScrollViewDelegate>
 
@@ -31,7 +29,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     if (self.webView.scrollView.contentOffset.y == 0) {
-        self.navBarBgAlpha = [NSString stringWithFormat:@"%f",0.0];
+//        self.navBarBgAlpha = [NSString stringWithFormat:@"%f",0.0];
     }
 }
 - (void)viewSafeAreaInsetsDidChange {
@@ -48,9 +46,9 @@
         if (alpha > 1.0) {
             alpha = 1.0;
         }
-        self.navBarBgAlpha = [NSString stringWithFormat:@"%f",alpha];
+//        self.navBarBgAlpha = [NSString stringWithFormat:@"%f",alpha];
     }else {
-        self.navBarBgAlpha = [NSString stringWithFormat:@"%f",0.0];
+//        self.navBarBgAlpha = [NSString stringWithFormat:@"%f",0.0];
     }
 }
 

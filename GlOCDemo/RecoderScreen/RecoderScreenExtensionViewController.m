@@ -76,8 +76,6 @@
 }
 
 
-
-
 //方式一：启动支持录制的列表sheet，APP内容录屏，可获取码流。若要系统录屏则需要到控制中心 长按录制按钮选择APP
 - (void)starRecoderMethod1 {
     NSLog(@"方式一录屏");

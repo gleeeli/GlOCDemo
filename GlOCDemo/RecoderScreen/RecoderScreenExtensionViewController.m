@@ -35,7 +35,7 @@
     
     UIButton *recode2Btn = [UIButton buttonWithType:UIButtonTypeSystem];
     recode2Btn.tag = 302;
-    recode2Btn.enabled = NO;
+//    recode2Btn.enabled = NO;
     recode2Btn.frame =CGRectMake(160, 90, 150, 50);
     [recode2Btn setTitle:@"方式二 录屏,目前无效，" forState:UIControlStateNormal];
     [recode2Btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
@@ -112,7 +112,7 @@
     NSLog(@"方式三录屏");
     if (@available(iOS 12.0, *)) {
         _broadPickerView = [[RPSystemBroadcastPickerView alloc] initWithFrame:CGRectMake(20, 190, 80, 80)];
-//        _broadPickerView.preferredExtension = @"lengmeng.GlOCDemo1.BroadcastSetupUIExtension";
+        _broadPickerView.preferredExtension = @"lengmeng.GlOCDemo1.BroadcastUploadExtension";
         [self.view addSubview:_broadPickerView];
     }else {
         NSLog(@"系统版本过低。。。");

@@ -7,22 +7,55 @@
 		<key>BroadcastSetupUIExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>0</integer>
 		</dict>
 		<key>BroadcastUploadExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>1</integer>
 		</dict>
 		<key>BroadcastUploadExtensionSetupUI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>3</integer>
 		</dict>
 		<key>GlOCDemo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>19B01D512112AF2B003ECDD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19B01D692112AF2C003ECDD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19B01D742112AF2C003ECDD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>21EA6E52242E03A800F39E03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>21EA6E66242E042300F39E03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>21EA6E71242E042300F39E03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

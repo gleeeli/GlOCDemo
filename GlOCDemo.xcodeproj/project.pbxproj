@@ -135,6 +135,7 @@
 		19D1C4AEFA95F4FAAFB62632 /* Pods_GlOCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA63704800171C6D311C8A49 /* Pods_GlOCDemo.framework */; };
 		19DF7C3321868AD1000708FA /* TestAutoScorllviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */; };
 		19DF7C3621868AFC000708FA /* GlBaseAutoLayoutScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3421868AFC000708FA /* GlBaseAutoLayoutScrollview.m */; };
+		21AA3517251B84110064B875 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21EA6E6D242E042300F39E03 /* Info.plist */; };
 		21EA6E4C242DEC0100F39E03 /* RecoderScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA6E4B242DEC0100F39E03 /* RecoderScreenViewController.m */; };
 		21EA6E4E242DEC8500F39E03 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */; };
 		21EA6E54242E03A800F39E03 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */; };
@@ -1344,6 +1345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21AA3517251B84110064B875 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1820,7 +1822,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB25QSQKV6;
 				INFOPLIST_FILE = BroadcastSetupUIExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1841,7 +1843,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB25QSQKV6;
 				INFOPLIST_FILE = BroadcastSetupUIExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1861,7 +1863,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB25QSQKV6;
 				INFOPLIST_FILE = BroadcastUploadExtensionSetupUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1882,7 +1884,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB25QSQKV6;
 				INFOPLIST_FILE = BroadcastUploadExtensionSetupUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1902,7 +1904,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB25QSQKV6;
 				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1923,7 +1925,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB25QSQKV6;
 				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

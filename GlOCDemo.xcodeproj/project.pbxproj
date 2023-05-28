@@ -135,6 +135,7 @@
 		19D1C4AEFA95F4FAAFB62632 /* Pods_GlOCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA63704800171C6D311C8A49 /* Pods_GlOCDemo.framework */; };
 		19DF7C3321868AD1000708FA /* TestAutoScorllviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */; };
 		19DF7C3621868AFC000708FA /* GlBaseAutoLayoutScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF7C3421868AFC000708FA /* GlBaseAutoLayoutScrollview.m */; };
+		219461312A239FF9004668C2 /* iosAppIcon.sh in Resources */ = {isa = PBXBuildFile; fileRef = 219461302A239FF9004668C2 /* iosAppIcon.sh */; };
 		21AA3517251B84110064B875 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21EA6E6D242E042300F39E03 /* Info.plist */; };
 		21EA6E4C242DEC0100F39E03 /* RecoderScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA6E4B242DEC0100F39E03 /* RecoderScreenViewController.m */; };
 		21EA6E4E242DEC8500F39E03 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */; };
@@ -432,6 +433,7 @@
 		19DF7C3221868AD1000708FA /* TestAutoScorllviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAutoScorllviewViewController.m; sourceTree = "<group>"; };
 		19DF7C3421868AFC000708FA /* GlBaseAutoLayoutScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlBaseAutoLayoutScrollview.m; sourceTree = "<group>"; };
 		19DF7C3521868AFC000708FA /* GlBaseAutoLayoutScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlBaseAutoLayoutScrollview.h; sourceTree = "<group>"; };
+		219461302A239FF9004668C2 /* iosAppIcon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = iosAppIcon.sh; sourceTree = "<group>"; };
 		21EA6E4A242DEC0100F39E03 /* RecoderScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoderScreenViewController.h; sourceTree = "<group>"; };
 		21EA6E4B242DEC0100F39E03 /* RecoderScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoderScreenViewController.m; sourceTree = "<group>"; };
 		21EA6E4D242DEC8500F39E03 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
@@ -618,6 +620,7 @@
 		195418C421C9D956000A4C81 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				219461302A239FF9004668C2 /* iosAppIcon.sh */,
 				1910F28222D82E1F00A42293 /* movie_audioPcm.pcm */,
 				1962859C22BCC47300C5EAB0 /* audioMp2ToPcm.pcm */,
 				1909E03522BB89D700A2C24A /* recorder_normal_44100_mono.pcm */,
@@ -1292,6 +1295,7 @@
 				196F818921CA456100FD39E5 /* gleelirecorder.mp3 in Resources */,
 				19599EEB21E2D606004BD6B2 /* 2206F7F9-EAF3-4EDE-8421-FF4BEFD13F5B.codesnippet in Resources */,
 				19599EE821E2D606004BD6B2 /* 备注.txt in Resources */,
+				219461312A239FF9004668C2 /* iosAppIcon.sh in Resources */,
 				19599EF521E2D606004BD6B2 /* A05770DB-7EFA-46EF-BFDC-5E6485090FF9.codesnippet in Resources */,
 				1962859D22BCC47300C5EAB0 /* audioMp2ToPcm.pcm in Resources */,
 				19599EF021E2D606004BD6B2 /* 976B4CBC-F257-4DF1-8F12-915FD758B34F.codesnippet in Resources */,
